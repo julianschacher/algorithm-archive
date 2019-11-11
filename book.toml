@@ -1,0 +1,5 @@
+[book]
+title = "Arcane Algorithm Archive"
+description = "A collaborative book on algorithms."
+src = "contents"
+language = "en"
