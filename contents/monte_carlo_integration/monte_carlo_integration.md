@@ -20,15 +20,15 @@ For simplicity, we can also say that $$\text{Area}_{\text{square}}=4r^2$$.
 Now, let's say we want to find the area of the circle without an equation.
 As we said before, it's embedded in the square, so we should be able to find some ratio of the area of the square to the area of the circle:
 
-$$
+\\[
 \text{Ratio} = \frac{\text{Area}_{\text{circle}}}{\text{Area}_{\text{square}}}
-$$
+\\]
 
 This means,
 
-$$
+\\[
 \text{Area}_{\text{circle}} = \text{Area}_{\text{square}}\times\text{Ratio} = 4r^2 \times \text{ratio}
-$$
+\\]
 
 So, if we can find the $$\text{Ratio}$$ and we know $$r$$, we should be able to easily find the $$\text{Area}_{\text{circle}}$$.
 The question is, "How do we easily find the $$\text{Ratio}$$?"
@@ -95,9 +95,9 @@ each point is tested to see whether it's in the circle or not:
 
 If it's in the circle, we increase an internal count by one, and in the end,
 
-$$
+\\[
 \text{Ratio} = \frac{\text{count in circle}}{\text{total number of points used}}
-$$
+\\]
 
 If we use a small number of points, this will only give us a rough approximation, but as we start adding more and more points, the approximation becomes much, much better (as shown below)!
 

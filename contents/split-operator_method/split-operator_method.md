@@ -2,9 +2,9 @@
 The Split-Operator Method (also called the Split-Step Method), was actually the primary method I used to solve the Schr&ouml;dinger equation during my PhD.
 It is one of the simplest and fastest methods for this purpose and is widely used throughout modern quantum research in the area, in particular when dealing with the Non-linear Schr&ouml;dinger Equation (NLSE):
 
-$$
+\\[
 i \hbar \frac{\partial \Psi(\mathbf{r},t)}{\partial t} = \left[-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf{r}) + g|\Psi(\mathbf{r},t)|^2 \right] \Psi(\mathbf{r},t),
-$$
+\\]
 
 which follows from the notation provided in the [quantum systems](../quantum_systems/quantum_systems.md) chapter: $$\Psi(\mathbf{r},t)$$ is a quantum wave-function with spatial ($$\mathbf{r}$$) and time ($$t$$) dependence, $$\nabla^2$$ is a laplacian, and $$V(\mathbf{r})$$ is a potential of some sort (like $$\omega x^2$$ or something).
 In this case, we also add an interaction term $$g$$ next to a nonlinear $$|\Psi(\mathbf{r},t)|^2$$ term.
@@ -21,30 +21,30 @@ Bad notation aside, let's continue.
 
 If we assume a somewhat general solution to our quantum system:
 
-$$
+\\[
 \Psi(\mathbf{r},t + dt) = \left[e^{-\frac{i\hat{H}dt}{\hbar}}\right]\Psi(\mathbf{r},t) = \left[e^{-\frac{i(\hat{H}_r + \hat{H}_k)dt}{\hbar}}\right]\Psi(\mathbf{r},t)
-$$
+\\]
 
 and assume we are simulating our system by a series of small timesteps ($$dt$$), we can perform similar splitting by using the Baker-Campbell-Housdorff formula:
 
-$$
+\\[
 \Psi(\mathbf{r},t+dt) = \left[e^{-\frac{i\hat{H}_rdt}{\hbar}}e^{-\frac{i\hat{H}_kdt}{\hbar}}e^{-\frac{[i\hat{H}_r, i\hat{H}_k]dt^2}{2}}\right]\Psi(\mathbf{r},t)
-$$
+\\]
 
 This accrues a small amount of error ($$dt^2$$) related to the commutation of the real and momentum-space components of the Hamiltonian.
 This is a relatively large error and that's not okay.
 In order to change the $$dt^2$$ error to $$dt^3$$, we can split the system by performing a half-step in position space before doing a full-step in momentum space, through a process called _Strang Splitting_ like so:
 
-$$
+\\[
 \Psi(\mathbf{r},t+dt) = \left[e^{-\frac{i\hat{H}_rdt}{2\hbar}}e^{-\frac{i\hat{H}_kdt}{\hbar}}e^{-\frac{i\hat{H}_rdt}{2\hbar}} \right]\Psi(\mathbf{r},t) + \mathcal{O}(dt^3)
-$$
+\\]
 
 We can then address each part of this solution in chunks, first in position space, then in momentum space, then in position space again by using [Fourier Transforms](../cooley_tukey/cooley_tukey.md).
 Which looks something like this:
 
-$$
+\\[
 \Psi(\mathcal{r}, t+dt) = \left[\hat{U}_r\left(\frac{dt}{2}\right)\mathcal{F}^{-1}\left[\hat{U}_k(dt) \mathcal{F} \left[\hat{U}_r\left(\frac{dt}{2}\right) \Psi(\mathbf{r},t) \right] \right] \right] + \mathcal{O}(dt^3)
-$$
+\\]
 
 where $$\hat{U}_r = e^{-\frac{i\hat{H}_rdt}{\hbar}}$$, $$\hat{U}_k = e^{-\frac{i\hat{H}_kdt}{\hbar}}$$, and $$\mathcal{F}$$ and $$\mathcal{F}^{-1}$$ indicate forward and inverse Fourier Transforms.
 Here's a flowchart of what we are looking for every timestep:

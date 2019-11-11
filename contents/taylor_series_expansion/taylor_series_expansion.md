@@ -5,33 +5,33 @@ NOTE: Incomplete!
 I have been formally trained as a physicist. In my mind, there are several mathematical topics that blur the boundary between mathematics and physics. Taylor Series Expansions are one of those topics.
 
 On the one hand, I can see how the expansion could be considered purely mathematical. I mean, here is the definition:
-$$
+\\[
 f(x) \simeq \sum_{n=0}^{\infty} \frac{f^{(n)}(a)}{n!}(x-a)^n
-$$
+\\]
 
 where $$f(x)$$ is some function along real or complex space, $$a$$ is the point that we are expanding from, and $$f^{(n)}(x)$$ denotes the $$n^{\text{th}}$$ derivative of $$f(x)$$.
 From this perspective, the expansion just looks like a bunch of derivatives strung together! Where's the physics? Well, let's expand this series for the first few derivatives:
 
-$$
+\\[
 f(x) \simeq f(a) + \frac{df(a)}{dx}(x-a)
     + \frac{1}{2}\frac{d^2f(a)}{dx^2}(x-a)^2
-$$
+\\]
 
 If we substitute the derivatives for their physical quantities with $$f(x) \rightarrow x(t)$$, expanding from 0, and set
 
-$$
+\\[
 \begin{align}
 \frac{dx(t)}{dt} &= \text{velocity} = v(t) \\
 \frac{d^2x(t)}{dt^2} &= \text{acceleration} = a \\
 \end{align}
-$$
+\\]
 
 The Taylor series expansion turns into one of the most common formulas in classical physics, the *kinematic equation*!
 
-$$
+\\[
 x(t) \simeq x_0 + v_0t
     + \frac{1}{2}at^2
-$$
+\\]
 
 Note that here, we assume the acceleration to be constant, but it could technically have higher order terms.
 

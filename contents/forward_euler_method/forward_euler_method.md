@@ -7,18 +7,18 @@ As a physicist, I tend to understand things through methods that I have learned 
 In this case, it makes sense for me to see Euler methods as extensions of the [Taylor Series Expansion](../taylor_series_expansion/taylor_series_expansion.md).
 These expansions basically approximate functions based on their derivatives, like so:
 
-$$
+\\[
 f(x) \approx f(a) + \frac{1}{1!}\frac{df(a)}{da}(x-a)
     + \frac{1}{2!}\frac{d^2f(a)}{da^2}(x-a)^2
     + \frac{1}{3!}\frac{d^3f(a)}{da^3}(x-a)^3 + \cdots
-$$
+\\]
 
 Like before,  $$f(x)$$ is some function along real or complex space, $$a$$ is the point that we are expanding from, and $$f^{(n)}(x)$$ denotes the $$n^{\text{th}}$$ derivative of $$f(x)$$.
 
 So, what does this mean? Well, as mentioned, we can think of this similarly to the kinematic equation:
-$$
+\\[
 x = x_0 + vt + \frac{1}{2}at^2
-$$
+\\]
 where $$x$$ is position, $$v$$ is velocity, and $$a$$ is acceleration.
 This equation allows us to find the position of an object based on it's previous position ($$x_0$$), the derivative of it's position with respect to time ($$\frac{dx}{dt} = v_0$$) and one derivative on top of that ($$\frac{d^2x}{dx^2} = a$$).
 As stated in the Tayor Series Expansion, the acceleration term must also have $$\frac{1}{2!}$$ in front of it.
@@ -28,24 +28,24 @@ Well, with these methods, we assume that we are looking for a position in some s
 The methods assume that we have some function to evaluate the derivative of $$y(t)$$. In other words, we know that $$\frac{dy(t)}{dt} = f(t,y(t))$$.
 For the kinematic equation, we know what this is!
 
-$$
+\\[
 \frac{dy(t)}{dt} = v = f(t,y(t)) = v_0 + a(t)
-$$
+\\]
 
 So, we can iteratively solve for position by first solving for velocity. By following the kinematic equation (or Taylor Series Expansion), we find that
 
-$$
+\\[
 y_{n+1} = y_n + f(t_n, y_n) dt
-$$
+\\]
 
 For any timestep $$dt$$. This means that if we are solving the kinematic equation, we simply have the following equations:
 
-$$
+\\[
 \begin{align}
     x_{n+1} &= x_n + v dt \\
     v_{n+1} &= a (t_n)
 \end{align}
-$$
+\\]
 
 Now, solving this set of equations in this way is known as the *forward* Euler Method.
 In fact, there is another method known as the *backward* Euler Method, which we will get to soon enough.
@@ -78,9 +78,9 @@ Here, it's interesting that we see 2 different instability patterns.
 The green is initially unstable, but converges onto the correct solution, but the red is wrong from the get-go and only gets more wrong as time goes on.
 
 In truth, the stability region of the forward Euler method for the case where $$y' = ky$$ can be found with the following inequality:
-$$
+\\[
 |kdt + 1 | \leq 1
-$$
+\\]
 Which means that the forward Euler method is actually unstable for most values!
 If we want to stick to using the forward Euler method exclusively, the only solution is to decrease the timestep until it is within this stability region, and that's not necessarily easy for all cases.
 So now it might be obvious that another, more stable method should be used instead; however, many other stable methods are *implicit*, which means that in order to find the solution, we need to solve a system of equations via the [Thomas Algorithm](../thomas_algorithm/thomas_algorithm.md) or [Gaussian Elimination](../gaussian_elimination/gaussian_elimination.md).

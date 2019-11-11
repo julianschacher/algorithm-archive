@@ -2,13 +2,13 @@
 
 Let's say we have a system of equations,
 
-$$
+\\[
 \begin{align}
 2x + 3y + 4z &= 6 \\
 x + 2y + 3z &= 4 \\
 3x - 4y &= 10
 \end{align}
-$$
+\\]
 
 and we want to solve for $$x$$, $$y$$, and $$z$$.
 Well, one way to do this is with _Gaussian Elimination_, which you may have encountered before in a math class or two.
@@ -16,7 +16,7 @@ Well, one way to do this is with _Gaussian Elimination_, which you may have enco
 The first step is to transform the system of equations into a matrix by using the coefficients in front of each variable, where each row corresponds to another equation and each column corresponds to an independent variable like $$x$$, $$y$$, or $$z$$.
 For the previous system of equations, this might look like this:
 
-$$
+\\[
 \left[
 \begin{array}{ccc}
 2 & 3  & 4\\
@@ -39,11 +39,11 @@ z
 10
 \end{array}
 \right]
-$$
+\\]
 
 Or more simply:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 2 & 3  & 4 & 6 \\
@@ -51,25 +51,25 @@ $$
 3 & -4 & 0 & 10
 \end{array}
 \right]
-$$
+\\]
 
 At first, translating the set of equations into a matrix like this doesn't seem to help with anything, so let's think of this in another way.
 
 #### Row Echelon Form
 Instead of the complicated mess of equations shown above, imagine if the system looked like this:
 
-$$
+\\[
 \begin{align}
 2x + 3y + 4z &= 6 \\
 y + 2z &= 2 \\
 11z &= 18
 \end{align}
-$$
+\\]
 
 Then we could just solve for $$z$$ and plug that value in to the top two equations to solve for $$x$$ and $$y$$ through a process known as back-substitution.
 In matrix form, this set of equations would look like this:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 2 & 3  & 4 & 6 \\
@@ -77,7 +77,7 @@ $$
 0 & 0 & 11 & 18
 \end{array}
 \right]
-$$
+\\]
 
 This matrix form has a particular name: _Row Echelon Form_.
 Basically, any matrix can be considered in row echelon form if the leading coefficient or _pivot_ (the first non-zero element in every row when reading from left to right) is right of the pivot of the row above it.
@@ -85,7 +85,7 @@ Basically, any matrix can be considered in row echelon form if the leading coeff
 This creates a matrix that sometimes resembles an upper-triangular matrix; however, that doesn't mean that all row-echelon matrices are upper-triangular.
 For example, all of the following matrices are in row echelon form:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 2 & 3  & 4 & 6 \\
@@ -117,7 +117,7 @@ $$
 0 &  0
 \end{array}
 \right]
-$$
+\\]
 
 The first two of these have the right dimensions to find a solution to a system of equations; however, the last two matrices are respectively under- and over-constrained, meaning they do not provide an appropriate solution to a system of equations.
 That said, this doesn't mean that every matrix in the correct form can be solved either.
@@ -128,17 +128,17 @@ Nevertheless, all of these matrices are in row echelon form.
 #### *Reduced* Row Echelon Form
 Row echelon form is nice, but wouldn't it be even better if our system of equations looked simply like this:
 
-$$
+\\[
 \begin{align}
 x &= \frac{18}{11} \\
 y &= \frac{-14}{11} \\
 z &= \frac{18}{11}
 \end{align}
-$$
+\\]
 
 Then we would know exactly what $$x$$, $$y$$, and $$z$$ are without any fuss! In matrix form, it looks like this:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 1 & 0 & 0 & \frac{18}{11} \\
@@ -146,7 +146,7 @@ $$
 0 & 0 & 1 & \frac{18}{11}
 \end{array}
 \right]
-$$
+\\]
 
 This introduces yet another matrix configuration: * **Reduced** Row Echelon Form*.
 A matrix is in reduced row echelon form if it satisfies the following conditions:
@@ -156,7 +156,7 @@ A matrix is in reduced row echelon form if it satisfies the following conditions
 
 All the following examples are in the reduced row echelon form:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 1 & 0 & 0 & 8 \\
@@ -180,7 +180,7 @@ $$
 0 & 0
 \end{array}
 \right]
-$$
+\\]
 
 Again, only the first of these (the one that looks like an identity matrix) is desirable in the context of solving a system of equations, but transforming any matrix in this form gives us an immediate and definitive answer at the question: can I solve my system of equations?
 
@@ -213,7 +213,7 @@ That's it.
 Before continuing, I suggest you try to recreate the row echelon matrix we made above.
 That is, do the following:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 2 & 3  & 4 & 6 \\
@@ -229,7 +229,7 @@ $$
 0 & 0 & 11 & 18
 \end{array}
 \right]
-$$
+\\]
 
 There are plenty of different strategies you could use to do this, and no one strategy is better than the rest.
 One method is to subtract a multiple of the top row from subsequent rows below it such that all values beneath the pivot value are zero.
@@ -237,7 +237,7 @@ This process might be easier if you swap some rows around first and can be perfo
 
 After you get a row echelon matrix, the next step is to find the reduced row echelon form. In other words, we do the following:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 2 & 3  & 4 & 6 \\
@@ -253,7 +253,7 @@ $$
 0 & 0 & 1 & \frac{18}{11}
 \end{array}
 \right]
-$$
+\\]
 
 Here, the idea is similar to above and the same rules apply.
 In this case, we might start from the right-most column and subtracts upwards instead of downwards.
@@ -272,7 +272,7 @@ The *pivot* is then considered to be the first element in the highest swapped ro
 
 For example, in this case the highest value is $$3$$:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 2 & 3  & 4 & 6 \\
@@ -280,11 +280,11 @@ $$
 \mathbf{3} & -4 & 0 & 10
 \end{array}
 \right]
-$$
+\\]
 
 After finding this value, we simply switch the row with the $$3$$ to the current row:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 \mathbf{2} & \mathbf{3}  & \mathbf{4} & \mathbf{6} \\
@@ -300,7 +300,7 @@ $$
 \mathbf{2} & \mathbf{3}  & \mathbf{4} & \mathbf{6}
 \end{array}
 \right]
-$$
+\\]
 
 In this case, the new pivot is $$3$$.
 
@@ -340,7 +340,7 @@ This process essentially subtracts an optimal multiple of the current row from e
 Ideally, this should always create a 0 under the current row's pivot value.
 
 For example, in this matrix, the next row is $$1$$ and the pivot value is $$3$$, so the fraction is $$\frac{1}{3}$$.
-$$
+\\[
 \rightarrow
 \left[
 \begin{array}{ccc|c}
@@ -353,11 +353,11 @@ $$
     f &= A(\text{curr_row}, \text{pivot}_{\text{col}}) /  A(\text{pivot}_{\text{row}}, \text{pivot}_{\text{col}}) \\
       &= \frac{1}{3}
 \end{align}
-$$
+\\]
 
 After finding the fraction, we simply subtract $$\text{current_row} - \frac{1}{3}\times \text{pivot_row}$$, like so:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 3 & -4 & 0 & 10 \\
@@ -374,7 +374,7 @@ $$
 2 & 3  & 4 & 6
 \end{array}
 \right]
-$$
+\\]
 
 After this, repeat the process for all other rows.
 
@@ -472,7 +472,7 @@ This process is straightforward but will not be covered here, simply because the
 The idea of back-substitution is straightforward: we create a matrix of solutions and iteratively solve for each variable by plugging in all variables before it.
 For example, if our matrix looks like this:
 
-$$
+\\[
 \left[
 \begin{array}{ccc|c}
 2 & 3  & 4 & 6 \\
@@ -480,7 +480,7 @@ $$
 0 & 0 & 11 & 18
 \end{array}
 \right]
-$$
+\\]
 
 We can quickly solve $$11z = 18$$ for $$z$$, and then use that to solve $$y + 2z = 2$$ for $$y$$ by plugging in for $$z$$.
 After that, we simply need to solve $$2x + 3y + 4z = 6$$ for $$x$$ in a similar fashion.

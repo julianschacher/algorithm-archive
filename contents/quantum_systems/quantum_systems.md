@@ -25,17 +25,17 @@ The truth is that quantum simulators are hard to make in laboratories, so simula
 This section is devoted to all the different methods currently used to solve complex quantum systems, so let's start with the Schr&ouml;dinger Equation, which has many different formulations.
 Here is the easiest one to explain:
 
-$$
+\\[
 i \hbar \frac{\partial \Psi(\mathbf{r},t)}{\partial t} = \left[-\frac{\hbar^2}{2m} \nabla^2 + V(\mathbf{r},t) \right] \Psi(\mathbf{r},t)
-$$
+\\]
 
 Where $$\Psi(\mathbf{r},t)$$ is a quantum wavefunction, $$V(\mathbf{r},t)$$ is a _trapping potential_, $$\nabla^2$$ is a _laplacian_, $$\mathbf{r}$$ is some sort of spatial component, and $$t$$ is time.
 There is a lot to take in here; however, it's ultimately just some time derivative on the left-hand side and a spatial derivative (with some extra steps) on the right-hand side.
 In this way, it isn't too different from the diffusion (heat) equation:
 
-$$
+\\[
 \frac{\partial\phi(\mathbf{r},t)}{\partial t} = D \nabla^2 \phi(\mathbf{r},t)
-$$
+\\]
 
 where $$D$$ is some positive definite matrix and $$\phi(\mathbf{r},t)$$ is the density (or temperature) of the system.
 In fact, this is why one of the most common types of quantum simulation is sometimes called  _diffusion Monte Carlo_.
@@ -48,9 +48,9 @@ Quantum mechanics works fundamentally differently than classical mechanics in ph
 The wavefunction can be thought of as a set of all possible states for an object to be in, where there is some probability for the particle to be found in each state.
 This means that it is not possible to say that a particle is at a particular location, and instead we often say that it could be at any location with probability, as shown in the _probability density_:
 
-$$
+\\[
 P(\mathbf{r}, t) = |\Psi(\mathbf{r},t)|^2 = \Psi(\mathbf{r},t)^{*}\Psi(\mathbf{r},t)
-$$
+\\]
 
 Here, there are 2 things to note:
 
@@ -59,9 +59,9 @@ Here, there are 2 things to note:
 
 Now, to be clear: the probabilities must all sum to 1, or (more formally):
 
-$$
+\\[
 \int_{-\infty}^{+\infty}|\Psi(\mathbf{r},t)|^2 d\mathbf{r} = 1
-$$
+\\]
 
 This simply means that the probability of finding our quantum particle *somewhere in real space* is 1.
 In other words, our particle must exist somewhere in the known universe.
@@ -70,9 +70,9 @@ As another note: Just like position space can be parameterized by a position vec
 Any wavevector $$\textbf{k}$$ has the same units as reciprocal space and is thus analogous to angular frequency $$\omega$$.
 Often times, the wavevector space is called _momentum_ space, which makes sense when considering the de Broglie formula:
 
-$$
+\\[
 p = \frac{h}{\lambda} = \frac{2 \pi h}{2 \pi \lambda} = \hbar k
-$$
+\\]
 
 where $$h$$ is Planck's constant and $$\lambda$$ is the wavelength.
 This means that we can ultimately move between position and momentum space by using [Fourier Transforms](../../algorithms/cooley_tukey/cooley_tukey.md), which is incredibly useful in a number of cases!
@@ -86,9 +86,9 @@ The easiest way to understand this might be to look at the _Heisenberg uncertain
 Simply put, the Heisenberg uncertainty principle states that we cannot definitely know both the position and momentum of a quantum particle.
 In particular, it says:
 
-$$
+\\[
 \sigma_x \sigma_p \geq \frac{\hbar}{2}
-$$
+\\]
 
 where $$\hbar$$ is Planck's constant and $$\sigma_q = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(q_i-\mu)^2}$$.
 In this case, $$\sigma$$ is the standard deviation, $$\mu$$ is the statistical mean of your distribution, $$N$$ is the number of points sampled, $$q_i$$ is the value for each point $$i$$, and $$q$$ stands for $$r$$ or $$p$$.
@@ -119,9 +119,9 @@ There is still something missing from the picture that should be described in mo
 
 Here is the Schr&ouml;dinger equation again:
 
-$$
+\\[
 i \hbar \frac{\partial \Psi(\mathbf{r},t)}{\partial t} = \left[-\frac{\hbar^2}{2m} \nabla^2 + V(\mathbf{r},t) \right] \Psi(\mathbf{r},t)
-$$
+\\]
 
 We described it in the initial section of this chapter.
 For the most part, when we are trying to solve this equation the left-hand side does not change.
@@ -137,13 +137,13 @@ More specifically, we can say that the Hamiltonian is a set of energy _operators
 
 In the case of a 1D particle in a harmonic trap, we might use the following definitions:
 
-$$
+\\[
 \begin{align}
 \hat H &= \hat T + \hat V \\
 \hat T &= \frac{p^2}{2m} \\
 \hat V &= \frac{1}{2}\omega x^2
 \end{align}
-$$
+\\]
 
 where $$p = -i\hbar \nabla$$ is the _momentum operator_ and $$\omega$$ is the _trapping frequency_ indicating how confined our quantum system will be.
 In this case, $$\hat T$$ is an operator that works on our wavefunction in momentum space, while $$\hat V$$ acts in position space.
@@ -153,9 +153,9 @@ Ultimately, this means that the operators are not meant to be interpreted on the
 
 In the end, we can update our Schr&ouml;dinger equation to be
 
-$$
+\\[
 i \hbar \frac{\partial \Psi(\mathbf{r},t)}{\partial t} = \hat H \Psi(\mathbf{r},t)
-$$
+\\]
 
 Which is a lot cleaner and more general.
 Now, the Schr&ouml;dinger equation can solve any quantum system so long as it can be written in terms of Hamiltonian mechanics!
@@ -167,9 +167,9 @@ This is not an easy question to answer, but it is definitely important and will 
 
 For now, we will blanketly say
 
-$$
+\\[
 \frac{\partial f}{\partial x} = \mathcal{F}^{-1}\left( 2\pi i k \mathcal{F}\left( f \right)\right)
-$$
+\\]
 
 In other words, we can derive a function by performing a Fourier transform on the function, multiplying by some momentum-space grid, and then inverse-transforming it back.
 Because this operation inherently involves a transform into momentum space before transformation, it is a momentum-space operator.
@@ -182,16 +182,16 @@ This section will be updated further when we discuss spectral methods, but if yo
 Unfortunately, the interpretation of quantum simulation is rather tricky and is sometimes easier to understand with slightly different notation.
 This notation is called _braket_ notation, where a _ket_ looks like this:
 
-$$
+\\[
 \lvert A \rangle
-$$
+\\]
 
 and basically describes $$A$$ as a column vector.
 The _bra_ represents the Hermitian conjugate of the ket and looks like this:
 
-$$
+\\[
 \langle B \rvert
-$$
+\\]
 
 The ket is often represented as a row vector for $$B$$.
 Because of this, $$ \langle B \rvert A \rangle $$ represents the inner product of the two vectors and $$ \lvert A \rangle \langle B \rvert $$ represents the outer product.
@@ -205,9 +205,9 @@ As mentioned, the wavefunction $$\Psi(x)$$ is complex and has both real and imag
 These states are _eigenstates_ of the system, and are often described as the constituent states that make up all other possible wavefunctions.
 In other words,
 
-$$
+\\[
 \lvert \Psi(x)\rangle = \sum_i c_i \lvert \Psi_i \rangle
-$$
+\\]
 
 Where $$c_i$$ is some constant describing _how much_ of a given eigenstate $$i$$ is in the full wavefunction.
 As you might expect, all of the $$c_i$$'s should sum to 1.
@@ -217,9 +217,9 @@ As you might expect, all of the $$c_i$$'s should sum to 1.
 When it comes to quantum systems, there is no quantity more important than energy.
 Basically, every eigenstate of the system has a different energy associated with it, and you can find this energy with a simple calculation:
 
-$$
+\\[
 E = \langle \Psi \lvert \hat H \lvert \Psi \rangle
-$$
+\\]
 
 Which can be done rather trivially in code by finding the conjugate of the wavefunction and multiplying it with another wavefunction after operation in position and momentum space.
 This ultimately looks like this:

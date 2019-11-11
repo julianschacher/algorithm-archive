@@ -168,11 +168,11 @@ We can represent this addition with the following (radix-2) butterfly:
 
 Here, the diagram means the following:
 
-$$
+\\[
 b_0 = a_0 + \omega_2^0 a_1 \\
 
 b_1 = a_0 + \omega_2^1 a_1
-$$
+\\]
 
 However, it turns out that the second half of our array of $$\omega$$ values is always the negative of the first half, so $$\omega_2^0 = -\omega_2^1$$, so we can use the following butterfly diagram:
 
@@ -182,11 +182,11 @@ However, it turns out that the second half of our array of $$\omega$$ values is 
 
 With the following equations:
 
-$$
+\\[
 b_0 = a_0 + \omega_2^0 a_1 \\
 
 b_1 = a_0 - \omega_2^0 a_1
-$$
+\\]
 
 By swapping out the second $$\omega$$ value in this way, we can save a good amount of space.
 Now imagine we need to combine more elements.
