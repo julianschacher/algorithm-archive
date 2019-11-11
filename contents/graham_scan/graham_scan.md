@@ -1,7 +1,7 @@
 # Graham Scan
 
 At around the same time of the [Jarvis March](../jarvis_march/jarvis_march.md), R. L. Graham was also developing an algorithm to find the convex hull of a random set of points {{ "gs1972" | cite }}.
-Unlike the Jarvis March, which is an $$\mathcal{O}(nh)$$ operation, the Graham Scan is $$\mathcal{O}(n\log(n))$$, where $$n$$ is the number of points and $$h$$ is the size for the hull.
+Unlike the Jarvis March, which is an \\(\mathcal{O}(nh)\\) operation, the Graham Scan is \\(\mathcal{O}(n\log(n))\\), where \\(n\\) is the number of points and \\(h\\) is the size for the hull.
 This means that the complexity of the Graham Scan is not output-sensitive; moreover, there are some cases where the Jarvis March is more optimal, depending on the size of the hull and the number of points to wrap.
 
 Rather than starting at the leftmost point like the Jarvis March, the Graham scan starts at the bottom.
@@ -38,7 +38,7 @@ We basically do not want clockwise rotations, because this means we are at an in
 <!---ADD FIGURE--->
 
 To save memory and expensive `append()` operations, we ultimately look for points that should be on the hull and swap them with the first elements in the array.
-If there are $$M$$ elements on the hull, then the first $$M$$ elements in our output random distribution of points will be the hull.
+If there are \\(M\\) elements on the hull, then the first \\(M\\) elements in our output random distribution of points will be the hull.
 In the end, the code should look something like this:
 
 {% method %}

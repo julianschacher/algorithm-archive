@@ -10,10 +10,10 @@ x + 2y + 3z &= 4 \\
 \end{align}
 \\]
 
-and we want to solve for $$x$$, $$y$$, and $$z$$.
+and we want to solve for \\(x\\), \\(y\\), and \\(z\\).
 Well, one way to do this is with _Gaussian Elimination_, which you may have encountered before in a math class or two.
 
-The first step is to transform the system of equations into a matrix by using the coefficients in front of each variable, where each row corresponds to another equation and each column corresponds to an independent variable like $$x$$, $$y$$, or $$z$$.
+The first step is to transform the system of equations into a matrix by using the coefficients in front of each variable, where each row corresponds to another equation and each column corresponds to an independent variable like \\(x\\), \\(y\\), or \\(z\\).
 For the previous system of equations, this might look like this:
 
 \\[
@@ -66,7 +66,7 @@ y + 2z &= 2 \\
 \end{align}
 \\]
 
-Then we could just solve for $$z$$ and plug that value in to the top two equations to solve for $$x$$ and $$y$$ through a process known as back-substitution.
+Then we could just solve for \\(z\\) and plug that value in to the top two equations to solve for \\(x\\) and \\(y\\) through a process known as back-substitution.
 In matrix form, this set of equations would look like this:
 
 \\[
@@ -121,7 +121,7 @@ For example, all of the following matrices are in row echelon form:
 
 The first two of these have the right dimensions to find a solution to a system of equations; however, the last two matrices are respectively under- and over-constrained, meaning they do not provide an appropriate solution to a system of equations.
 That said, this doesn't mean that every matrix in the correct form can be solved either.
-For example, if you translate the second matrix into a system of equations again, the last row translates into $$0x+0y+0z=1$$, which is a contradiction.
+For example, if you translate the second matrix into a system of equations again, the last row translates into \\(0x+0y+0z=1\\), which is a contradiction.
 This is due to the fact that the matrix is singular, and there are no solutions to this particular system.
 Nevertheless, all of these matrices are in row echelon form.
 
@@ -136,7 +136,7 @@ z &= \frac{18}{11}
 \end{align}
 \\]
 
-Then we would know exactly what $$x$$, $$y$$, and $$z$$ are without any fuss! In matrix form, it looks like this:
+Then we would know exactly what \\(x\\), \\(y\\), and \\(z\\) are without any fuss! In matrix form, it looks like this:
 
 \\[
 \left[
@@ -261,7 +261,7 @@ In this case, we might start from the right-most column and subtracts upwards in
 ## The Computational Method
 
 The analytical method for Gaussian Elimination may seem straightforward, but the computational method does not obviously follow from the "game" we were playing before.
-Ultimately, the computational method boils down to two separate steps and has a complexity of $$\mathcal{O}(n^3)$$.
+Ultimately, the computational method boils down to two separate steps and has a complexity of \\(\mathcal{O}(n^3)\\).
 
 As a note, this process iterates through all the rows in the provided matrix.
 When we say "current row" (`curr_row`), we mean the specific row iteration number we are on at that time, and as before, the "pivot" corresponds to the first non-zero element in that row.
@@ -270,7 +270,7 @@ When we say "current row" (`curr_row`), we mean the specific row iteration numbe
 For each element in the pivot column under the current row, find the highest value and switch the row with the highest value with the current row.
 The *pivot* is then considered to be the first element in the highest swapped row.
 
-For example, in this case the highest value is $$3$$:
+For example, in this case the highest value is \\(3\\):
 
 \\[
 \left[
@@ -282,7 +282,7 @@ For example, in this case the highest value is $$3$$:
 \right]
 \\]
 
-After finding this value, we simply switch the row with the $$3$$ to the current row:
+After finding this value, we simply switch the row with the \\(3\\) to the current row:
 
 \\[
 \left[
@@ -302,7 +302,7 @@ After finding this value, we simply switch the row with the $$3$$ to the current
 \right]
 \\]
 
-In this case, the new pivot is $$3$$.
+In this case, the new pivot is \\(3\\).
 
 In code, this process might look like this:
 
@@ -327,10 +327,10 @@ In code, this process might look like this:
 [import:43-76, lang:"rust"](code/rust/gaussian_elimination.rs)
 {% endmethod %}
 
-As a note, if the highest value is $$0$$, the matrix is singular and the system has no single solution.
+As a note, if the highest value is \\(0\\), the matrix is singular and the system has no single solution.
 This makes sense because if the highest value in a column is 0, the entire column must be 0, thus there can be no unique solution when we read the matrix as a set of equations.
 That said, Gaussian elimination is more general and allows us to continue, even if the matrix is not necessarily solvable as a set of equations.
-Feel free to exit after finding a $$0$$ if your end-goal is to solve a system of equations.
+Feel free to exit after finding a \\(0\\) if your end-goal is to solve a system of equations.
 
 
 #### Step 2
@@ -339,7 +339,7 @@ After this, subtract the current pivot row multiplied by the fraction from each 
 This process essentially subtracts an optimal multiple of the current row from each row underneath (similar to Step 3 from the above game).
 Ideally, this should always create a 0 under the current row's pivot value.
 
-For example, in this matrix, the next row is $$1$$ and the pivot value is $$3$$, so the fraction is $$\frac{1}{3}$$.
+For example, in this matrix, the next row is \\(1\\) and the pivot value is \\(3\\), so the fraction is \\(\frac{1}{3}\\).
 \\[
 \rightarrow
 \left[
@@ -355,7 +355,7 @@ For example, in this matrix, the next row is $$1$$ and the pivot value is $$3$$,
 \end{align}
 \\]
 
-After finding the fraction, we simply subtract $$\text{current_row} - \frac{1}{3}\times \text{pivot_row}$$, like so:
+After finding the fraction, we simply subtract \\(\text{current_row} - \frac{1}{3}\times \text{pivot_row}\\), like so:
 
 \\[
 \left[
@@ -482,8 +482,8 @@ For example, if our matrix looks like this:
 \right]
 \\]
 
-We can quickly solve $$11z = 18$$ for $$z$$, and then use that to solve $$y + 2z = 2$$ for $$y$$ by plugging in for $$z$$.
-After that, we simply need to solve $$2x + 3y + 4z = 6$$ for $$x$$ in a similar fashion.
+We can quickly solve \\(11z = 18\\) for \\(z\\), and then use that to solve \\(y + 2z = 2\\) for \\(y\\) by plugging in for \\(z\\).
+After that, we simply need to solve \\(2x + 3y + 4z = 6\\) for \\(x\\) in a similar fashion.
 In code, this involves keeping a rolling sum of all the values we substitute, subtracting that sum from the solution column and then dividing by the coefficient variable.
 In code, it looks like this:
 
@@ -511,8 +511,8 @@ In code, it looks like this:
 ## Visual Representation
 
 We have thus far used Gaussian elimination as a method to solve a system of equations; however, there is often a much easier way to find a similar solution simply by plotting each row in our matrix.
-For the case of 2 equations and 2 unknowns, we would plot the two lines corresponding to each equation and the $$(x, y)$$ location of their point of intersection would be the solution for $$x$$ and $$y$$.
-Similarly, for the case of 3 equations and 3 unknowns, we would plot 3 planes and the $$(x, y, z)$$ location of their point of intersection would be the solution for $$x$$, $$y$$, and $$z$$.
+For the case of 2 equations and 2 unknowns, we would plot the two lines corresponding to each equation and the \\((x, y)\\) location of their point of intersection would be the solution for \\(x\\) and \\(y\\).
+Similarly, for the case of 3 equations and 3 unknowns, we would plot 3 planes and the \\((x, y, z)\\) location of their point of intersection would be the solution for \\(x\\), \\(y\\), and \\(z\\).
 
 What, then, is the point of Gaussian elimination if we can simply plot our set of equations to find a solution?
 Well, this analogy breaks down quickly when we start moving beyond 3D, so it is obvious we need some method to deal with higher-dimensional systems.
@@ -525,10 +525,10 @@ Your browser does not support the video tag.
 </video>
 </div>
 
-As we can see in the above visualization, the planes wobble about in 3D until they reach row echelon form, where one plane is parallel to the $$x$$ and $$y$$ axes.
-At this point, it's trivial to find the $$z$$-coordinate for the solution because it's simply the $$z$$ intercept of the parallel plane.
+As we can see in the above visualization, the planes wobble about in 3D until they reach row echelon form, where one plane is parallel to the \\(x\\) and \\(y\\) axes.
+At this point, it's trivial to find the \\(z\\)-coordinate for the solution because it's simply the \\(z\\) intercept of the parallel plane.
 From there, the matrices become even easier to interpret as they move to the reduced row echelon form.
-In this form, the solution is simply the $$x$$, $$y$$, and $$z$$ intercepts of the appropriate planes.
+In this form, the solution is simply the \\(x\\), \\(y\\), and \\(z\\) intercepts of the appropriate planes.
 
 This visualization might have been obvious for some readers, but I found it particularly enlightening at first.
 By performing Gaussian elimination, we are manipulating our planes such that they can be interpreted at a glance -- which is precisely the same thing we are doing with the matrix interpretation!
@@ -541,8 +541,8 @@ If no solution exists or we are trying to find a reduced row echelon matrix, the
 As we said at the start, the notation for Gaussian Elimination is rather ambiguous in the literature, so we are hoping that the definitions provided here are clear and consistent enough to cover all the bases.
 
 As for what's next... Well, we are in for a treat!
-The above algorithm clearly has 3 `for` loops and has a complexity of $$\sim O(n^3)$$, which is abysmal!
-If we can reduce the matrix to a specifically **tridiagonal** matrix, we can actually solve the system in $$\sim O(n)$$!
+The above algorithm clearly has 3 `for` loops and has a complexity of \\(\sim O(n^3)\\), which is abysmal!
+If we can reduce the matrix to a specifically **tridiagonal** matrix, we can actually solve the system in \\(\sim O(n)\\)!
 How? Well, we can use an algorithm known as the _Tri-Diagonal Matrix Algorithm_ \(TDMA\) also known as the [_Thomas Algorithm_](../thomas_algorithm/thomas_algorithm.md).
 
 There are also plenty of other solvers that do similar things that we will get to in due time.

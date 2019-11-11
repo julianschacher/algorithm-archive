@@ -17,11 +17,11 @@ Here's the idea: algorithms operate on data.
 Complexity theory uses different notations to describe how many operations an algorithm will need.
 In this way, computational complexity measures runtime in terms of the number of operations an algorithm takes to complete its task.
 To be clear, the notations used are not at all exact, but they roughly describe the run-time of code and can be used to estimate how long an algorithm should take to run.
-In addition, there are many different notations depending on who you ask, but for now we'll focus on the big 3: $$O$$, $$\Omega$$, and $$\Theta$$.
-Big $$O$$ assumes the worst, which is the often the most useful description of an algorithm.
-On the other hand, $$\Omega$$ assumes the best and $$\Theta$$ is used when the best and worst cases are the same.
+In addition, there are many different notations depending on who you ask, but for now we'll focus on the big 3: \\(O\\), \\(\Omega\\), and \\(\Theta\\).
+Big \\(O\\) assumes the worst, which is the often the most useful description of an algorithm.
+On the other hand, \\(\Omega\\) assumes the best and \\(\Theta\\) is used when the best and worst cases are the same.
 
-Of the three Big $$O$$ is used the most, and is used in conversation to mean that the algorithm will take "on the order of" $$n$$ operations.
+Of the three Big \\(O\\) is used the most, and is used in conversation to mean that the algorithm will take "on the order of" \\(n\\) operations.
 Unfortunately, at this point, these notations might be a little vague.
 In fact, it was incredibly vague for me for a long time, and it wasn't until I saw the notations in action that it all started to make sense, so that's what this section is about: providing concrete examples to better understand computational complexity notation.
 
@@ -36,9 +36,9 @@ end
 ```
 
 Obviously, no matter how large `a` is, this function will not take any longer to run.
-Because of this, we say it has a constant runtime and notate it with $$O(1) = \Omega(1) = \Theta(1)$$.
+Because of this, we say it has a constant runtime and notate it with \\(O(1) = \Omega(1) = \Theta(1)\\).
 Basically, we are saying that this function will run with 1 operation total (a single print).
-The best-case runtime will be 1 operation, the worst-case runtime will be 1 operation, and because they are both the same, we can use $$\Theta$$ to notate that.
+The best-case runtime will be 1 operation, the worst-case runtime will be 1 operation, and because they are both the same, we can use \\(\Theta\\) to notate that.
 Now imagine the following function:
 
 ```julia
@@ -52,9 +52,9 @@ end
 ```
 
 This function has 3 print statements, so it has 3 operations total.
-Because of this, it's tempting to say that the runtime would be $$O(3) = \Omega(3) = \Theta(3)$$, and you would not be wrong; however, complexity notations often make a big assumption: **we don't care about constants!**
+Because of this, it's tempting to say that the runtime would be \\(O(3) = \Omega(3) = \Theta(3)\\), and you would not be wrong; however, complexity notations often make a big assumption: **we don't care about constants!**
 What does this mean? Well, it means that we get rid of all constants that are not 1!
-In this case, that means we set $$O(3) = O(1)$$.
+In this case, that means we set \\(O(3) = O(1)\\).
 
 Now, I know what you are thinking, *That's stupid! It's clear that the second function will take 3 times as long to run, shouldn't we notate that?*
 You're not wrong; however, complexity notation is mostly interested in how algorithms scale with larger and larger inputs.
@@ -79,8 +79,8 @@ function linear(a::Array{Float64})
 end
 ```
 Here, it's clear that if we increase `a` by one element, we will need to do another operation.
-That is, with an array of size $$n$$, we will need to do $$n$$ operations, which means that our complexity is $$O(n) = \Omega(n) = \Theta(n)$$.
-As before, adding more operations into the `for` loop will change the constant in front of $$n$$ in our complexity notation, but we'll continue to ignore those constants.
+That is, with an array of size \\(n\\), we will need to do \\(n\\) operations, which means that our complexity is \\(O(n) = \Omega(n) = \Theta(n)\\).
+As before, adding more operations into the `for` loop will change the constant in front of \\(n\\) in our complexity notation, but we'll continue to ignore those constants.
 For example:
 
 ```julia
@@ -98,11 +98,11 @@ function linear(a::Array{Float64})
 end
 ```
 
-Technically has a complexity of $$\Theta(\frac{3n}{2} + 2)$$, but we'll just call it $$\Theta(n)$$.
-Regardless of the notation, if you see something that is $$O(n)$$, you know that *at worst* it will run at the speed of a `for` loop, which is pretty good!
+Technically has a complexity of \\(\Theta(\frac{3n}{2} + 2)\\), but we'll just call it \\(\Theta(n)\\).
+Regardless of the notation, if you see something that is \\(O(n)\\), you know that *at worst* it will run at the speed of a `for` loop, which is pretty good!
 
 ### Polynomial Time
-A promise of $$O(n)$$ is not bad in terms of run-time; however, it is unlikely that you will run into too many straightforward algorithms that are $$O(n)$$.
+A promise of \\(O(n)\\) is not bad in terms of run-time; however, it is unlikely that you will run into too many straightforward algorithms that are \\(O(n)\\).
 For example, let's say you have a square, 2D image and want to iterate through all of its points.
 Well, to do this, we might write code that looks something like:
 
@@ -118,9 +118,9 @@ function access_image(img::Array{Float64}, size::Int64)
 end
 ```
 
-This is a simple case where a nested `for` loop is perfectly acceptable, and it's obvious geometrically that we need to access $$\mathrm{size}\times\mathrm{size}$$ number of elements (because we are working with a square).
-This means that this example has $$\Theta(n^2)$$ complexity. This is not great.
-If you have to access 3D space, this might require $$\Theta(n^3)$$, which is even worse! Don't even get me started on 4D!
+This is a simple case where a nested `for` loop is perfectly acceptable, and it's obvious geometrically that we need to access \\(\mathrm{size}\times\mathrm{size}\\) number of elements (because we are working with a square).
+This means that this example has \\(\Theta(n^2)\\) complexity. This is not great.
+If you have to access 3D space, this might require \\(\Theta(n^3)\\), which is even worse! Don't even get me started on 4D!
 Intuitively, if you see anything that has a polynomial runtime, it's easy to think of it as a bunch of nested `for` loops.
 That said, there have been several cases throughout the history of algorithms where polynomial runtimes have inhibited certain algorithms from being used entirely, simply because it takes too long to run!
 
@@ -144,7 +144,7 @@ end
 ```
 
 Here, we read in the maximum number `n` we are iterating through and recursively call the `exponential` function, decrementing the number of iterations left each time.
-Because we are calling the `exponential` function twice, this has a complexity of $$\Theta(2^n)$$, which is not great, but if it's the only way to get a job done, it's the only way to get a job done.
+Because we are calling the `exponential` function twice, this has a complexity of \\(\Theta(2^n)\\), which is not great, but if it's the only way to get a job done, it's the only way to get a job done.
 
 Logarithmic algorithms can be thought of as the opposite of exponential ones.
 Instead of taking a value and computing more and more values each time, a good example of a logarithmic algorithm is one that takes an array and recursively divides it up, like so:
@@ -158,33 +158,33 @@ function logarithmic(a::Array{Float64}, cutoff::Int64)
     println(length(a))
 end
 ```
-To be honest, it is not obvious that the provided `logarithmic` function should operate in $$\Theta(\log(n))$$ time, where $$n$$ is the size of `a`.
+To be honest, it is not obvious that the provided `logarithmic` function should operate in \\(\Theta(\log(n))\\) time, where \\(n\\) is the size of `a`.
 That said, I encourage you to think about an array of size 8.
 First, we split it in half, creating 2 arrays of 4 elements each.
 If we split these new arrays, we have 4 arrays of 2, and if we split these by two we have 8 arrays of 1 element each.
 This is as far as we can go, and we ended up dividing the array 3 times to get to this point.
-$$3 = \log_2(8)$$, so this function runs with a logarithmic number of operations.
+\\(3 = \log_2(8)\\), so this function runs with a logarithmic number of operations.
 
 ## Putting it all together
 
 We've outlined the most common complexity cases of different algorithms here, but at this point things might still be unclear.
-Which is better: $$O(n^2)$$ or $$O(log(n))$$?
+Which is better: \\(O(n^2)\\) or \\(O(log(n))\\)?
 Well, let's plot all the different cases out, and the answer should become obvious.
 
 <p>
     <img  class="center" src="res/cplot.png" />
 </p>
 
-Here, we see each of the complexity cases as $$n$$ increases.
+Here, we see each of the complexity cases as \\(n\\) increases.
 Clearly, linear time is not bad when compared to polynomial or exponential time; however, if you can manage something in logarithmic or constant time, do it!
 
 Now, there is a lot more to say about computational complexity and we'll definitely cover it at some point, but I can only move so fast!
-In particular, I would love to have a discussion on the $$P=NP$$ issue that has been rustling the jimmies of a few computer scientists for a while, but we'll get to that in due time.
+In particular, I would love to have a discussion on the \\(P=NP\\) issue that has been rustling the jimmies of a few computer scientists for a while, but we'll get to that in due time.
 
 ### Final Warning
 This is a book about algorithms.
 It would be nearly impossible to talk about most algorithms without touching on complexity theory and explaining why certain algorithms are faster than others.
-That said, just because an algorithm runs in $$O(\log n)$$ does not mean it will always be faster than one that runs in $$O(n^2)$$.
+That said, just because an algorithm runs in \\(O(\log n)\\) does not mean it will always be faster than one that runs in \\(O(n^2)\\).
 Because complexity notation often ignores constants, there could be a crazy constant that we are missing that actually makes a huge difference in runtime.
 In addition, in order to use an algorithm that seems faster based on complexity notation, you may need to use a library that massively increases runtime due to a plethora of other reasons.
 

@@ -99,7 +99,7 @@ Ultimately, to compress our encoded bitstring, we want to minimize the following
 L(C(W)) = \sum_{i=0}^{n}w_i\times \text{length}(c_i)
 \\]
 
-Where $$C$$ is the characters of our alphabet and $$c_i$$ is codeword for a single character, $$W$$ is related to the probability of pulling that character out of a bag and $$w_i$$ is an individual probability of getting a specific character, and $$L$$ is a vague, unitless quantity to determine the overall length and is usually used to determine compression ratios.
+Where \\(C\\) is the characters of our alphabet and \\(c_i\\) is codeword for a single character, \\(W\\) is related to the probability of pulling that character out of a bag and \\(w_i\\) is an individual probability of getting a specific character, and \\(L\\) is a vague, unitless quantity to determine the overall length and is usually used to determine compression ratios.
 To show how this works, let's consider encoding the word _abbcccdddd_ with two different alphabets:
 
 | Character |  Probability | Bit Representation 1 | Bit Representation 2 |
@@ -118,7 +118,7 @@ L_2 &= 0.1\times 3 + 0.2 \times 3 + 0.3 \times 2 + 0.4 \times 1 = 1.9
 \end{align}
 \\]
 
-Here, it's clear that $$L_2 < L_1$$, and thus the second set of codewords compresses our data more than the first.
+Here, it's clear that \\(L_2 < L_1\\), and thus the second set of codewords compresses our data more than the first.
 This measure can be used as a direct test of certain simple data compression techniques, notably those created by Shannon, Fano, and [Huffman](../huffman_encoding/huffman_encoding.md), which will be covered soon!
 
 

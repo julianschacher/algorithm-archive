@@ -12,20 +12,20 @@ Gauss (of course) already had too many things named after him and Cooley and Tuk
 To an outsider, the Fourier Transform looks like a mathematical mess -- certainly a far cry from the heroic portal between two domains I have depicted it to be; however, like most things, it's not as bad as it initially appears to be.
 So, here it is in all it's glory!
 
-$$F(\xi) = \int_{-\infty} ^\infty f(x) e^{-2 \pi i x \xi} dx$$
+\\(F(\xi) = \int_{-\infty} ^\infty f(x) e^{-2 \pi i x \xi} dx\\)
 
 and
 
-$$f(x) = \int_{-\infty} ^\infty F(\xi) e^{2 \pi i \xi x} d\xi$$
+\\(f(x) = \int_{-\infty} ^\infty F(\xi) e^{2 \pi i \xi x} d\xi\\)
 
-Where $$F(\xi)$$ represents a function in frequency space, $$\xi$$ represents a value in frequency space, $$f(x)$$ represents a function in real space, and $$x$$ represents a value in the real space.
+Where \\(F(\xi)\\) represents a function in frequency space, \\(\xi\\) represents a value in frequency space, \\(f(x)\\) represents a function in real space, and \\(x\\) represents a value in the real space.
 Note here that the only difference between the two exponential terms is a minus sign in the transformation to frequency space.
 As I mentioned, this is not intuitive syntax, so please allow me to explain a bit.
 
 Firstly, **what does the Fourier Transform do?**
 
-If we take a sum sinusoidal functions (like $$\sin(\omega t)$$ or $$\cos(\omega t)$$), we might find a complicated mess of waves between $$\pm 1$$.
-Each constituent wave can be described by only one value: $$\omega$$.
+If we take a sum sinusoidal functions (like \\(\sin(\omega t)\\) or \\(\cos(\omega t)\\)), we might find a complicated mess of waves between \\(\pm 1\\).
+Each constituent wave can be described by only one value: \\(\omega\\).
 So, instead of representing these curves as seen above, we could instead describe them as peaks in frequency space, as shown below.
 
 <p>
@@ -38,17 +38,17 @@ After performing the transform, it is now much, much easier to understand precis
 Now, how does this relate to the transformations above?
 Well, the easiest way is to substitute in the Euler's formula:
 
-$$e^{2 \pi i \theta} = \cos(2 \pi \theta) + i \sin(2 \pi \theta)$$
+\\(e^{2 \pi i \theta} = \cos(2 \pi \theta) + i \sin(2 \pi \theta)\\)
 
 This clearly turns our function in frequency space into:
 
-$$F(\xi) = \int_{-\infty} ^\infty f(x) (\cos(-2 \pi x \xi) + i \sin(-2 \pi x \xi))dx$$
+\\(F(\xi) = \int_{-\infty} ^\infty f(x) (\cos(-2 \pi x \xi) + i \sin(-2 \pi x \xi))dx\\)
 
 and our function in real space into:
 
-$$f(x) = \int_{-\infty} ^\infty F(\xi) (\cos(2 \pi \xi x) + i \sin(2 \pi \xi x)) d\xi$$
+\\(f(x) = \int_{-\infty} ^\infty F(\xi) (\cos(2 \pi \xi x) + i \sin(2 \pi \xi x)) d\xi\\)
 
-Here, the $$\sin$$ and $$\cos$$ functions are clearly written in the formulas, so it looks much friendlier, right?
+Here, the \\(\sin\\) and \\(\cos\\) functions are clearly written in the formulas, so it looks much friendlier, right?
 This means that a point in real space is defined by the integral over all space of it's corresponding frequency function multiplied by sinusoidal oscillations.
 
 Truth be told, even after seeing this math, I still didn't understand Fourier Transforms.
@@ -58,13 +58,13 @@ Truth be told, I didn't understand it fully until I discretized real and frequen
 
 In principle, the Discrete Fourier Transform (DFT) is simply the Fourier transform with summations instead of integrals:
 
-$$X_k = \sum_{n=0}^{N-1} x_n \cdot e^{-2 \pi i k n / N}$$
+\\(X_k = \sum_{n=0}^{N-1} x_n \cdot e^{-2 \pi i k n / N}\\)
 
 and
 
-$$x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k \cdot e^{2 \pi i k n / N}$$
+\\(x_n = \frac{1}{N} \sum_{k=0}^{N-1} X_k \cdot e^{2 \pi i k n / N}\\)
 
-Where $$X_n$$ and $$x_n$$ are sequences of $$N$$ numbers in frequency and real space, respectively.
+Where \\(X_n\\) and \\(x_n\\) are sequences of \\(N\\) numbers in frequency and real space, respectively.
 In principle, this is no easier to understand than the previous case!
 For some reason, though, putting code to this transformation really helped me figure out what was actually going on.
 
@@ -89,7 +89,7 @@ For some reason, though, putting code to this transformation really helped me fi
 [import:3-15, lang:"javascript"](code/javascript/fft.js)
 {% endmethod %}
 
-In this function, we define `n` to be a set of integers from $$0 \rightarrow N-1$$ and arrange them to be a column.
+In this function, we define `n` to be a set of integers from \\(0 \rightarrow N-1\\) and arrange them to be a column.
 We then set `k` to be the same thing, but in a row.
 This means that when we multiply them together, we get a matrix, but not just any matrix!
 This matrix is the heart to the transformation itself!
@@ -116,7 +116,7 @@ The trick to the Cooley-Tukey algorithm is recursion.
 In particular, we split the matrix we wish to perform the FFT on into two parts: one for all elements with even indices and another for all odd indices.
 We then proceed to split the array again and again until we have a manageable array size to perform a DFT (or similar FFT) on.
 We can also perform a similar re-ordering by using a bit reversal scheme, where we output each array index's integer value in binary and flip it to find the new location of that element.
-With recursion, we can reduce the complexity to $$\sim \mathcal{O}(n \log n)$$, which is a feasible operation.
+With recursion, we can reduce the complexity to \\(\sim \mathcal{O}(n \log n)\\), which is a feasible operation.
 
 In the end, the code looks like:
 {% method %}
@@ -151,12 +151,12 @@ Butterfly Diagrams show where each element in the array goes before, during, and
 As mentioned, the FFT must perform a DFT.
 This means that even though we need to be careful about how we add elements together, we are still ultimately performing the following operation:
 
-$$X_k = \sum_{n=0}^{N-1} x_n \cdot e^{-2 \pi i k n / N}$$
+\\(X_k = \sum_{n=0}^{N-1} x_n \cdot e^{-2 \pi i k n / N}\\)
 
-However, after shuffling the initial array (by bit reversing or recursive subdivision), we perform the matrix multiplication of the $$e^{-2 \pi k n / N}$$ terms in pieces.
+However, after shuffling the initial array (by bit reversing or recursive subdivision), we perform the matrix multiplication of the \\(e^{-2 \pi k n / N}\\) terms in pieces.
 Basically, we split the array into a series of omega values:
 
-$$\omega_N^k = e^{-2 \pi i k / N}$$
+\\(\omega_N^k = e^{-2 \pi i k / N}\\)
 
 And at each step, we use the appropriate term.
 For example, imagine we need to perform an FFT of an array of only 2 elements.
@@ -174,7 +174,7 @@ b_0 = a_0 + \omega_2^0 a_1 \\
 b_1 = a_0 + \omega_2^1 a_1
 \\]
 
-However, it turns out that the second half of our array of $$\omega$$ values is always the negative of the first half, so $$\omega_2^0 = -\omega_2^1$$, so we can use the following butterfly diagram:
+However, it turns out that the second half of our array of \\(\omega\\) values is always the negative of the first half, so \\(\omega_2^0 = -\omega_2^1\\), so we can use the following butterfly diagram:
 
 <p>
     <img  class="center" src="res/radix-2screen.jpg" width="400" />
@@ -188,7 +188,7 @@ b_0 = a_0 + \omega_2^0 a_1 \\
 b_1 = a_0 - \omega_2^0 a_1
 \\]
 
-By swapping out the second $$\omega$$ value in this way, we can save a good amount of space.
+By swapping out the second \\(\omega\\) value in this way, we can save a good amount of space.
 Now imagine we need to combine more elements.
 In this case, we start with simple butterflies, as shown above, and then sum butterflies of butterflies.
 For example, if we have 8 elements, this might look like this:

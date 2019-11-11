@@ -8,10 +8,10 @@ After all, random numbers are random.
 How could they possibly be used to find non-random values?
 
 Well, imagine you have a square.
-The area of the square is simple, $$\text{Area}_{\text{square}} = \text{length} \times \text{width}$$.
-Since it's a square, the $$\text{length}$$ and $$\text{width}$$ are the same, so the formula is technically just $$\text{Area}_{\text{square}} = \text{length}^2$$.
-If we embed a circle into the square with a radius $$r = \tfrac{length}{2}$$ (shown below), then its area is $$\text{Area}_{\text{circle}}=\pi r^2$$.
-For simplicity, we can also say that $$\text{Area}_{\text{square}}=4r^2$$.
+The area of the square is simple, \\(\text{Area}_{\text{square}} = \text{length} \times \text{width}\\).
+Since it's a square, the \\(\text{length}\\) and \\(\text{width}\\) are the same, so the formula is technically just \\(\text{Area}_{\text{square}} = \text{length}^2\\).
+If we embed a circle into the square with a radius \\(r = \tfrac{length}{2}\\) (shown below), then its area is \\(\text{Area}_{\text{circle}}=\pi r^2\\).
+For simplicity, we can also say that \\(\text{Area}_{\text{square}}=4r^2\\).
 
 <p>
     <img  class="center" src="res/square_circle.png" width="300"/>
@@ -30,8 +30,8 @@ This means,
 \text{Area}_{\text{circle}} = \text{Area}_{\text{square}}\times\text{Ratio} = 4r^2 \times \text{ratio}
 \\]
 
-So, if we can find the $$\text{Ratio}$$ and we know $$r$$, we should be able to easily find the $$\text{Area}_{\text{circle}}$$.
-The question is, "How do we easily find the $$\text{Ratio}$$?"
+So, if we can find the \\(\text{Ratio}\\) and we know \\(r\\), we should be able to easily find the \\(\text{Area}_{\text{circle}}\\).
+The question is, "How do we easily find the \\(\text{Ratio}\\)?"
 Well, one way is with *random sampling*.
 We basically just pick a bunch of points randomly in the square, and
 each point is tested to see whether it's in the circle or not:
@@ -122,9 +122,9 @@ Here is a video describing Monte Carlo integration:
 Monte Carlo methods are famous for their simplicity.
 It doesn't take too many lines to get something simple going.
 Here, we are just integrating a circle, like we described above; however, there is a small twist and trick.
-Instead of calculating the area of the circle, we are instead trying to find the value of $$\pi$$, and
-rather than integrating the entire circle, we are only integrating the upper right quadrant of the circle from $$0 < x, y < 1$$.
-This saves a bit of computation time, but also requires us to multiply our output by $$4$$.
+Instead of calculating the area of the circle, we are instead trying to find the value of \\(\pi\\), and
+rather than integrating the entire circle, we are only integrating the upper right quadrant of the circle from \\(0 < x, y < 1\\).
+This saves a bit of computation time, but also requires us to multiply our output by \\(4\\).
 
 That's all there is to it!
 Feel free to submit your version via pull request, and thanks for reading!

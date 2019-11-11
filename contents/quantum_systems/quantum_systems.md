@@ -29,7 +29,7 @@ Here is the easiest one to explain:
 i \hbar \frac{\partial \Psi(\mathbf{r},t)}{\partial t} = \left[-\frac{\hbar^2}{2m} \nabla^2 + V(\mathbf{r},t) \right] \Psi(\mathbf{r},t)
 \\]
 
-Where $$\Psi(\mathbf{r},t)$$ is a quantum wavefunction, $$V(\mathbf{r},t)$$ is a _trapping potential_, $$\nabla^2$$ is a _laplacian_, $$\mathbf{r}$$ is some sort of spatial component, and $$t$$ is time.
+Where \\(\Psi(\mathbf{r},t)\\) is a quantum wavefunction, \\(V(\mathbf{r},t)\\) is a _trapping potential_, \\(\nabla^2\\) is a _laplacian_, \\(\mathbf{r}\\) is some sort of spatial component, and \\(t\\) is time.
 There is a lot to take in here; however, it's ultimately just some time derivative on the left-hand side and a spatial derivative (with some extra steps) on the right-hand side.
 In this way, it isn't too different from the diffusion (heat) equation:
 
@@ -37,7 +37,7 @@ In this way, it isn't too different from the diffusion (heat) equation:
 \frac{\partial\phi(\mathbf{r},t)}{\partial t} = D \nabla^2 \phi(\mathbf{r},t)
 \\]
 
-where $$D$$ is some positive definite matrix and $$\phi(\mathbf{r},t)$$ is the density (or temperature) of the system.
+where \\(D\\) is some positive definite matrix and \\(\phi(\mathbf{r},t)\\) is the density (or temperature) of the system.
 In fact, this is why one of the most common types of quantum simulation is sometimes called  _diffusion Monte Carlo_.
 There really isn't that much of a difference between the two systems in terms of how they are simulated on classical hardware... but we are getting ahead of ourselves.
 For now, let's talk about how quantum mechanics differs from classical mechanics and how we can use this to our advantage.
@@ -54,7 +54,7 @@ P(\mathbf{r}, t) = |\Psi(\mathbf{r},t)|^2 = \Psi(\mathbf{r},t)^{*}\Psi(\mathbf{r
 
 Here, there are 2 things to note:
 
-1. The absolute value squared of a complex parameter $$\Psi(\mathbf{r},t)$$ is a dot product (inner product) between a complex function and it's Hermitian conjugate. This means the value will always be real, while the wavefunction, itself, might not be.
+1. The absolute value squared of a complex parameter \\(\Psi(\mathbf{r},t)\\) is a dot product (inner product) between a complex function and it's Hermitian conjugate. This means the value will always be real, while the wavefunction, itself, might not be.
 2. As you have probably heard, once a wavefunction is observed it collapses onto a single state. This can be simply interpreted as absolute knowledge of the particle's location. A probability density doesn't make sense if we know where the particle is!
 
 Now, to be clear: the probabilities must all sum to 1, or (more formally):
@@ -66,15 +66,15 @@ Now, to be clear: the probabilities must all sum to 1, or (more formally):
 This simply means that the probability of finding our quantum particle *somewhere in real space* is 1.
 In other words, our particle must exist somewhere in the known universe.
 
-As another note: Just like position space can be parameterized by a position vector $$\textbf{x}$$, wavefunctions can also be parameterized by a _wave_ vector $$\textbf{k}$$ in frequency space.
-Any wavevector $$\textbf{k}$$ has the same units as reciprocal space and is thus analogous to angular frequency $$\omega$$.
+As another note: Just like position space can be parameterized by a position vector \\(\textbf{x}\\), wavefunctions can also be parameterized by a _wave_ vector \\(\textbf{k}\\) in frequency space.
+Any wavevector \\(\textbf{k}\\) has the same units as reciprocal space and is thus analogous to angular frequency \\(\omega\\).
 Often times, the wavevector space is called _momentum_ space, which makes sense when considering the de Broglie formula:
 
 \\[
 p = \frac{h}{\lambda} = \frac{2 \pi h}{2 \pi \lambda} = \hbar k
 \\]
 
-where $$h$$ is Planck's constant and $$\lambda$$ is the wavelength.
+where \\(h\\) is Planck's constant and \\(\lambda\\) is the wavelength.
 This means that we can ultimately move between position and momentum space by using [Fourier Transforms](../../algorithms/cooley_tukey/cooley_tukey.md), which is incredibly useful in a number of cases!
 
 Even though the relation between position and momentum space is an essential cornerstone of understanding modern quantum mechanics, it is difficult to understand at a fundamental level.
@@ -90,12 +90,12 @@ In particular, it says:
 \sigma_x \sigma_p \geq \frac{\hbar}{2}
 \\]
 
-where $$\hbar$$ is Planck's constant and $$\sigma_q = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(q_i-\mu)^2}$$.
-In this case, $$\sigma$$ is the standard deviation, $$\mu$$ is the statistical mean of your distribution, $$N$$ is the number of points sampled, $$q_i$$ is the value for each point $$i$$, and $$q$$ stands for $$r$$ or $$p$$.
+where \\(\hbar\\) is Planck's constant and \\(\sigma_q = \sqrt{\frac{1}{N}\sum_{i=1}^{N}(q_i-\mu)^2}\\).
+In this case, \\(\sigma\\) is the standard deviation, \\(\mu\\) is the statistical mean of your distribution, \\(N\\) is the number of points sampled, \\(q_i\\) is the value for each point \\(i\\), and \\(q\\) stands for \\(r\\) or \\(p\\).
 Ultimately, this means that if we have a higher precision in position space, we will have a lower precision in momentum space.
 The converse is also true: a higher precision in momentum space will lead to a lower precision in position space.
 
-This makes the most sense if we imagine having a gaussian-like probability density ($$|\Psi(x)|^2$$) in position space, which will provide a gaussian-like density when in momentum space.
+This makes the most sense if we imagine having a gaussian-like probability density (\\(|\Psi(x)|^2\\)) in position space, which will provide a gaussian-like density when in momentum space.
 Here, we see that if we have a broader distribution in one space, we must have a thinner distribution in the opposite space, as shown here:
 
 <p>
@@ -103,7 +103,7 @@ Here, we see that if we have a broader distribution in one space, we must have a
 </p>
 
 
-Because the density can be interpreted as "the probability of finding a quantum particle at any provided location in position ($$x_i$$) or momentum ($$k_i$$) space, the interpretation is clear: the more we understand about a particle's position, the less we understand about it's momentum.
+Because the density can be interpreted as "the probability of finding a quantum particle at any provided location in position (\\(x_i\\)) or momentum (\\(k_i\\)) space, the interpretation is clear: the more we understand about a particle's position, the less we understand about it's momentum.
 This is a powerful statement and should be given some thought.
 
 To me, the most interesting part of this description is not the physical interpretation, but the fact that this act of transforming between larger and smaller gaussians is precisely what Fourier transforms do!
@@ -125,7 +125,7 @@ i \hbar \frac{\partial \Psi(\mathbf{r},t)}{\partial t} = \left[-\frac{\hbar^2}{2
 
 We described it in the initial section of this chapter.
 For the most part, when we are trying to solve this equation the left-hand side does not change.
-It's always $$i \hbar \frac{\partial \Psi(\mathbf{r},t)}{\partial t}$$.
+It's always \\(i \hbar \frac{\partial \Psi(\mathbf{r},t)}{\partial t}\\).
 On the other hand, the right-hand side can change a lot depending on the situation.
 That is to say that we can easily simplify the Schr&ouml;dinger equation by using a mathematical formalism known as the _Hamiltonian_.
 
@@ -145,11 +145,11 @@ In the case of a 1D particle in a harmonic trap, we might use the following defi
 \end{align}
 \\]
 
-where $$p = -i\hbar \nabla$$ is the _momentum operator_ and $$\omega$$ is the _trapping frequency_ indicating how confined our quantum system will be.
-In this case, $$\hat T$$ is an operator that works on our wavefunction in momentum space, while $$\hat V$$ acts in position space.
+where \\(p = -i\hbar \nabla\\) is the _momentum operator_ and \\(\omega\\) is the _trapping frequency_ indicating how confined our quantum system will be.
+In this case, \\(\hat T\\) is an operator that works on our wavefunction in momentum space, while \\(\hat V\\) acts in position space.
 Both of these are operators.
 That is to say that they _operate_ on our quantum system by transforming it in some way.
-Ultimately, this means that the operators are not meant to be interpreted on their own without acting on some other object, in this case, the wavefunction $$\Psi(x)$$.
+Ultimately, this means that the operators are not meant to be interpreted on their own without acting on some other object, in this case, the wavefunction \\(\Psi(x)\\).
 
 In the end, we can update our Schr&ouml;dinger equation to be
 
@@ -160,9 +160,9 @@ i \hbar \frac{\partial \Psi(\mathbf{r},t)}{\partial t} = \hat H \Psi(\mathbf{r},
 Which is a lot cleaner and more general.
 Now, the Schr&ouml;dinger equation can solve any quantum system so long as it can be written in terms of Hamiltonian mechanics!
 
-When looking at the operators, it is clear that the $$\hat V$$ operator is in position space.
-We can clearly see that it operates as a function of $$x$$.
-That said, it is not immediately obvious why the $$\hat T$$ is in momentum space.
+When looking at the operators, it is clear that the \\(\hat V\\) operator is in position space.
+We can clearly see that it operates as a function of \\(x\\).
+That said, it is not immediately obvious why the \\(\hat T\\) is in momentum space.
 This is not an easy question to answer, but it is definitely important and will be covered in more depth when we discuss spectral methods.
 
 For now, we will blanketly say
@@ -186,22 +186,22 @@ This notation is called _braket_ notation, where a _ket_ looks like this:
 \lvert A \rangle
 \\]
 
-and basically describes $$A$$ as a column vector.
+and basically describes \\(A\\) as a column vector.
 The _bra_ represents the Hermitian conjugate of the ket and looks like this:
 
 \\[
 \langle B \rvert
 \\]
 
-The ket is often represented as a row vector for $$B$$.
-Because of this, $$ \langle B \rvert A \rangle $$ represents the inner product of the two vectors and $$ \lvert A \rangle \langle B \rvert $$ represents the outer product.
+The ket is often represented as a row vector for \\(B\\).
+Because of this, \\( \langle B \rvert A \rangle \\) represents the inner product of the two vectors and \\( \lvert A \rangle \langle B \rvert \\) represents the outer product.
 Now, to this point, the braket notation does not have any particularly quantum-like features; however, it becomes useful when describing actual quantum phenomenon.
-For example, if we want to indicate the probability of a wavefunction $$\psi$$ collapsing onto state $$\phi$$, we might write: $$\langle \phi \rvert \psi \rangle$$, which is precisely the same as the probability density defined above.
+For example, if we want to indicate the probability of a wavefunction \\(\psi\\) collapsing onto state \\(\phi\\), we might write: \\(\langle \phi \rvert \psi \rangle\\), which is precisely the same as the probability density defined above.
 
 Now that we have a basic understanding of the notation, we should go through several other important quantum mechanical ideas and properties.
 
 ## Eigenstates
-As mentioned, the wavefunction $$\Psi(x)$$ is complex and has both real and imaginary parts; however, there are certain states that are exclusively real.
+As mentioned, the wavefunction \\(\Psi(x)\\) is complex and has both real and imaginary parts; however, there are certain states that are exclusively real.
 These states are _eigenstates_ of the system, and are often described as the constituent states that make up all other possible wavefunctions.
 In other words,
 
@@ -209,8 +209,8 @@ In other words,
 \lvert \Psi(x)\rangle = \sum_i c_i \lvert \Psi_i \rangle
 \\]
 
-Where $$c_i$$ is some constant describing _how much_ of a given eigenstate $$i$$ is in the full wavefunction.
-As you might expect, all of the $$c_i$$'s should sum to 1.
+Where \\(c_i\\) is some constant describing _how much_ of a given eigenstate \\(i\\) is in the full wavefunction.
+As you might expect, all of the \\(c_i\\)'s should sum to 1.
 
 ## Energy Calculations
 
@@ -238,7 +238,7 @@ This ultimately looks like this:
 {% endmethod %}
 
 This calculation will be used in many different simulations of quantum systems to check our results.
-In the end, many quantum simulations are focused on the _ground_ state, which is the lowest energy state ($$\Psi_0$$); however, sometimes higher energy states are desired.
+In the end, many quantum simulations are focused on the _ground_ state, which is the lowest energy state (\\(\Psi_0\\)); however, sometimes higher energy states are desired.
 
 ## The Future
 

@@ -1,5 +1,5 @@
 # The Stable Marriage Problem
-Imagine you have two groups, each of size $$n$$.
+Imagine you have two groups, each of size \\(n\\).
 Each individual within a group has an internal ranking associated with all members of the opposing group.
 The *Stable Matching Problem* attempts to unite both groups into stable pairs.
 In this case, a set of pairs is considered stable if there are no pairs that like each other more than their current partners.
@@ -13,7 +13,7 @@ This problem is solved by the Gale-Shapley algorithm, which can be simply descri
 2. The women become tentatively engaged to their top choice of the men who have proposed to them.
 3. All rejected men propose to their next choice, and the women again select whichever man they prefer, possibly rejecting the one they were already engaged to.
 
-This process continues until all individuals are paired, which means that this algorithm guarantees stable matching and also has a $$\mathcal{O}(n^2)$$ runtime.
+This process continues until all individuals are paired, which means that this algorithm guarantees stable matching and also has a \\(\mathcal{O}(n^2)\\) runtime.
 To be clear, even though this algorithm seems conceptually simple, it is rather tricky to implement correctly.
 I do not at all claim that the code provided here is efficient and we will definitely be coming back to this problem in the future when we have more tools under our belt.
 I am incredibly interested to see what you guys do and how you implement the algorithm.

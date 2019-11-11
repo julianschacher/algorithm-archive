@@ -4,8 +4,8 @@ Though it might not be the fastest tool in the shed, it's definitely straightfor
 
 Here's how it works: we go through each element in our vector and check to see if it is larger than the element to it's right.
 If it is, we swap the elements and then move to the next element.
-In this way, we sweep through the array $$n$$ times for each element and continually swap any two adjacent elements that are improperly ordered.
-This means that we need to go through the vector $$\mathcal{O}(n^2)$$ times with code similar to the following:
+In this way, we sweep through the array \\(n\\) times for each element and continually swap any two adjacent elements that are improperly ordered.
+This means that we need to go through the vector \\(\mathcal{O}(n^2)\\) times with code similar to the following:
 
 {% method %}
 {% sample lang="jl" %}

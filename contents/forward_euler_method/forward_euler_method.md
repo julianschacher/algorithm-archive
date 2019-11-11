@@ -13,19 +13,19 @@ f(x) \approx f(a) + \frac{1}{1!}\frac{df(a)}{da}(x-a)
     + \frac{1}{3!}\frac{d^3f(a)}{da^3}(x-a)^3 + \cdots
 \\]
 
-Like before,  $$f(x)$$ is some function along real or complex space, $$a$$ is the point that we are expanding from, and $$f^{(n)}(x)$$ denotes the $$n^{\text{th}}$$ derivative of $$f(x)$$.
+Like before,  \\(f(x)\\) is some function along real or complex space, \\(a\\) is the point that we are expanding from, and \\(f^{(n)}(x)\\) denotes the \\(n^{\text{th}}\\) derivative of \\(f(x)\\).
 
 So, what does this mean? Well, as mentioned, we can think of this similarly to the kinematic equation:
 \\[
 x = x_0 + vt + \frac{1}{2}at^2
 \\]
-where $$x$$ is position, $$v$$ is velocity, and $$a$$ is acceleration.
-This equation allows us to find the position of an object based on it's previous position ($$x_0$$), the derivative of it's position with respect to time ($$\frac{dx}{dt} = v_0$$) and one derivative on top of that ($$\frac{d^2x}{dx^2} = a$$).
-As stated in the Tayor Series Expansion, the acceleration term must also have $$\frac{1}{2!}$$ in front of it.
+where \\(x\\) is position, \\(v\\) is velocity, and \\(a\\) is acceleration.
+This equation allows us to find the position of an object based on it's previous position (\\(x_0\\)), the derivative of it's position with respect to time (\\(\frac{dx}{dt} = v_0\\)) and one derivative on top of that (\\(\frac{d^2x}{dx^2} = a\\)).
+As stated in the Tayor Series Expansion, the acceleration term must also have \\(\frac{1}{2!}\\) in front of it.
 
 Now, how does this relate to the Euler methods?
-Well, with these methods, we assume that we are looking for a position in some space, usually denoted as $$y(t)$$, but we can use any variable.
-The methods assume that we have some function to evaluate the derivative of $$y(t)$$. In other words, we know that $$\frac{dy(t)}{dt} = f(t,y(t))$$.
+Well, with these methods, we assume that we are looking for a position in some space, usually denoted as \\(y(t)\\), but we can use any variable.
+The methods assume that we have some function to evaluate the derivative of \\(y(t)\\). In other words, we know that \\(\frac{dy(t)}{dt} = f(t,y(t))\\).
 For the kinematic equation, we know what this is!
 
 \\[
@@ -38,7 +38,7 @@ So, we can iteratively solve for position by first solving for velocity. By foll
 y_{n+1} = y_n + f(t_n, y_n) dt
 \\]
 
-For any timestep $$dt$$. This means that if we are solving the kinematic equation, we simply have the following equations:
+For any timestep \\(dt\\). This means that if we are solving the kinematic equation, we simply have the following equations:
 
 \\[
 \begin{align}
@@ -55,7 +55,7 @@ For now, it is important to note that the error of these methods depend on the t
     <img  class="center" src="res/error.png" />
 </p>
 
-For example, here we see dramatically different results for different timesteps for solving the ODE $$y' = \frac{x^3}{6}$$, whose solution is $$y = \frac{x^2}{2}$$.
+For example, here we see dramatically different results for different timesteps for solving the ODE \\(y' = \frac{x^3}{6}\\), whose solution is \\(y = \frac{x^2}{2}\\).
 The blue line is the analytical solution, the green is with a timestep of 0.5 and the red is with a timestep of 1.
 To be clear: the larger the timestep, the worse the error becomes; however, there is at least one more problem with using the forward Euler method on real problems: instabilities.
 
@@ -64,10 +64,10 @@ This is (rather expectedly) a poor approximation.
 In fact, the approximation is so poor that the error associated with running this algorithm can add up and result in incredibly incorrect results.
 As you might imagine, the only solution to this is decreasing the timestep and hoping for the best or using a similar method with different stability regions, like the backward Euler method.
 
-Let's assume we are solving a simple ODE: $$y' = -3y, y(0) = 1$$.
-The solution here is $$y(t) = e^{-3t}$$ and we can find this solution somewhat easily with the forward Euler method shown below.
+Let's assume we are solving a simple ODE: \\(y' = -3y, y(0) = 1\\).
+The solution here is \\(y(t) = e^{-3t}\\) and we can find this solution somewhat easily with the forward Euler method shown below.
 That said, by choosing a larger timestep, we see the Euler method's solution oscillate above and below 0, which should *never* happen.
-If we were to take the Euler method's solution as valid, we would incorrectly assume that $$e^{-3t}$$ will become negative!
+If we were to take the Euler method's solution as valid, we would incorrectly assume that \\(e^{-3t}\\) will become negative!
 
 <p>
     <img  class="center" src="res/instability.png" />
@@ -77,7 +77,7 @@ Like above, the blue line is the analytical solution, the green is with a timest
 Here, it's interesting that we see 2 different instability patterns.
 The green is initially unstable, but converges onto the correct solution, but the red is wrong from the get-go and only gets more wrong as time goes on.
 
-In truth, the stability region of the forward Euler method for the case where $$y' = ky$$ can be found with the following inequality:
+In truth, the stability region of the forward Euler method for the case where \\(y' = ky\\) can be found with the following inequality:
 \\[
 |kdt + 1 | \leq 1
 \\]
@@ -103,7 +103,7 @@ Here is a video describing the forward Euler method:
 
 Like in the case of [Verlet Integration](../verlet_integration/verlet_integration.md), the easiest way to test to see if this method works is to test it against a simple test-case.
 Here, the most obvious test-case would be dropping a ball from 5 meters, which is my favorite example, but proved itself to be slightly less enlightening than I would have thought.
-So, this time, let's remove ourselves from any physics and instead solve the following ODE: $$y(t)' = -3t$$ with the initial condition that $$y(0) = 1$$.
+So, this time, let's remove ourselves from any physics and instead solve the following ODE: \\(y(t)' = -3t\\) with the initial condition that \\(y(0) = 1\\).
 Note that in this case, the velocity is directly given by the ODE and the acceleration is not part of the model.
 
 {% method %}

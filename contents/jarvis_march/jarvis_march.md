@@ -12,7 +12,7 @@ We then choose the point with the largest interior angle and move the simulation
 We keep repeating this process until we have returned to our original point.
 The set of points chosen in this simulation will be the convex hull.
 
-As we might expect, this algorithm is not incredibly efficient and has a runtime of $$\mathcal{O}(nh)$$, where $$n$$ is the number of points and $$h$$ is the size of the hull.
+As we might expect, this algorithm is not incredibly efficient and has a runtime of \\(\mathcal{O}(nh)\\), where \\(n\\) is the number of points and \\(h\\) is the size of the hull.
 As a note, the Jarvis March can be generalized to higher dimensions.
 Since this algorithm, there have been many other algorithms that have advanced the field of two-dimensional gift-wrapping forward, including the Graham Scan and Chan's Algorithm, which will be discussed in due time.
 
