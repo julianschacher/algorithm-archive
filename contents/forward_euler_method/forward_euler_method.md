@@ -108,31 +108,31 @@ Note that in this case, the velocity is directly given by the ODE and the accele
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/euler.jl}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/euler.c}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/euler.cpp}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/euler.rs}}
 ```
 
-#### Code Example elm
+#### Code Example Elm
 
 ```elm
 {{#include code/elm/euler.elm:44:54}}
@@ -148,19 +148,19 @@ Full code for the visualization follows:
 {{#include code/elm/euler.elm}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/euler.py}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/euler.hs}}
 ```
 
-#### Code Example m
+#### Code Example Matlab
 
 ```matlab
 {{#include code/matlab/euler.m}}
@@ -172,43 +172,43 @@ Full code for the visualization follows:
 {{#include code/swift/euler.swift}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/euler.js}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/euler.f90}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/euler.go}}
 ```
 
-#### Code Example v
+#### Code Example Vlang
 
 ```v
 {{#include code/v/euler.v}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/euler.s}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/ForwardEuler.java}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/forwardeuler.nim}}

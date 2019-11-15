@@ -13,49 +13,49 @@ We can find whether a rotation is counter-clockwise with trigonometric functions
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/graham.jl:6:8}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/grahamScan.hs:6:7}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/graham.c:24:26}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/graham-scan.js:36:38}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/graham_scan.py:4:6}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/graham.go:13:15}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/GrahamScan.java:27:29}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/graham_scan.cpp:18:20}}
@@ -74,49 +74,49 @@ In the end, the code should look something like this:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/graham.jl:10:45}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/grahamScan.hs:9:18}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/graham.c:65:95}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/graham-scan.js:1:30}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/graham_scan.py:14:28}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/graham.go:21:42}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/GrahamScan.java:35:70}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/graham_scan.cpp:26:62}}
@@ -130,49 +130,49 @@ In the end, the code should look something like this:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/graham.jl}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/grahamScan.hs}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/graham.c}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/graham-scan.js}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/graham_scan.py}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/graham.go}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/GrahamScan.java}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/graham_scan.cpp}}

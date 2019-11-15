@@ -70,55 +70,55 @@ For some reason, though, putting code to this transformation really helped me fi
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/fft.jl:4:13}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/fft.c:25:35}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/fft.clj:15:30}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/fft.cpp:23:33}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/fft.hs:7:13}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/fft.py:5:11}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 ```julia
 {{#include code/julia/fft.jl:4:13}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/fft.s:15:74}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/fft.js:3:15}}
@@ -157,55 +157,55 @@ In the end, the code looks like:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/fft.jl:16:32}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/fft.c:37:56}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/fft.clj:31:58}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/fft.cpp:36:66}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/fft.hs:15:28}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/fft.py:13:24}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 ```julia
 {{#include code/julia/fft.jl:16:32}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/fft.s:76:165}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/fft.js:17:39}}
@@ -303,53 +303,53 @@ Note: I implemented this in Julia because the code seems more straightforward in
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/fft.jl}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/fft.c}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/fft.clj}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/fft.cpp}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/fft.hs}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/fft.py}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 Some rather impressive scratch code was submitted by Jie and can be found here: https://scratch.mit.edu/projects/37759604/#editor
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/fft.s}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/fft.js}}

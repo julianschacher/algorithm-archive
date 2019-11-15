@@ -36,43 +36,43 @@ Here is a video describing the stable marriage problem:
 {{#include code/ruby/stable_marriage.rb}}
 ```
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/stable_marriage.jl}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/stable_marriage.py}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/stableMarriage.hs}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/stable_marriage.c}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/stable_marriage.cpp}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/stable-marriage.js}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ##### GaleShapleyAlgorithm.cs
 
@@ -98,19 +98,19 @@ Here is a video describing the stable marriage problem:
 {{#include code/csharp/ListExtensions.cs}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/stable-marriage.java}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/stable_marriage.php}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/stable_marriage.scala}}

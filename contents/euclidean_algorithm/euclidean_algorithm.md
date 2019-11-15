@@ -6,55 +6,55 @@ The algorithm is a simple way to find the *greatest common divisor* (GCD) of two
 
 ### Code Examples
 
-#### Code Example c
+#### Code Example C
 
 ```c_cpp
 {{#include code/c/euclidean_example.c:17:30}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/EuclideanAlgorithm.cs:8:23}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/euclidean_example.clj:2:8}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```c_cpp
 {{#include code/c++/euclidean.cpp:18:31}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/EuclideanAlgo.java:3:16}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/Euclidean.kt:3:13}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/euclidean_example.js:15:29}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/euclidean.lisp:3:12}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/euclidean_example.py:11:22}}
@@ -66,19 +66,19 @@ The algorithm is a simple way to find the *greatest common divisor* (GCD) of two
 {{#include code/haskell/euclidean_example.hs:2:8}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/euclidean_example.rs:3:15}}
 ```
 
-#### Code Example ml
+#### Code Example OCaml
 
 ```ocaml
 {{#include code/ocaml/euclidean_example.ml:9:17}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/euclidean.go:25:38}}
@@ -96,61 +96,61 @@ The algorithm is a simple way to find the *greatest common divisor* (GCD) of two
 {{#include code/matlab/euclidean.m:3:17}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/euclidean.lua:1:14}}
 ```
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/euclidean.jl:12:25}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/euclid_algorithm.nim:13:24}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/euclidean_example.s:35:56}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/euclidean.f90:1:19}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/euclidean.php:4:18}}
 ```
 
-#### Code Example factor
+#### Code Example Factor
 
 ```factor
 {{#include code/factor/euclid.factor:1:13}}
 ```
 
-#### Code Example ws
+#### Code Example Whitespace
 
 ```whitespace
 {{#include code/whitespace/euclidian_sub.ws}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/euclidean.scala:3:8}}
 ```
 
-#### Code Example racket
+#### Code Example Racket
 
 ```lisp
 {{#include code/racket/euclidean_algorithm.rkt:3:14}}
@@ -168,41 +168,41 @@ The algorithm is a simple way to find the *greatest common divisor* (GCD) of two
 {{#include code/smalltalk/euclid.st:1:13}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/euclidean_algorithm.emojic:2:17}}
 ```
 
-#### Code Example lolcode
+#### Code Example LOLCODE
 
 ```LOLCODE
 {{#include code/lolcode/euclid.lol:25:40}}
 ```
 
-#### Code Example bash
+#### Code Example Bash
 
 ```bash
 {{#include code/bash/euclid.bash:24:38}}
 ```
 
-#### Code Example d
+#### Code Example D
 
 ```d
 {{#include code/d/euclidean_algorithm.d:19:33}}
 ```
 
-#### Code Example piet
+#### Code Example Piet
 
 > ![](code/piet/subtract/euclidian_algorithm_subtract_large.png) ![](code/piet/subtract/euclidian_algorithm_subtract.png)
 
-#### Code Example ss
+#### Code Example Scheme
 
 ```scheme
 {{#include code/scheme/euclidalg.ss:1:7}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 <p>
   <img  class="center" src="code/scratch/euclid_sub.svg" width="200" />
@@ -219,55 +219,55 @@ Modern implementations, though, often use the modulus operator (%) like so
 
 ### Code Examples
 
-#### Code Example c
+#### Code Example C
 
 ```c_cpp
 {{#include code/c/euclidean_example.c:4:16}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/EuclideanAlgorithm.cs:25:39}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/euclidean_example.clj:9:13}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```c_cpp
 {{#include code/c++/euclidean.cpp:5:15}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/EuclideanAlgo.java:18:26}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/Euclidean.kt:15:26}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/euclidean_example.js:1:13}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/euclidean.lisp:14:18}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/euclidean_example.py:1:9}}
@@ -279,19 +279,19 @@ Modern implementations, though, often use the modulus operator (%) like so
 {{#include code/haskell/euclidean_example.hs:10:14}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/euclidean_example.rs:17:27}}
 ```
 
-#### Code Example ml
+#### Code Example OCaml
 
 ```ocaml
 {{#include code/ocaml/euclidean_example.ml:3:7}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/euclidean.go:14:23}}
@@ -309,61 +309,61 @@ Modern implementations, though, often use the modulus operator (%) like so
 {{#include code/matlab/euclidean.m:19:31}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/euclidean.lua:16:25}}
 ```
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/euclidean.jl:1:10}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/euclid_algorithm.nim:1:11}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/euclidean_example.s:10:33}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/euclidean.f90:21:34}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/euclidean.php:20:30}}
 ```
 
-#### Code Example factor
+#### Code Example Factor
 
 ```factor
 {{#include code/factor/euclid.factor:15:25}}
 ```
 
-#### Code Example ws
+#### Code Example Whitespace
 
 ```whitespace
 {{#include code/whitespace/euclidian_mod.ws}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/euclidean.scala:10:14}}
 ```
 
-#### Code Example racket
+#### Code Example Racket
 
 ```lisp
 {{#include code/racket/euclidean_algorithm.rkt:16:24}}
@@ -381,41 +381,41 @@ Modern implementations, though, often use the modulus operator (%) like so
 {{#include code/smalltalk/euclid.st:15:25}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/euclidean_algorithm.emojic:19:31}}
 ```
 
-#### Code Example lolcode
+#### Code Example LOLCODE
 
 ```LOLCODE
 {{#include code/lolcode/euclid.lol:9:23}}
 ```
 
-#### Code Example bash
+#### Code Example Bash
 
 ```bash
 {{#include code/bash/euclid.bash:10:22}}
 ```
 
-#### Code Example d
+#### Code Example D
 
 ```d
 {{#include code/d/euclidean_algorithm.d:4:17}}
 ```
 
-#### Code Example piet
+#### Code Example Piet
 
 > ![](code/piet/mod/euclidian_algorithm_mod_large.png) ![](code/piet/mod/euclidian_algorithm_mod.png)
 
-#### Code Example ss
+#### Code Example Scheme
 
 ```scheme
 {{#include code/scheme/euclidalg.ss:9:12}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 <p>
   <img  class="center" src="code/scratch/euclid_mod.svg" width="200" />
@@ -442,13 +442,13 @@ Here's a video on the Euclidean algorithm:
 
 ### Code Examples
 
-#### Code Example c
+#### Code Example C
 
 ```c_cpp
 {{#include code/c/euclidean_example.c}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ##### EuclideanAlgorithm.cs
 
@@ -462,37 +462,37 @@ Here's a video on the Euclidean algorithm:
 {{#include code/csharp/Program.cs}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/euclidean_example.clj}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```c_cpp
 {{#include code/c++/euclidean.cpp}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/EuclideanAlgo.java}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/euclidean_example.js}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/euclidean.lisp}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/euclidean_example.py}}
@@ -504,19 +504,19 @@ Here's a video on the Euclidean algorithm:
 {{#include code/haskell/euclidean_example.hs}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/euclidean_example.rs}}
 ```
 
-#### Code Example ml
+#### Code Example OCaml
 
 ```ocaml
 {{#include code/ocaml/euclidean_example.ml}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/euclidean.go}}
@@ -534,49 +534,49 @@ Here's a video on the Euclidean algorithm:
 {{#include code/matlab/euclidean.m}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/euclidean.lua}}
 ```
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/euclidean.jl}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/euclid_algorithm.nim}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/euclidean_example.s}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/euclidean.f90}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/euclidean.php}}
 ```
 
-#### Code Example factor
+#### Code Example Factor
 
 ```factor
 {{#include code/factor/euclid.factor}}
 ```
 
-#### Code Example ws
+#### Code Example Whitespace
 
 Here is a readable version of the algorithms with comments. First, subtraction method:
 
@@ -590,13 +590,13 @@ and modulo method:
 {{#include code/whitespace/euclidian_mod_comments.ws}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/euclidean.scala}}
 ```
 
-#### Code Example racket
+#### Code Example Racket
 
 ```lisp
 {{#include code/racket/euclidean_algorithm.rkt}}
@@ -614,31 +614,31 @@ and modulo method:
 {{#include code/smalltalk/euclid.st}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/euclidean_algorithm.emojic}}
 ```
 
-#### Code Example lolcode
+#### Code Example LOLCODE
 
 ```LOLCODE
 {{#include code/lolcode/euclid.lol}}
 ```
 
-#### Code Example bash
+#### Code Example Bash
 
 ```bash
 {{#include code/bash/euclid.bash}}
 ```
 
-#### Code Example d
+#### Code Example D
 
 ```d
 {{#include code/d/euclidean_algorithm.d}}
 ```
 
-#### Code Example piet
+#### Code Example Piet
 
 A text version of the program is provided for both versions.
 
@@ -658,13 +658,13 @@ A text version of the program is provided for both versions.
 {{#include code/piet/euclidian_algorithm.piet:126:146}}
 ```
 
-#### Code Example ss
+#### Code Example Scheme
 
 ```scheme
 {{#include code/scheme/euclidalg.ss}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 The code snippets were taken from this [Scratch project](https://scratch.mit.edu/projects/278727055/)
 

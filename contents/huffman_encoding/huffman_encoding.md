@@ -63,31 +63,31 @@ Whether you use a stack or straight-up recursion also depends on the language, b
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/huffman.jl}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/huffman.rs}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/huffman.c}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/huffman.hs}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ##### HuffmanCoding.cs
 
@@ -101,55 +101,55 @@ Whether you use a stack or straight-up recursion also depends on the language, b
 {{#include code/csharp/Program.cs}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/huffman.lua}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/huffman.cpp}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/huffman.clj}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/huffman.py}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/huffman.js}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/huffman.java}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/huffman.go}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/huffman.s}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/huffman_encoding.scala}}

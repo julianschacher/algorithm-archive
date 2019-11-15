@@ -14,73 +14,73 @@ In code, it looks something like this:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/bogo.jl:12:16}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/BogoSort.cs:9:15}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/bogo.clj:7:11}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/bogo_sort.c:25:29}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Bogo.java:2:6}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/bogo.js:11:15}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/bogo.py:10:12}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/bogoSort.hs:17:20}}
 ```
 
-#### Code Example m
+#### Code Example Matlab
 
 ```matlab
 {{#include code/matlab/bogosort.m:21:28}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/bogosort.lua:1:22}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/bogosort.cpp:33:38}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/bogosort.rs:16:20}}
@@ -92,13 +92,13 @@ In code, it looks something like this:
 {{#include code/swift/bogosort.swift:13:19}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/bogo_sort.php:15:22}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/bogo_sort.nim:16:18}}
@@ -110,25 +110,25 @@ In code, it looks something like this:
 {{#include code/ruby/bogo.rb:12:16}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/bogo_sort.emojic:2:6}}
 ```
 
-#### Code Example factor
+#### Code Example Factor
 
 ```factor
 {{#include code/factor/bogo_sort.factor:10:12}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/bogo.f90:24:32}}
 ```
 
-#### Code Example racket
+#### Code Example Racket
 
 ```lisp
 {{#include code/racket/bogo_sort.rkt:3:8}}
@@ -140,43 +140,43 @@ In code, it looks something like this:
 {{#include code/smalltalk/bogosort.st:2:6}}
 ```
 
-#### Code Example bash
+#### Code Example Bash
 
 ```bash
 {{#include code/bash/bogo_sort.bash:38:45}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/bogo_sort.s:93:113}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/bogo-sort.lisp:20:24}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/bogo.cr:10:14}}
 ```
 
-#### Code Example r
+#### Code Example R
 
 ```r
 {{#include code/r/bogo_sort.r:1:6}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/bogo.scala:12:16}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/bogo_sort.go:27:31}}
@@ -190,13 +190,13 @@ We are done here!
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/bogo.jl}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ##### BogoSort.cs
 
@@ -210,61 +210,61 @@ We are done here!
 {{#include code/csharp/Program.cs}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/bogo.clj}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/bogo_sort.c}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Bogo.java}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/bogo.js}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/bogo.py}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/bogoSort.hs}}
 ```
 
-#### Code Example m
+#### Code Example Matlab
 
 ```matlab
 {{#include code/matlab/bogosort.m}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/bogosort.lua}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/bogosort.cpp}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/bogosort.rs}}
@@ -276,13 +276,13 @@ We are done here!
 {{#include code/swift/bogosort.swift}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/bogo_sort.php}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/bogo_sort.nim}}
@@ -294,25 +294,25 @@ We are done here!
 {{#include code/ruby/bogo.rb}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/bogo_sort.emojic}}
 ```
 
-#### Code Example factor
+#### Code Example Factor
 
 ```factor
 {{#include code/factor/bogo_sort.factor}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/bogo.f90}}
 ```
 
-#### Code Example racket
+#### Code Example Racket
 
 ```lisp
 {{#include code/racket/bogo_sort.rkt}}
@@ -324,43 +324,43 @@ We are done here!
 {{#include code/smalltalk/bogosort.st}}
 ```
 
-#### Code Example bash
+#### Code Example Bash
 
 ```bash
 {{#include code/bash/bogo_sort.bash}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/bogo_sort.s}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/bogo-sort.lisp}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/bogo.cr}}
 ```
 
-#### Code Example r
+#### Code Example R
 
 ```r
 {{#include code/r/bogo_sort.r}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/bogo.scala}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/bogo_sort.go}}

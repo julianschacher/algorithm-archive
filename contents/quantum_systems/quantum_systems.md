@@ -226,31 +226,31 @@ This ultimately looks like this:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/energy.jl}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/Energy.hs}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/energy.c:29:}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/energy.cpp:26:}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/energy.py:4:17}}

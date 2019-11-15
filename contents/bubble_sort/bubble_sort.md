@@ -9,97 +9,97 @@ This means that we need to go through the vector \\(\mathcal{O}(n^2)\\) times wi
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/bubble.jl:1:10}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/BubbleSort.cs:9:27}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/bubble_sort.c:10:20}}
 ```
 
-#### Code Example c8
+#### Code Example chip-8
 
 ```chip-8
 {{#include code/chip8/bubblesort.c8:39:63}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Bubble.java:2:12}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/BubbleSort.kt:1:11}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/bubble.js:1:12}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/bubblesort.py:4:9}}
 ```
 
-#### Code Example m
+#### Code Example Matlab
 
 ```matlab
 {{#include code/matlab/bubblesort.m:1:13}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/bubble_sort.lua:1:9}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/bubbleSort.hs}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/bubblesort.cpp:13:23}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/bubble_sort.rs:6:16}}
 ```
 
-#### Code Example d
+#### Code Example D
 
 ```d
 {{#include code/d/bubble_sort.d:3:18}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/bubbleSort.go:7:21}}
 ```
 
-#### Code Example racket
+#### Code Example Racket
 
 ```scheme
 {{#include code/racket/bubbleSort.rkt:6:19}}
@@ -111,7 +111,7 @@ This means that we need to go through the vector \\(\mathcal{O}(n^2)\\) times wi
 {{#include code/swift/bubblesort.swift:1:13}}
 ```
 
-#### Code Example ti83b
+#### Code Example TI-83 Basic
 
 ```ti-83_basic
 {{#include code/ti83basic/BUBLSORT.txt:2:13}}
@@ -123,25 +123,25 @@ This means that we need to go through the vector \\(\mathcal{O}(n^2)\\) times wi
 {{#include code/ruby/bubble.rb:3:13}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/bubble.cr:1:11}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/bubble_sort.php:4:17}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/bubble_sort.lisp:3:28}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/bubble_sort.nim:5:9}}
@@ -153,13 +153,13 @@ This means that we need to go through the vector \\(\mathcal{O}(n^2)\\) times wi
 {{#include code/smalltalk/bubble.st:2:15}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/bubble_sort.s:43:66}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/bubble.f90:19:40}}
@@ -171,31 +171,31 @@ This means that we need to go through the vector \\(\mathcal{O}(n^2)\\) times wi
 {{#include code/brainfuck/bubblesort.bf:17:63}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/bubble_sort.scala:3:14}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/bubble_sort.emojic:2:14}}
 ```
 
-#### Code Example bash
+#### Code Example Bash
 
 ```bash
 {{#include code/bash/bubble_sort.bash:2:21}}
 ```
 
-#### Code Example v
+#### Code Example Vlang
 
 ```v
 {{#include code/v/bubble_sort.v:1:11}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 <p>
   <img  class="center" src="code/scratch/bubble_sort.svg" width="400" />
@@ -216,13 +216,13 @@ Trust me, there are plenty of more complicated algorithms that do precisely the 
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/bubble.jl}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ##### BubbleSort.cs
 
@@ -236,85 +236,85 @@ Trust me, there are plenty of more complicated algorithms that do precisely the 
 {{#include code/csharp/Program.cs}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/bubble_sort.c}}
 ```
 
-#### Code Example c8
+#### Code Example chip-8
 
 ```chip-8
 {{#include code/chip8/bubblesort.c8}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Bubble.java}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/BubbleSort.kt}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/bubble.js}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/bubblesort.py}}
 ```
 
-#### Code Example m
+#### Code Example Matlab
 
 ```matlab
 {{#include code/matlab/bubblesort.m}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/bubble_sort.lua}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/bubbleSort.hs}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/bubblesort.cpp}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/bubble_sort.rs}}
 ```
 
-#### Code Example d
+#### Code Example D
 
 ```d
 {{#include code/d/bubble_sort.d}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/bubbleSort.go}}
 ```
 
-#### Code Example racket
+#### Code Example Racket
 
 ```scheme
 {{#include code/racket/bubbleSort.rkt}}
@@ -326,7 +326,7 @@ Trust me, there are plenty of more complicated algorithms that do precisely the 
 {{#include code/swift/bubblesort.swift}}
 ```
 
-#### Code Example ti83b
+#### Code Example TI-83 Basic
 
 ```ti-83_basic
 {{#include code/ti83basic/BUBLSORT.txt}}
@@ -338,37 +338,37 @@ Trust me, there are plenty of more complicated algorithms that do precisely the 
 {{#include code/ruby/bubble.rb}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/bubble.cr}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/bubble_sort.php}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/bubble_sort.lisp}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/bubble_sort.nim}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/bubble_sort.s}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/bubble.f90}}
@@ -386,31 +386,31 @@ Trust me, there are plenty of more complicated algorithms that do precisely the 
 {{#include code/smalltalk/bubble.st}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/bubble_sort.scala}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/bubble_sort.emojic}}
 ```
 
-#### Code Example bash
+#### Code Example Bash
 
 ```bash
 {{#include code/bash/bubble_sort.bash}}
 ```
 
-#### Code Example v
+#### Code Example Vlang
 
 ```v
 {{#include code/v/bubble_sort.v}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 The code snippet was taken from this [Scratch project](https://scratch.mit.edu/projects/316483792)
 

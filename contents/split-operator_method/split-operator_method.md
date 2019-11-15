@@ -98,13 +98,13 @@ Regardless, we first need to set all the initial parameters, including the initi
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/split_op.jl:11:34}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/split_op.c:11:21}}
@@ -114,19 +114,19 @@ Regardless, we first need to set all the initial parameters, including the initi
 {{#include code/c/split_op.c:52:73}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/split_op.cpp:14:49}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/split_op.py:11:30}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/splitOp.hs:17:47}}
@@ -141,13 +141,13 @@ Afterwards, we turn them into operators:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/split_op.jl:36:62}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/split_op.c:23:29}}
@@ -157,19 +157,19 @@ Afterwards, we turn them into operators:
 {{#include code/c/split_op.c:75:96}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/split_op.cpp:51:80}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/split_op.py:33:54}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/splitOp.hs:49:66}}
@@ -185,31 +185,31 @@ The final step is to do the iteration, itself.
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/split_op.jl:65:112}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/split_op.c:98:148}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/split_op.cpp:99:156}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/split_op.py:57:95}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/splitOp.hs:68:73}}
@@ -239,31 +239,31 @@ Checking to make sure your code can output the correct energy for a harmonic tra
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/split_op.jl}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/split_op.c}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/split_op.cpp}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/split_op.py:5:127}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/splitOp.hs}}

@@ -24,7 +24,7 @@ Since this algorithm, there have been many other algorithms that have advanced t
 
 ### Code Examples
 
-#### Code Example cs
+#### Code Example C#
 
 ##### JarvisMarch.cs
 
@@ -38,61 +38,61 @@ Since this algorithm, there have been many other algorithms that have advanced t
 {{#include code/csharp/Program.cs}}
 ```
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/jarvis.jl}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/jarvisMarch.hs}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/jarvis_march.c}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/jarvis-march.js}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/jarvis_march.py}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/jarvis_march.cpp}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/jarvis-march.lisp}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/JarvisMarch.java}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/jarvis.go}}
 ```
 
-#### Code Example v
+#### Code Example Vlang
 
 ```v
 {{#include code/v/jarvis.v}}

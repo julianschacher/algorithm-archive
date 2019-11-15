@@ -31,43 +31,43 @@ Here is what it looks like in code:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/verlet.jl:1:13}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/verlet.cpp:9:22}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/verlet.c:3:14}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Verlet.java:2:17}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/verlet.py:1:10}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/verlet.hs:14:21}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 Unfortunately, this has not yet been implemented in scratch, so here's Julia code:
 
@@ -97,7 +97,7 @@ Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia cod
 {{#include code/javascript/verlet.js:1:14}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/verlet.rs:1:13}}
@@ -109,7 +109,7 @@ Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia cod
 {{#include code/swift/verlet.swift:1:15}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/verlet.f90:1:20}}
@@ -121,31 +121,31 @@ Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia cod
 {{#include code/ruby/verlet.rb:1:14}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/verlet.go:5:16}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/verlet.s:18:42}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/verlet.kt:3:15}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/verlet.nim:1:14}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/verlet.lisp:3:13}}
@@ -167,43 +167,43 @@ However, the error for this is \\(\mathcal{O}(\Delta t)\\), which is quite poor,
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/verlet.jl:15:31}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/verlet.cpp:24:41}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/verlet.c:16:31}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Verlet.java:19:37}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/verlet.py:12:23}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/verlet.hs:23:28}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 Unfortunately, this has not yet been implemented in scratch, so here's Julia code:
 
@@ -233,7 +233,7 @@ Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia cod
 {{#include code/javascript/verlet.js:16:32}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/verlet.rs:15:32}}
@@ -245,7 +245,7 @@ Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia cod
 {{#include code/swift/verlet.swift:17:34}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/verlet.f90:22:42}}
@@ -257,31 +257,31 @@ Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia cod
 {{#include code/ruby/verlet.rb:16:32}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/verlet.go:18:30}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/verlet.s:44:71}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/verlet.kt:17:30}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/verlet.nim:16:32}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/verlet.lisp:15:26}}
@@ -317,43 +317,43 @@ Here is the velocity Verlet method in code:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/verlet.jl:33:45}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/verlet.cpp:43:54}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/verlet.c:33:43}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Verlet.java:39:51}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/verlet.py:25:34}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/verlet.hs:30:35}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 Unfortunately, this has not yet been implemented in scratch, so here's Julia code:
 
@@ -383,7 +383,7 @@ Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia cod
 {{#include code/javascript/verlet.js:34:45}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/verlet.rs:34:45}}
@@ -395,7 +395,7 @@ Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia cod
 {{#include code/swift/verlet.swift:36:49}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/verlet.f90:44:60}}
@@ -407,31 +407,31 @@ Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia cod
 {{#include code/ruby/verlet.rb:34:46}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/verlet.go:32:42}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/verlet.s:73:101}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/verlet.kt:32:42}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/verlet.nim:34:45}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/verlet.lisp:28:35}}
@@ -453,25 +453,25 @@ Both of these methods work simply by iterating timestep-by-timestep and can be w
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/verlet.jl}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/verlet.cpp}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/verlet.c}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/VerletValues.java}}
@@ -481,19 +481,19 @@ Both of these methods work simply by iterating timestep-by-timestep and can be w
 {{#include code/java/Verlet.java}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/verlet.py}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/verlet.hs}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 Submitted by Jie
 
@@ -523,7 +523,7 @@ Submitted by P. Mekhail
 {{#include code/javascript/verlet.js}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/verlet.rs}}
@@ -535,7 +535,7 @@ Submitted by P. Mekhail
 {{#include code/swift/verlet.swift}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/verlet.f90}}
@@ -547,31 +547,31 @@ Submitted by P. Mekhail
 {{#include code/ruby/verlet.rb}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/verlet.go}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/verlet.s}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/verlet.kt}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/verlet.nim}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/verlet.lisp}}

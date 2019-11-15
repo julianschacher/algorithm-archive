@@ -97,25 +97,25 @@ The transformations are quite easy too, isn't that neat?
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/thomas.jl}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/thomas.c}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/thomas.py}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 You will find this algorithm implemented [in this project](https://scratch.mit.edu/projects/169418273/).
 
@@ -123,25 +123,25 @@ You will find this algorithm implemented [in this project](https://scratch.mit.e
   <img  class="center" src="code/scratch/thomas.svg" width="1000" />
 </p>
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Thomas.java}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/thomas.hs}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/thomas.go}}
 ```
 
-#### Code Example v
+#### Code Example Vlang
 
 ```v
 {{#include code/v/thomas.v}}
@@ -153,37 +153,37 @@ You will find this algorithm implemented [in this project](https://scratch.mit.e
 {{#include code/swift/thomas.swift}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/thomas.php}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/thomas_algorithm.nim}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/thomas.cpp}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/thomas.lua}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/thomas.cr}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/thomas.kt}}

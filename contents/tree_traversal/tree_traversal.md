@@ -4,37 +4,37 @@ Trees are naturally recursive data structures, and because of this, we cannot ac
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/Tree.jl:3:7}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/tree_example.cpp:12:15}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/Tree.cs:7:11}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/tree_traversal.c:7:11}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Tree.java:110:126}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/tree.js:1:10}}
@@ -42,25 +42,25 @@ Trees are naturally recursive data structures, and because of this, we cannot ac
 
 As a note, a `node` struct is not necessary in javascript, so this is an example of how a tree might be constructed.
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/Tree_example.py:1:4}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 <p>
   <img  class="center" src="code/scratch/struct.svg" width="250" />
 </p>
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/tree.rs:4:7}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/TreeTraversal.hs:1:4}}
@@ -72,31 +72,31 @@ As a note, a `node` struct is not necessary in javascript, so this is an example
 {{#include code/swift/tree.swift:1:9}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/tree_traversal.php:4:37}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/tree-traversal.cr:1:5}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/treetraversal.go:5:8}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/tree_traversal.s:24:27}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/tree_traversal.emojic:1:3}}
@@ -106,62 +106,62 @@ Because of this, the most straightforward way to traverse the tree might be recu
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/Tree.jl:9:16}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/tree_example.cpp:17:24}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/Tree.cs:34:45}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/tree_traversal.c:37:45}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Tree.java:21:27}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/tree.js:12:15}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/Tree_example.py:18:23}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 <p>
   <img  class="center" src="code/scratch/dfs.svg" width="250" />
   <img  class="center" src="code/scratch/dfs-from.svg" width="250" />
 </p>
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/tree.rs:9:15}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/TreeTraversal.hs:6:7}}
@@ -173,31 +173,31 @@ Because of this, the most straightforward way to traverse the tree might be recu
 {{#include code/swift/tree.swift:24:30}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/tree_traversal.php:41:49}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/tree-traversal.cr:7:10}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/treetraversal.go:10:15}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/tree_traversal.s:290:314}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/tree_traversal.emojic:27:34}}
@@ -216,61 +216,61 @@ Now, in this case the first element searched through is still the root of the tr
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/Tree.jl:18:26}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/tree_example.cpp:26:31}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/Tree.cs:47:58}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/tree_traversal.c:47:53}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Tree.java:34:41}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/tree.js:17:20}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/Tree_example.py:26:31}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 <p>
   <img  class="center" src="code/scratch/dfs-post.svg" width="300" />
 </p>
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/tree.rs:17:24}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/TreeTraversal.hs:9:10}}
@@ -282,31 +282,31 @@ Now, in this case the first element searched through is still the root of the tr
 {{#include code/swift/tree.swift:32:38}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/tree_traversal.php:51:57}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/tree-traversal.cr:12:15}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/treetraversal.go:17:22}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/tree_traversal.s:316:344}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/tree_traversal.emojic:36:43}}
@@ -320,61 +320,61 @@ In this case, the first node visited is at the bottom of the tree and moves up t
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/Tree.jl:28:43}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/tree_example.cpp:34:52}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/Tree.cs:60:79}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/tree_traversal.c:55:73}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Tree.java:48:62}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/tree.js:22:34}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/Tree_example.py:34:46}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 <p>
   <img  class="center" src="code/scratch/dfs-in.svg" width="300" />
 </p>
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/tree.rs:25:40}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/TreeTraversal.hs:12:16}}
@@ -386,31 +386,31 @@ In this case, the first node visited is at the bottom of the tree and moves up t
 {{#include code/swift/tree.swift:40:53}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/tree_traversal.php:59:78}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/tree-traversal.cr:17:31}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/treetraversal.go:24:38}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/tree_traversal.s:346:396}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/tree_traversal.emojic:45:62}}
@@ -434,61 +434,61 @@ In code, it looks like this:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/Tree.jl:45:56}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/tree_example.cpp:55:70}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/Tree.cs:81:94}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/tree_traversal.c:75:93}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Tree.java:65:79}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/tree.js:36:43}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/Tree_example.py:49:60}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 <p>
   <img  class="center" src="code/scratch/dfs-stack.svg" width="400" />
 </p>
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/tree.rs:41:48}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/TreeTraversal.hs:18:22}}
@@ -500,31 +500,31 @@ In code, it looks like this:
 {{#include code/swift/tree.swift:55:67}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/tree_traversal.php:80:91}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/tree-traversal.cr:33:41}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/treetraversal.go:40:49}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/tree_traversal.s:398:445}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/tree_traversal.emojic:64:79}}
@@ -540,61 +540,61 @@ And this is exactly what Breadth-First Search (BFS) does! On top of that, it can
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/Tree.jl:58:69}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/tree_example.cpp:73:86}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/Tree.cs:96:109}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/tree_traversal.c:95:113}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/Tree.java:81:95}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/tree.js:45:52}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/Tree_example.py:63:75}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 <p>
   <img  class="center" src="code/scratch/bfs.svg" width="400" />
 </p>
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/tree.rs:50:58}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/TreeTraversal.hs:24:28}}
@@ -606,31 +606,31 @@ And this is exactly what Breadth-First Search (BFS) does! On top of that, it can
 {{#include code/swift/tree.swift:69:81}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/tree_traversal.php:93:104}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/tree-traversal.cr:43:51}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/treetraversal.go:51:60}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/tree_traversal.s:447:498}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/tree_traversal.emojic:81:96}}
@@ -648,19 +648,19 @@ Here is a video describing tree traversal:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/Tree.jl}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/tree_example.cpp}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ##### Tree.cs
 
@@ -674,7 +674,7 @@ Here is a video describing tree traversal:
 {{#include code/csharp/Program.cs}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ##### utility.h
 
@@ -688,7 +688,7 @@ Here is a video describing tree traversal:
 {{#include code/c/tree_traversal.c}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ##### Tree.java
 
@@ -702,29 +702,29 @@ Here is a video describing tree traversal:
 {{#include code/java/MainClass.java}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/tree.js}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/Tree_example.py}}
 ```
 
-#### Code Example scratch
+#### Code Example Scratch
 
 The code snippets were taken from this [Scratch project](https://scratch.mit.edu/projects/174017753/)
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/tree.rs}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/TreeTraversal.hs}}
@@ -736,31 +736,31 @@ The code snippets were taken from this [Scratch project](https://scratch.mit.edu
 {{#include code/swift/tree.swift}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/tree_traversal.php}}
 ```
 
-#### Code Example crystal
+#### Code Example Crystal
 
 ```crystal
 {{#include code/crystal/tree-traversal.cr}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/golang/treetraversal.go}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/tree_traversal.s}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/tree_traversal.emojic}}

@@ -308,19 +308,19 @@ In code, this process might look like this:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/gaussian_elimination.jl:12:24}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/GaussianElimination.java:14:30}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/gaussian_elimination.c:5:13}}
@@ -330,13 +330,13 @@ In code, this process might look like this:
 {{#include code/c/gaussian_elimination.c:19:34}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/gaussian_elimination.cpp:13:23}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/gaussianElimination.hs:10:17}}
@@ -346,19 +346,19 @@ In code, this process might look like this:
 {{#include code/haskell/gaussianElimination.hs:44:46}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/gaussian_elimination.js:7:23}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/gaussian_elimination.py:13:19}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/gaussian_elimination.rs:43:76}}
@@ -419,31 +419,31 @@ Here is what it might look like in code:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/gaussian_elimination.jl:26:38}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/GaussianElimination.java:32:40}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/gaussian_elimination.c:36:41}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/gaussian_elimination.cpp:25:32}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/gaussianElimination.hs:19:33}}
@@ -453,19 +453,19 @@ Here is what it might look like in code:
 {{#include code/haskell/gaussianElimination.hs:42:42}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/gaussian_elimination.js:25:30}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/gaussian_elimination.py:21:26}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/gaussian_elimination.rs:62:75}}
@@ -477,55 +477,55 @@ When we put everything together, it looks like this:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/gaussian_elimination.jl:1:45}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/gaussian_elimination.c:15:48}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/gaussian_elimination.cpp:8:34}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/gaussianElimination.hs:10:36}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/gaussian_elimination.py:3:28}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/GaussianElimination.java:5:47}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/gaussian_elimination.js:1:38}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/gaussian_elimination.go:9:53}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/gaussian_elimination.rs:41:77}}
@@ -553,55 +553,55 @@ Here it is in code:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/gaussian_elimination.jl:67:93}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/gaussian_elimination.c:64:82}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/gaussian_elimination.cpp:36:54}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/gaussianElimination.hs:38:46}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/gaussian_elimination.py:31:49}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/GaussianElimination.java:49:70}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/gaussian_elimination.js:57:76}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/gaussian_elimination.go:55:82}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/gaussian_elimination.rs:79:96}}
@@ -632,55 +632,55 @@ In code, it looks like this:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/gaussian_elimination.jl:47:64}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/gaussian_elimination.c:50:62}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/gaussian_elimination.cpp:56:72}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/gaussian_elimination.rs:98:112}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/gaussianElimination.hs:48:53}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/gaussian_elimination.py:52:64}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/GaussianElimination.java:72:87}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/gaussian_elimination.js:40:55}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/gaussian_elimination.go:84:98}}
@@ -737,55 +737,55 @@ Here's a video describing Gaussian elimination:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/gaussian_elimination.jl}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/gaussian_elimination.c}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/gaussian_elimination.cpp}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/gaussian_elimination.rs}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/gaussianElimination.hs}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/gaussian_elimination.py}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/GaussianElimination.java}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/gaussian_elimination.js}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/gaussian_elimination.go}}

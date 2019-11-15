@@ -38,67 +38,67 @@ each point is tested to see whether it's in the circle or not:
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/monte_carlo.jl:2:7}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/monte_carlo.clj:3:10}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/monte_carlo.c:7:9}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/monte_carlo.cpp:7:16}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/monte_carlo.js:2:6}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/monteCarlo.hs:7:7}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/monte_carlo.rs:7:9}}
 ```
 
-#### Code Example d
+#### Code Example D
 
 ```d
 {{#include code/d/monte_carlo.d:2:5}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/monteCarlo.go:12:14}}
 ```
 
-#### Code Example r
+#### Code Example R
 
 ```r
 {{#include code/r/monte_carlo.R:2:6}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/MonteCarlo.java:12:14}}
@@ -110,19 +110,19 @@ each point is tested to see whether it's in the circle or not:
 {{#include code/swift/monte_carlo.swift:1:3}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/monte_carlo.py:5:7}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ```csharp
 {{#include code/csharp/Circle.cs:23:23}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/monte_carlo.nim:6:7}}
@@ -134,67 +134,67 @@ each point is tested to see whether it's in the circle or not:
 {{#include code/ruby/monte_carlo.rb:1:4}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/monte_carlo.f90:1:8}}
 ```
 
-#### Code Example factor
+#### Code Example Factor
 
 ```factor
 {{#include code/factor/monte_carlo.factor:9:12}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/monte_carlo.emojic:23:27}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/monte_carlo.php:4:7}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/monte_carlo.lua:1:3}}
 ```
 
-#### Code Example racket
+#### Code Example Racket
 
 ```lisp
 {{#include code/racket/monte_carlo.rkt:2:4}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/monte_carlo.scala:3:3}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/monte-carlo.lisp:3:5}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/monte_carlo.s:21:32}}
 ```
 
-#### Code Example bash
+#### Code Example Bash
 
 ```bash
 {{#include code/bash/monte_carlo.bash:2:10}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/MonteCarlo.kt:3:3}}
@@ -238,67 +238,67 @@ Feel free to submit your version via pull request, and thanks for reading!
 
 ### Code Examples
 
-#### Code Example jl
+#### Code Example Julia
 
 ```julia
 {{#include code/julia/monte_carlo.jl}}
 ```
 
-#### Code Example clj
+#### Code Example Clojure
 
 ```clojure
 {{#include code/clojure/monte_carlo.clj}}
 ```
 
-#### Code Example c
+#### Code Example C
 
 ```c
 {{#include code/c/monte_carlo.c}}
 ```
 
-#### Code Example cpp
+#### Code Example C++
 
 ```cpp
 {{#include code/c++/monte_carlo.cpp}}
 ```
 
-#### Code Example js
+#### Code Example JavaScript
 
 ```javascript
 {{#include code/javascript/monte_carlo.js}}
 ```
 
-#### Code Example hs
+#### Code Example Haskell
 
 ```haskell
 {{#include code/haskell/monteCarlo.hs}}
 ```
 
-#### Code Example rs
+#### Code Example Rust
 
 ```rust
 {{#include code/rust/monte_carlo.rs}}
 ```
 
-#### Code Example d
+#### Code Example D
 
 ```d
 {{#include code/d/monte_carlo.d}}
 ```
 
-#### Code Example go
+#### Code Example Go
 
 ```go
 {{#include code/go/monteCarlo.go}}
 ```
 
-#### Code Example r
+#### Code Example R
 
 ```r
 {{#include code/r/monte_carlo.R}}
 ```
 
-#### Code Example java
+#### Code Example Java
 
 ```java
 {{#include code/java/MonteCarlo.java}}
@@ -310,13 +310,13 @@ Feel free to submit your version via pull request, and thanks for reading!
 {{#include code/swift/monte_carlo.swift}}
 ```
 
-#### Code Example py
+#### Code Example Python
 
 ```python
 {{#include code/python/monte_carlo.py}}
 ```
 
-#### Code Example cs
+#### Code Example C#
 
 ##### MonteCarlo.cs
 
@@ -336,7 +336,7 @@ Feel free to submit your version via pull request, and thanks for reading!
 {{#include code/csharp/Program.cs}}
 ```
 
-#### Code Example nim
+#### Code Example Nim
 
 ```nim
 {{#include code/nim/monte_carlo.nim}}
@@ -348,67 +348,67 @@ Feel free to submit your version via pull request, and thanks for reading!
 {{#include code/ruby/monte_carlo.rb}}
 ```
 
-#### Code Example f90
+#### Code Example Fortran90
 
 ```fortran
 {{#include code/fortran/monte_carlo.f90}}
 ```
 
-#### Code Example factor
+#### Code Example Factor
 
 ```factor
 {{#include code/factor/monte_carlo.factor}}
 ```
 
-#### Code Example emojic
+#### Code Example Emojicode
 
 ```emojicode
 {{#include code/emojicode/monte_carlo.emojic}}
 ```
 
-#### Code Example php
+#### Code Example PHP
 
 ```php
 {{#include code/php/monte_carlo.php}}
 ```
 
-#### Code Example lua
+#### Code Example Lua
 
 ```lua
 {{#include code/lua/monte_carlo.lua}}
 ```
 
-#### Code Example racket
+#### Code Example Racket
 
 ```lisp
 {{#include code/racket/monte_carlo.rkt}}
 ```
 
-#### Code Example scala
+#### Code Example Scala
 
 ```scala
 {{#include code/scala/monte_carlo.scala}}
 ```
 
-#### Code Example lisp
+#### Code Example Common Lisp
 
 ```lisp
 {{#include code/clisp/monte-carlo.lisp}}
 ```
 
-#### Code Example asm-x64
+#### Code Example X86-64 Assembly
 
 ```asm-x64
 {{#include code/asm-x64/monte_carlo.s}}
 ```
 
-#### Code Example bash
+#### Code Example Bash
 
 ```bash
 {{#include code/bash/monte_carlo.bash}}
 ```
 
-#### Code Example kotlin
+#### Code Example Kotlin
 
 ```kotlin
 {{#include code/kotlin/MonteCarlo.kt}}
