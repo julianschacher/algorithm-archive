@@ -509,3 +509,7 @@ __pycache__/
 # Settings directory for visual studio code
 vscode/
 
+# mdBook
+index.html
+book/
+
