@@ -12,64 +12,175 @@ In the best case, this algorithm runs with a complexity of \\(\Omega(n)\\), and 
 
 In code, it looks something like this:
 
-{% method %}
-{% sample lang="jl" %}
-[import:12-16, lang:"julia"](code/julia/bogo.jl)
-{% sample lang="cs" %}
-[import:9-15, lang:"csharp"](code/csharp/BogoSort.cs)
-{% sample lang="clj" %}
-[import:7-11, lang:"clojure"](code/clojure/bogo.clj)
-{% sample lang="c" %}
-[import:25-29, lang:"c"](code/c/bogo_sort.c)
-{% sample lang="java" %}
-[import:2-6, lang:"java"](code/java/Bogo.java)
-{% sample lang="js" %}
-[import:11-15, lang:"javascript"](code/javascript/bogo.js)
-{% sample lang="py" %}
-[import:10-12, lang:"python"](code/python/bogo.py)
-{% sample lang="hs" %}
-[import:17-20, lang:"haskell"](code/haskell/bogoSort.hs)
-{% sample lang="m" %}
-[import:21-28, lang:"matlab"](code/matlab/bogosort.m)
-{% sample lang="lua" %}
-[import:1-22, lang="lua"](code/lua/bogosort.lua)
-{% sample lang="cpp" %}
-[import:33-38, lang:"cpp"](code/c++/bogosort.cpp)
-{% sample lang="rs" %}
-[import:16-20, lang:"rust"](code/rust/bogosort.rs)
-{% sample lang="swift" %}
-[import:13-19, lang:"swift"](code/swift/bogosort.swift)
-{% sample lang="php" %}
-[import:15-22, lang:"php"](code/php/bogo_sort.php)
-{% sample lang="nim" %}
-[import:16-18, lang:"nim"](code/nim/bogo_sort.nim)
-{% sample lang="ruby" %}
-[import:12-16, lang:"ruby"](code/ruby/bogo.rb)
-{% sample lang="emojic" %}
-[import:2-6, lang:"emojicode"](code/emojicode/bogo_sort.emojic)
-{% sample lang="factor" %}
-[import:10-12, lang:"factor"](code/factor/bogo_sort.factor)
-{% sample lang="f90" %}
-[import:24-32, lang:"fortran"](code/fortran/bogo.f90)
-{% sample lang="racket" %}
-[import:3-8, lang:"lisp"](code/racket/bogo_sort.rkt)
-{% sample lang="st" %}
-[import:2-6, lang:"smalltalk"](code/smalltalk/bogosort.st)
-{% sample lang="bash" %}
-[import:38-45, lang:"bash"](code/bash/bogo_sort.bash)
-{% sample lang="asm-x64" %}
-[import:93-113, lang:"asm-x64"](code/asm-x64/bogo_sort.s)
-{% sample lang="lisp" %}
-[import:20-24, lang:"lisp"](code/clisp/bogo-sort.lisp)
-{% sample lang="crystal" %}
-[import:10-14, lang:"crystal"](code/crystal/bogo.cr)
-{% sample lang="r" %}
-[import:1-6, lang:"r"](code/r/bogo_sort.r)
-{% sample lang="scala" %}
-[import:12-16, lang:"scala"](code/scala/bogo.scala)
-{% sample lang="go" %}
-[import:27-31, lang:"go"](code/go/bogo_sort.go)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/bogo.jl:12:16}}
+```
+
+#### Code Example cs
+
+```csharp
+{{#include code/csharp/BogoSort.cs:9:15}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/bogo.clj:7:11}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/bogo_sort.c:25:29}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/Bogo.java:2:6}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/bogo.js:11:15}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/bogo.py:10:12}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/bogoSort.hs:17:20}}
+```
+
+#### Code Example m
+
+```matlab
+{{#include code/matlab/bogosort.m:21:28}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/bogosort.lua:1:22}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/bogosort.cpp:33:38}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/bogosort.rs:16:20}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/bogosort.swift:13:19}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/bogo_sort.php:15:22}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/bogo_sort.nim:16:18}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/bogo.rb:12:16}}
+```
+
+#### Code Example emojic
+
+```emojicode
+{{#include code/emojicode/bogo_sort.emojic:2:6}}
+```
+
+#### Code Example factor
+
+```factor
+{{#include code/factor/bogo_sort.factor:10:12}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/bogo.f90:24:32}}
+```
+
+#### Code Example racket
+
+```lisp
+{{#include code/racket/bogo_sort.rkt:3:8}}
+```
+
+#### Code Example st
+
+```smalltalk
+{{#include code/smalltalk/bogosort.st:2:6}}
+```
+
+#### Code Example bash
+
+```bash
+{{#include code/bash/bogo_sort.bash:38:45}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/bogo_sort.s:93:113}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/bogo-sort.lisp:20:24}}
+```
+
+#### Code Example crystal
+
+```crystal
+{{#include code/crystal/bogo.cr:10:14}}
+```
+
+#### Code Example r
+
+```r
+{{#include code/r/bogo_sort.r:1:6}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/bogo.scala:12:16}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/bogo_sort.go:27:31}}
+```
 
 That's it.
 Ship it!
@@ -77,67 +188,183 @@ We are done here!
 
 ## Example Code
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/bogo.jl)
-{% sample lang="cs" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/bogo.jl}}
+```
+
+#### Code Example cs
+
 ##### BogoSort.cs
-[import, lang:"csharp"](code/csharp/BogoSort.cs)
+
+```csharp
+{{#include code/csharp/BogoSort.cs}}
+```
+
 ##### Program.cs
-[import, lang:"csharp"](code/csharp/Program.cs)
-{% sample lang="clj" %}
-[import, lang:"clojure"](code/clojure/bogo.clj)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/bogo_sort.c)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/Bogo.java)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/bogo.js)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/bogo.py)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/bogoSort.hs)
-{% sample lang="m" %}
-[import, lang:"matlab"](code/matlab/bogosort.m)
-{% sample lang="lua" %}
-[import, lang="lua"](code/lua/bogosort.lua)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/bogosort.cpp)
-{% sample lang="rs" %}
-[import, lang:"rust"](code/rust/bogosort.rs)
-{% sample lang="swift" %}
-[import, lang:"swift"](code/swift/bogosort.swift)
-{% sample lang="php" %}
-[import, lang:"php"](code/php/bogo_sort.php)
-{% sample lang="nim" %}
-[import, lang:"nim"](code/nim/bogo_sort.nim)
-{% sample lang="ruby" %}
-[import, lang:"ruby"](code/ruby/bogo.rb)
-{% sample lang="emojic" %}
-[import, lang:"emojicode"](code/emojicode/bogo_sort.emojic)
-{% sample lang="factor" %}
-[import, lang:"factor"](code/factor/bogo_sort.factor)
-{% sample lang="f90" %}
-[import, lang:"fortran"](code/fortran/bogo.f90)
-{% sample lang="racket" %}
-[import, lang:"lisp"](code/racket/bogo_sort.rkt)
-{% sample lang="st" %}
-[import, lang:"smalltalk"](code/smalltalk/bogosort.st)
-{% sample lang="bash" %}
-[import, lang:"bash"](code/bash/bogo_sort.bash)
-{% sample lang="asm-x64" %}
-[import, lang:"asm-x64"](code/asm-x64/bogo_sort.s)
-{% sample lang="lisp" %}
-[import, lang:"lisp"](code/clisp/bogo-sort.lisp)
-{% sample lang="crystal" %}
-[import, lang:"crystal"](code/crystal/bogo.cr)
-{% sample lang="r" %}
-[import, lang:"r"](code/r/bogo_sort.r)
-{% sample lang="scala" %}
-[import, lang:"scala"](code/scala/bogo.scala)
-{% sample lang="go" %}
-[import, lang:"go"](code/go/bogo_sort.go)
-{% endmethod %}
+
+```csharp
+{{#include code/csharp/Program.cs}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/bogo.clj}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/bogo_sort.c}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/Bogo.java}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/bogo.js}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/bogo.py}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/bogoSort.hs}}
+```
+
+#### Code Example m
+
+```matlab
+{{#include code/matlab/bogosort.m}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/bogosort.lua}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/bogosort.cpp}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/bogosort.rs}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/bogosort.swift}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/bogo_sort.php}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/bogo_sort.nim}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/bogo.rb}}
+```
+
+#### Code Example emojic
+
+```emojicode
+{{#include code/emojicode/bogo_sort.emojic}}
+```
+
+#### Code Example factor
+
+```factor
+{{#include code/factor/bogo_sort.factor}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/bogo.f90}}
+```
+
+#### Code Example racket
+
+```lisp
+{{#include code/racket/bogo_sort.rkt}}
+```
+
+#### Code Example st
+
+```smalltalk
+{{#include code/smalltalk/bogosort.st}}
+```
+
+#### Code Example bash
+
+```bash
+{{#include code/bash/bogo_sort.bash}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/bogo_sort.s}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/bogo-sort.lisp}}
+```
+
+#### Code Example crystal
+
+```crystal
+{{#include code/crystal/bogo.cr}}
+```
+
+#### Code Example r
+
+```r
+{{#include code/r/bogo_sort.r}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/bogo.scala}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/bogo_sort.go}}
+```
 
 
 <script>

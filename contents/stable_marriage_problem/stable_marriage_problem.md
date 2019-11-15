@@ -28,37 +28,93 @@ Here is a video describing the stable marriage problem:
 
 ## Example Code
 
-{% method %}
-{% sample lang="ruby" %}
-[import, lang:"ruby"](code/ruby/stable_marriage.rb)
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/stable_marriage.jl)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/stable_marriage.py)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/stableMarriage.hs)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/stable_marriage.c)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/stable_marriage.cpp)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/stable-marriage.js)
-{% sample lang="cs" %}
+### Code Examples
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/stable_marriage.rb}}
+```
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/stable_marriage.jl}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/stable_marriage.py}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/stableMarriage.hs}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/stable_marriage.c}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/stable_marriage.cpp}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/stable-marriage.js}}
+```
+
+#### Code Example cs
+
 ##### GaleShapleyAlgorithm.cs
-[import, lang:"csharp"](code/csharp/GaleShapleyAlgorithm.cs)
+
+```csharp
+{{#include code/csharp/GaleShapleyAlgorithm.cs}}
+```
+
 ##### Person.cs
-[import, lang:"csharp"](code/csharp/Person.cs)
+
+```csharp
+{{#include code/csharp/Person.cs}}
+```
+
 ##### Program.cs
-[import, lang:"csharp"](code/csharp/Program.cs)
+
+```csharp
+{{#include code/csharp/Program.cs}}
+```
+
 ##### ListExtensions.cs
-[import, lang:"csharp"](code/csharp/ListExtensions.cs)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/stable-marriage.java)
-{% sample lang="php" %}
-[import, lang:"php"](code/php/stable_marriage.php)
-{% sample lang="scala" %}
-[import, lang:"scala"](code/scala/stable_marriage.scala)
-{% endmethod %}
+
+```csharp
+{{#include code/csharp/ListExtensions.cs}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/stable-marriage.java}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/stable_marriage.php}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/stable_marriage.scala}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

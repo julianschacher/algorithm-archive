@@ -61,39 +61,99 @@ The most straightforward way to do this in some languages is with a priority que
 In addition, to read the tree backwards, some sort of [Depth First Search](../tree_traversal/tree_traversal.md) needs to be implemented.
 Whether you use a stack or straight-up recursion also depends on the language, but the recursive method is a little easier to understand in most cases.
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/huffman.jl)
-{% sample lang="rs" %}
-[import, lang:"rust"](code/rust/huffman.rs)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/huffman.c)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/huffman.hs)
-{% sample lang="cs" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/huffman.jl}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/huffman.rs}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/huffman.c}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/huffman.hs}}
+```
+
+#### Code Example cs
+
 ##### HuffmanCoding.cs
-[import, lang:"csharp"](code/csharp/HuffmanCoding.cs)
+
+```csharp
+{{#include code/csharp/HuffmanCoding.cs}}
+```
+
 ##### Program.cs
-[import, lang:"csharp"](code/csharp/Program.cs)
-{% sample lang="lua" %}
-[import, lang="lua"](code/lua/huffman.lua)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/huffman.cpp)
-{% sample lang="clj" %}
-[import, lang:"clojure"](code/clojure/huffman.clj)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/huffman.py)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/huffman.js)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/huffman.java)
-{% sample lang="go" %}
-[import, lang:"go"](code/golang/huffman.go)
-{% sample lang="asm-x64" %}
-[import, lang:"asm-x64"](code/asm-x64/huffman.s)
-{% sample lang="scala" %}
-[import, lang:"scala"](code/scala/huffman_encoding.scala)
-{% endmethod %}
+
+```csharp
+{{#include code/csharp/Program.cs}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/huffman.lua}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/huffman.cpp}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/huffman.clj}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/huffman.py}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/huffman.js}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/huffman.java}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/huffman.go}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/huffman.s}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/huffman_encoding.scala}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

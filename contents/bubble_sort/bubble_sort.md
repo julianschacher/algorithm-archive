@@ -7,76 +7,205 @@ If it is, we swap the elements and then move to the next element.
 In this way, we sweep through the array \\(n\\) times for each element and continually swap any two adjacent elements that are improperly ordered.
 This means that we need to go through the vector \\(\mathcal{O}(n^2)\\) times with code similar to the following:
 
-{% method %}
-{% sample lang="jl" %}
-[import:1-10, lang:"julia"](code/julia/bubble.jl)
-{% sample lang="cs" %}
-[import:9-27, lang:"csharp"](code/csharp/BubbleSort.cs)
-{% sample lang="c" %}
-[import:10-20, lang:"c"](code/c/bubble_sort.c)
-{% sample lang="c8" %}
-[import:39-63, lang:"chip-8"](code/chip8/bubblesort.c8)
-{% sample lang="java" %}
-[import:2-12, lang:"java"](code/java/Bubble.java)
-{% sample lang="kotlin" %}
-[import:1-11, lang:"kotlin"](code/kotlin/BubbleSort.kt)
-{% sample lang="js" %}
-[import:1-12, lang:"javascript"](code/javascript/bubble.js)
-{% sample lang="py" %}
-[import:4-9, lang:"python"](code/python/bubblesort.py)
-{% sample lang="m" %}
-[import:1-13, lang:"matlab"](code/matlab/bubblesort.m)
-{% sample lang="lua" %}
-[import:1-9, lang="lua"](code/lua/bubble_sort.lua)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/bubbleSort.hs)
-{% sample lang="cpp" %}
-[import:13-23, lang:"cpp"](code/c++/bubblesort.cpp)
-{% sample lang="rs" %}
-[import:6-16, lang:"rust"](code/rust/bubble_sort.rs)
-{% sample lang="d" %}
-[import:3-18, lang:"d"](code/d/bubble_sort.d)
-{% sample lang="go" %}
-[import:7-21, lang:"go"](code/go/bubbleSort.go)
-{% sample lang="racket" %}
-[import:6-19, lang:"scheme"](code/racket/bubbleSort.rkt)
-{% sample lang="swift" %}
-[import:1-13, lang:"swift"](code/swift/bubblesort.swift)
-{% sample lang="ti83b" %}
-[import:2-13, lang:"ti-83_basic"](code/ti83basic/BUBLSORT.txt)
-{% sample lang="ruby" %}
-[import:3-13, lang:"ruby"](code/ruby/bubble.rb)
-{% sample lang="crystal" %}
-[import:1-11, lang:"crystal"](code/crystal/bubble.cr)
-{% sample lang="php" %}
-[import:4-17, lang:"php"](code/php/bubble_sort.php)
-{% sample lang="lisp" %}
-[import:3-28, lang:"lisp"](code/clisp/bubble_sort.lisp)
-{% sample lang="nim" %}
-[import:5-9, lang:"nim"](code/nim/bubble_sort.nim)
-{% sample lang="st" %}
-[import:2-15, lang:"smalltalk"](code/smalltalk/bubble.st)
-{% sample lang="asm-x64" %}
-[import:43-66, lang:"asm-x64"](code/asm-x64/bubble_sort.s)
-{% sample lang="f90" %}
-[import:19-40, lang:"fortran"](code/fortran/bubble.f90)
-{% sample lang="bf" %}
-[import:17-63, lang:"brainfuck"](code/brainfuck/bubblesort.bf)
-{% sample lang="scala" %}
-[import:3-14, lang:"scala"](code/scala/bubble_sort.scala)
-{% sample lang="emojic" %}
-[import:2-14, lang:"emojicode"](code/emojicode/bubble_sort.emojic)
-{% sample lang="bash" %}
-[import:2-21, lang:"bash"](code/bash/bubble_sort.bash)
-{% sample lang="v" %}
-[import:1-11, lang:"v"](code/v/bubble_sort.v)
-{% sample lang="scratch" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/bubble.jl:1:10}}
+```
+
+#### Code Example cs
+
+```csharp
+{{#include code/csharp/BubbleSort.cs:9:27}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/bubble_sort.c:10:20}}
+```
+
+#### Code Example c8
+
+```chip-8
+{{#include code/chip8/bubblesort.c8:39:63}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/Bubble.java:2:12}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/BubbleSort.kt:1:11}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/bubble.js:1:12}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/bubblesort.py:4:9}}
+```
+
+#### Code Example m
+
+```matlab
+{{#include code/matlab/bubblesort.m:1:13}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/bubble_sort.lua:1:9}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/bubbleSort.hs}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/bubblesort.cpp:13:23}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/bubble_sort.rs:6:16}}
+```
+
+#### Code Example d
+
+```d
+{{#include code/d/bubble_sort.d:3:18}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/bubbleSort.go:7:21}}
+```
+
+#### Code Example racket
+
+```scheme
+{{#include code/racket/bubbleSort.rkt:6:19}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/bubblesort.swift:1:13}}
+```
+
+#### Code Example ti83b
+
+```ti-83_basic
+{{#include code/ti83basic/BUBLSORT.txt:2:13}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/bubble.rb:3:13}}
+```
+
+#### Code Example crystal
+
+```crystal
+{{#include code/crystal/bubble.cr:1:11}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/bubble_sort.php:4:17}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/bubble_sort.lisp:3:28}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/bubble_sort.nim:5:9}}
+```
+
+#### Code Example st
+
+```smalltalk
+{{#include code/smalltalk/bubble.st:2:15}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/bubble_sort.s:43:66}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/bubble.f90:19:40}}
+```
+
+#### Code Example bf
+
+```brainfuck
+{{#include code/brainfuck/bubblesort.bf:17:63}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/bubble_sort.scala:3:14}}
+```
+
+#### Code Example emojic
+
+```emojicode
+{{#include code/emojicode/bubble_sort.emojic:2:14}}
+```
+
+#### Code Example bash
+
+```bash
+{{#include code/bash/bubble_sort.bash:2:21}}
+```
+
+#### Code Example v
+
+```v
+{{#include code/v/bubble_sort.v:1:11}}
+```
+
+#### Code Example scratch
+
 <p>
   <img  class="center" src="code/scratch/bubble_sort.svg" width="400" />
 </p>
-{% sample lang="coffeescript" %}
-[import:1-6, lang:"coffeescript"](code/coffeescript/bubblesort.coffee)
-{% endmethod %}
+
+#### Code Example coffeescript
+
+```coffeescript
+{{#include code/coffeescript/bubblesort.coffee:1:6}}
+```
 
 ... And that's it for the simplest bubble sort method.
 Now, as you might imagine, computer scientists have optimized this to the fiery lakes of Michigan and back, so we'll come back to this in the future and talk about how to optimize it.
@@ -85,77 +214,211 @@ Trust me, there are plenty of more complicated algorithms that do precisely the 
 
 ## Example Code
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/bubble.jl)
-{% sample lang="cs" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/bubble.jl}}
+```
+
+#### Code Example cs
+
 ##### BubbleSort.cs
-[import, lang:"csharp"](code/csharp/BubbleSort.cs)
+
+```csharp
+{{#include code/csharp/BubbleSort.cs}}
+```
+
 ##### Program.cs
-[import, lang:"csharp"](code/csharp/Program.cs)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/bubble_sort.c)
-{% sample lang="c8" %}
-[import, lang:"chip-8"](code/chip8/bubblesort.c8)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/Bubble.java)
-{% sample lang="kotlin" %}
-[import, lang:"kotlin"](code/kotlin/BubbleSort.kt)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/bubble.js)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/bubblesort.py)
-{% sample lang="m" %}
-[import, lang:"matlab"](code/matlab/bubblesort.m)
-{% sample lang="lua" %}
-[import, lang="lua"](code/lua/bubble_sort.lua)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/bubbleSort.hs)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/bubblesort.cpp)
-{% sample lang="rs" %}
-[import, lang:"rust"](code/rust/bubble_sort.rs)
-{% sample lang="d" %}
-[import, lang:"d"](code/d/bubble_sort.d)
-{% sample lang="go" %}
-[import, lang:"go"](code/go/bubbleSort.go)
-{% sample lang="racket" %}
-[import, lang:"scheme"](code/racket/bubbleSort.rkt)
-{% sample lang="swift" %}
-[import, lang:"swift"](code/swift/bubblesort.swift)
-{% sample lang="ti83b" %}
-[import, lang:"ti-83_basic"](code/ti83basic/BUBLSORT.txt)
-{% sample lang="ruby" %}
-[import, lang:"ruby"](code/ruby/bubble.rb)
-{% sample lang="crystal" %}
-[import, lang:"crystal"](code/crystal/bubble.cr)
-{% sample lang="php" %}
-[import, lang:"php"](code/php/bubble_sort.php)
-{% sample lang="lisp" %}
-[import, lang:"lisp"](code/clisp/bubble_sort.lisp)
-{% sample lang="nim" %}
-[import, lang:"nim"](code/nim/bubble_sort.nim)
-{% sample lang="asm-x64" %}
-[import, lang:"asm-x64"](code/asm-x64/bubble_sort.s)
-{% sample lang="f90" %}
-[import, lang:"fortran"](code/fortran/bubble.f90)
-{% sample lang="bf" %}
-[import, lang:"brainfuck"](code/brainfuck/bubblesort.bf)
-{% sample lang="st" %}
-[import, lang:"smalltalk"](code/smalltalk/bubble.st)
-{% sample lang="scala" %}
-[import, lang:"scala"](code/scala/bubble_sort.scala)
-{% sample lang="emojic" %}
-[import, lang:"emojicode"](code/emojicode/bubble_sort.emojic)
-{% sample lang="bash" %}
-[import, lang:"bash"](code/bash/bubble_sort.bash)
-{% sample lang="v" %}
-[import, lang:"v"](code/v/bubble_sort.v)
-{% sample lang="scratch" %}
+
+```csharp
+{{#include code/csharp/Program.cs}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/bubble_sort.c}}
+```
+
+#### Code Example c8
+
+```chip-8
+{{#include code/chip8/bubblesort.c8}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/Bubble.java}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/BubbleSort.kt}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/bubble.js}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/bubblesort.py}}
+```
+
+#### Code Example m
+
+```matlab
+{{#include code/matlab/bubblesort.m}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/bubble_sort.lua}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/bubbleSort.hs}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/bubblesort.cpp}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/bubble_sort.rs}}
+```
+
+#### Code Example d
+
+```d
+{{#include code/d/bubble_sort.d}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/bubbleSort.go}}
+```
+
+#### Code Example racket
+
+```scheme
+{{#include code/racket/bubbleSort.rkt}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/bubblesort.swift}}
+```
+
+#### Code Example ti83b
+
+```ti-83_basic
+{{#include code/ti83basic/BUBLSORT.txt}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/bubble.rb}}
+```
+
+#### Code Example crystal
+
+```crystal
+{{#include code/crystal/bubble.cr}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/bubble_sort.php}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/bubble_sort.lisp}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/bubble_sort.nim}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/bubble_sort.s}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/bubble.f90}}
+```
+
+#### Code Example bf
+
+```brainfuck
+{{#include code/brainfuck/bubblesort.bf}}
+```
+
+#### Code Example st
+
+```smalltalk
+{{#include code/smalltalk/bubble.st}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/bubble_sort.scala}}
+```
+
+#### Code Example emojic
+
+```emojicode
+{{#include code/emojicode/bubble_sort.emojic}}
+```
+
+#### Code Example bash
+
+```bash
+{{#include code/bash/bubble_sort.bash}}
+```
+
+#### Code Example v
+
+```v
+{{#include code/v/bubble_sort.v}}
+```
+
+#### Code Example scratch
+
 The code snippet was taken from this [Scratch project](https://scratch.mit.edu/projects/316483792)
-{% sample lang="coffeescript" %}
-[import, lang:"coffeescript"](code/coffeescript/bubblesort.coffee)
-{% endmethod %}
+
+#### Code Example coffeescript
+
+```coffeescript
+{{#include code/coffeescript/bubblesort.coffee}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

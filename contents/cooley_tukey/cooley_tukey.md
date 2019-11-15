@@ -68,26 +68,61 @@ Where \\(X_n\\) and \\(x_n\\) are sequences of \\(N\\) numbers in frequency and 
 In principle, this is no easier to understand than the previous case!
 For some reason, though, putting code to this transformation really helped me figure out what was actually going on.
 
-{% method %}
-{% sample lang="jl" %}
-[import:4-13, lang:"julia"](code/julia/fft.jl)
-{% sample lang="c" %}
-[import:25-35, lang:"c"](code/c/fft.c)
-{% sample lang="clj" %}
-[import:15-30, lang:"clojure"](code/clojure/fft.clj)
-{% sample lang="cpp" %}
-[import:23-33, lang:"cpp"](code/c++/fft.cpp)
-{% sample lang="hs" %}
-[import:7-13, lang:"haskell"](code/haskell/fft.hs)
-{% sample lang="py" %}
-[import:5-11, lang:"python"](code/python/fft.py)
-{% sample lang="scratch" %}
-[import:4-13, lang:"julia"](code/julia/fft.jl)
-{% sample lang="asm-x64" %}
-[import:15-74, lang:"asm-x64"](code/asm-x64/fft.s)
-{% sample lang="js" %}
-[import:3-15, lang:"javascript"](code/javascript/fft.js)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/fft.jl:4:13}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/fft.c:25:35}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/fft.clj:15:30}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/fft.cpp:23:33}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/fft.hs:7:13}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/fft.py:5:11}}
+```
+
+#### Code Example scratch
+
+```julia
+{{#include code/julia/fft.jl:4:13}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/fft.s:15:74}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/fft.js:3:15}}
+```
 
 In this function, we define `n` to be a set of integers from \\(0 \rightarrow N-1\\) and arrange them to be a column.
 We then set `k` to be the same thing, but in a row.
@@ -119,26 +154,62 @@ We can also perform a similar re-ordering by using a bit reversal scheme, where 
 With recursion, we can reduce the complexity to \\(\sim \mathcal{O}(n \log n)\\), which is a feasible operation.
 
 In the end, the code looks like:
-{% method %}
-{% sample lang="jl" %}
-[import:16-32, lang:"julia"](code/julia/fft.jl)
-{% sample lang="c" %}
-[import:37-56, lang:"c"](code/c/fft.c)
-{% sample lang="clj" %}
-[import:31-58, lang:"clojure"](code/clojure/fft.clj)
-{% sample lang="cpp" %}
-[import:36-66, lang:"cpp"](code/c++/fft.cpp)
-{% sample lang="hs" %}
-[import:15-28, lang:"haskell"](code/haskell/fft.hs)
-{% sample lang="py" %}
-[import:13-24, lang:"python"](code/python/fft.py)
-{% sample lang="scratch" %}
-[import:16-32, lang:"julia"](code/julia/fft.jl)
-{% sample lang="asm-x64" %}
-[import:76-165, lang:"asm-x64"](code/asm-x64/fft.s)
-{% sample lang="js" %}
-[import:17-39, lang="javascript"](code/javascript/fft.js)
-{% endmethod %}
+
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/fft.jl:16:32}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/fft.c:37:56}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/fft.clj:31:58}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/fft.cpp:36:66}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/fft.hs:15:28}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/fft.py:13:24}}
+```
+
+#### Code Example scratch
+
+```julia
+{{#include code/julia/fft.jl:16:32}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/fft.s:76:165}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/fft.js:17:39}}
+```
 
 As a side note, we are enforcing that the array must be a power of 2 for the operation to work.
 This is a limitation of the fact that we are using recursion and dividing the array in 2 every time; however, if your array is not a power of 2, you can simply pad the leftover space with 0's until your array is a power of 2.
@@ -230,26 +301,59 @@ As before, pull requests are favoured.
 Note: I implemented this in Julia because the code seems more straightforward in Julia; however, if you wish to write better Julia code or better code in your own language, please feel free to do so!
 **I do not claim that this is the most efficient way to implement the Cooley-Tukey method, so if you have a better way to do it, feel free to implement it that way!**
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/fft.jl)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/fft.c)
-{% sample lang="clj" %}
-[import, lang:"clojure"](code/clojure/fft.clj)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/fft.cpp)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/fft.hs)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/fft.py)
-{% sample lang="scratch" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/fft.jl}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/fft.c}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/fft.clj}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/fft.cpp}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/fft.hs}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/fft.py}}
+```
+
+#### Code Example scratch
+
 Some rather impressive scratch code was submitted by Jie and can be found here: https://scratch.mit.edu/projects/37759604/#editor
-{% sample lang="asm-x64" %}
-[import, lang:"asm-x64"](code/asm-x64/fft.s)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/fft.js)
-{% endmethod %}
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/fft.s}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/fft.js}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

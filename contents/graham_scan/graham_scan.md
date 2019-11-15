@@ -11,24 +11,55 @@ We do this by looking for counter-clockwise rotations.
 If an angle between three points turns inward, the shape is obviously not convex, so we can throw that result out.
 We can find whether a rotation is counter-clockwise with trigonometric functions or by using a cross-product, like so:
 
-{% method %}
-{% sample lang="jl" %}
-[import:6-8, lang:"julia"](code/julia/graham.jl)
-{% sample lang="hs" %}
-[import:6-7, lang:"haskell"](code/haskell/grahamScan.hs)
-{% sample lang="c" %}
-[import:24-26, lang:"c"](code/c/graham.c)
-{% sample lang="js" %}
-[import:36-38, lang:"javascript"](code/javascript/graham-scan.js)
-{% sample lang="py" %}
-[import:4-6, lang:"python"](code/python/graham_scan.py)
-{% sample lang="go" %}
-[import:13-15, lang:"go"](code/golang/graham.go)
-{% sample lang="java" %}
-[import:27-29, lang:"java"](code/java/GrahamScan.java)
-{% sample lang="cpp" %}
-[import:18-20, lang="cpp"](code/c++/graham_scan.cpp)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/graham.jl:6:8}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/grahamScan.hs:6:7}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/graham.c:24:26}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/graham-scan.js:36:38}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/graham_scan.py:4:6}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/graham.go:13:15}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/GrahamScan.java:27:29}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/graham_scan.cpp:18:20}}
+```
 
 If the output of this function is 0, the points are collinear.
 If the output is positive, then the points form a counter-clockwise "left" turn.
@@ -41,24 +72,55 @@ To save memory and expensive `append()` operations, we ultimately look for point
 If there are \\(M\\) elements on the hull, then the first \\(M\\) elements in our output random distribution of points will be the hull.
 In the end, the code should look something like this:
 
-{% method %}
-{% sample lang="jl" %}
-[import:10-45, lang:"julia"](code/julia/graham.jl)
-{% sample lang="hs" %}
-[import:9-18, lang:"haskell"](code/haskell/grahamScan.hs)
-{% sample lang="c" %}
-[import:65-95, lang:"c"](code/c/graham.c)
-{% sample lang="js" %}
-[import:1-30, lang:"javascript"](code/javascript/graham-scan.js)
-{% sample lang="py" %}
-[import:14-28, lang:"python"](code/python/graham_scan.py)
-{% sample lang="go" %}
-[import:21-42, lang:"go"](code/golang/graham.go)
-{% sample lang="java" %}
-[import:35-70, lang:"java"](code/java/GrahamScan.java)
-{% sample lang="cpp" %}
-[import:26-62, lang="cpp"](code/c++/graham_scan.cpp)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/graham.jl:10:45}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/grahamScan.hs:9:18}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/graham.c:65:95}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/graham-scan.js:1:30}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/graham_scan.py:14:28}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/graham.go:21:42}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/GrahamScan.java:35:70}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/graham_scan.cpp:26:62}}
+```
 
 ### Bibliography
 
@@ -66,24 +128,55 @@ In the end, the code should look something like this:
 
 ## Example Code
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/graham.jl)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/grahamScan.hs)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/graham.c)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/graham-scan.js)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/graham_scan.py)
-{% sample lang="go" %}
-[import, lang:"go"](code/golang/graham.go)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/GrahamScan.java)
-{% sample lang="cpp" %}
-[import, lang="cpp"](code/c++/graham_scan.cpp)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/graham.jl}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/grahamScan.hs}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/graham.c}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/graham-scan.js}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/graham_scan.py}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/graham.go}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/GrahamScan.java}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/graham_scan.cpp}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

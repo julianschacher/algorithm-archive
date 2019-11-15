@@ -29,49 +29,127 @@ x(t+ \Delta t) = 2x(t) - x(t-\Delta t) + a(t)\Delta t^2 + \mathcal{O}(\Delta t^4
 So, this means we can find our next \\(x\\) simply by knowing our current \\(x\\), the \\(x\\) before that, and the acceleration! No velocity necessary! In addition, this drops the error to \\(\mathcal{O}(\Delta t^4)\\), which is great!
 Here is what it looks like in code:
 
-{% method %}
-{% sample lang="jl" %}
-[import:1-13, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="cpp" %}
-[import:9-22, lang:"cpp"](code/c++/verlet.cpp)
-{% sample lang="c" %}
-[import:3-14, lang:"c"](code/c/verlet.c)
-{% sample lang="java" %}
-[import:2-17, lang:"java"](code/java/Verlet.java)
-{% sample lang="py" %}
-[import:1-10, lang:"python"](code/python/verlet.py)
-{% sample lang="hs" %}
-[import:14-21, lang:"haskell"](code/haskell/verlet.hs)
-{% sample lang="scratch" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/verlet.jl:1:13}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/verlet.cpp:9:22}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/verlet.c:3:14}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/Verlet.java:2:17}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/verlet.py:1:10}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/verlet.hs:14:21}}
+```
+
+#### Code Example scratch
+
 Unfortunately, this has not yet been implemented in scratch, so here's Julia code:
-[import:1-13, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="matlab" %}
+
+```julia
+{{#include code/julia/verlet.jl:1:13}}
+```
+
+#### Code Example matlab
+
 Unfortunately, this has not yet been implemented in matlab, so here's Julia code:
-[import:1-13, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="LabVIEW" %}
+
+```julia
+{{#include code/julia/verlet.jl:1:13}}
+```
+
+#### Code Example LabVIEW
+
 Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia code:
-[import:1-13, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="javascript" %}
-[import:1-14, lang:"javascript"](code/javascript/verlet.js)
-{% sample lang="rs" %}
-[import:1-13, lang:"rust"](code/rust/verlet.rs)
-{% sample lang="swift" %}
-[import:1-15, lang:"swift"](code/swift/verlet.swift)
-{% sample lang="f90" %}
-[import:1-20, lang:"fortran"](code/fortran/verlet.f90)
-{% sample lang="ruby" %}
-[import:1-14, lang="ruby"](code/ruby/verlet.rb)
-{% sample lang="go" %}
-[import:5-16, lang:"go"](code/golang/verlet.go)
-{% sample lang="asm-x64" %}
-[import:18-42, lang:"asm-x64"](code/asm-x64/verlet.s)
-{% sample lang="kotlin" %}
-[import:3-15, lang:"kotlin"](code/kotlin/verlet.kt)
-{% sample lang="nim" %}
-[import:1-14, lang:"nim"](code/nim/verlet.nim)
-{% sample lang="lisp" %}
-[import:3-13, lang:"lisp"](code/clisp/verlet.lisp)
-{% endmethod %}
+
+```julia
+{{#include code/julia/verlet.jl:1:13}}
+```
+
+#### Code Example javascript
+
+```javascript
+{{#include code/javascript/verlet.js:1:14}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/verlet.rs:1:13}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/verlet.swift:1:15}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/verlet.f90:1:20}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/verlet.rb:1:14}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/verlet.go:5:16}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/verlet.s:18:42}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/verlet.kt:3:15}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/verlet.nim:1:14}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/verlet.lisp:3:13}}
+```
 
 Now, obviously this poses a problem; what if we want to calculate a term that requires velocity, like the kinetic energy, \\(\frac{1}{2}mv^2\\)? In this case, we certainly cannot get rid of the velocity! Well, we can find the velocity to \\(\mathcal{O}(\Delta t^2)\\) accuracy by using the Stormer-Verlet method, which is the same as before, but we calculate velocity like so
 
@@ -87,49 +165,127 @@ v(t+\Delta t) = \frac{x(t+\Delta t) - x(t)}{\Delta t} + \mathcal{O}(\Delta t)
 
 However, the error for this is \\(\mathcal{O}(\Delta t)\\), which is quite poor, but it gets the job done in a pinch.  Here's what it looks like in code:
 
-{% method %}
-{% sample lang="jl" %}
-[import:15-31, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="cpp" %}
-[import:24-41, lang:"cpp"](code/c++/verlet.cpp)
-{% sample lang="c" %}
-[import:16-31, lang:"c"](code/c/verlet.c)
-{% sample lang="java" %}
-[import:19-37, lang:"java"](code/java/Verlet.java)
-{% sample lang="py" %}
-[import:12-23, lang:"python"](code/python/verlet.py)
-{% sample lang="hs" %}
-[import:23-28, lang:"haskell"](code/haskell/verlet.hs)
-{% sample lang="scratch" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/verlet.jl:15:31}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/verlet.cpp:24:41}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/verlet.c:16:31}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/Verlet.java:19:37}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/verlet.py:12:23}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/verlet.hs:23:28}}
+```
+
+#### Code Example scratch
+
 Unfortunately, this has not yet been implemented in scratch, so here's Julia code:
-[import:15-31, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="matlab" %}
+
+```julia
+{{#include code/julia/verlet.jl:15:31}}
+```
+
+#### Code Example matlab
+
 Unfortunately, this has not yet been implemented in matlab, so here's Julia code:
-[import:15-31, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="LabVIEW" %}
+
+```julia
+{{#include code/julia/verlet.jl:15:31}}
+```
+
+#### Code Example LabVIEW
+
 Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia code:
-[import:15-31, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="javascript" %}
-[import:16-32, lang:"javascript"](code/javascript/verlet.js)
-{% sample lang="rs" %}
-[import:15-32, lang:"rust"](code/rust/verlet.rs)
-{% sample lang="swift" %}
-[import:17-34, lang:"swift"](code/swift/verlet.swift)
-{% sample lang="f90" %}
-[import:22-42, lang:"fortran"](code/fortran/verlet.f90)
-{% sample lang="ruby" %}
-[import:16-32, lang="ruby"](code/ruby/verlet.rb)
-{% sample lang="go" %}
-[import:18-30, lang:"go"](code/golang/verlet.go)
-{% sample lang="asm-x64" %}
-[import:44-71, lang:"asm-x64"](code/asm-x64/verlet.s)
-{% sample lang="kotlin" %}
-[import:17-30, lang:"kotlin"](code/kotlin/verlet.kt)
-{% sample lang="nim" %}
-[import:16-32, lang:"nim"](code/nim/verlet.nim)
-{% sample lang="lisp" %}
-[import:15-26, lang:"lisp"](code/clisp/verlet.lisp)
-{% endmethod %}
+
+```julia
+{{#include code/julia/verlet.jl:15:31}}
+```
+
+#### Code Example javascript
+
+```javascript
+{{#include code/javascript/verlet.js:16:32}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/verlet.rs:15:32}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/verlet.swift:17:34}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/verlet.f90:22:42}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/verlet.rb:16:32}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/verlet.go:18:30}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/verlet.s:44:71}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/verlet.kt:17:30}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/verlet.nim:16:32}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/verlet.lisp:15:26}}
+```
 
 
 Now, let's say we actually need the velocity to calculate out next timestep. Well, in this case, we simply cannot use the above approximation and instead need to use the *Velocity Verlet* algorithm.
@@ -159,49 +315,127 @@ v(t+\Delta t) &= v(t+\frac{1}{2}\Delta t) + \frac{1}{2}a(t+\Delta t)\Delta t
 
 Here is the velocity Verlet method in code:
 
-{% method %}
-{% sample lang="jl" %}
-[import:33-45, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="cpp" %}
-[import:43-54, lang:"cpp"](code/c++/verlet.cpp)
-{% sample lang="c" %}
-[import:33-43, lang:"c"](code/c/verlet.c)
-{% sample lang="java" %}
-[import:39-51, lang:"java"](code/java/Verlet.java)
-{% sample lang="py" %}
-[import:25-34, lang:"python"](code/python/verlet.py)
-{% sample lang="hs" %}
-[import:30-35, lang:"haskell"](code/haskell/verlet.hs)
-{% sample lang="scratch" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/verlet.jl:33:45}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/verlet.cpp:43:54}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/verlet.c:33:43}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/Verlet.java:39:51}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/verlet.py:25:34}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/verlet.hs:30:35}}
+```
+
+#### Code Example scratch
+
 Unfortunately, this has not yet been implemented in scratch, so here's Julia code:
-[import:33-45, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="matlab" %}
+
+```julia
+{{#include code/julia/verlet.jl:33:45}}
+```
+
+#### Code Example matlab
+
 Unfortunately, this has not yet been implemented in matlab, so here's Julia code:
-[import:33-45, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="LabVIEW" %}
+
+```julia
+{{#include code/julia/verlet.jl:33:45}}
+```
+
+#### Code Example LabVIEW
+
 Unfortunately, this has not yet been implemented in LabVIEW, so here's Julia code:
-[import:33-45, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="javascript" %}
-[import:34-45, lang:"javascript"](code/javascript/verlet.js)
-{% sample lang="rs" %}
-[import:34-45, lang:"rust"](code/rust/verlet.rs)
-{% sample lang="swift" %}
-[import:36-49, lang:"swift"](code/swift/verlet.swift)
-{% sample lang="f90" %}
-[import:44-60, lang:"fortran"](code/fortran/verlet.f90)
-{% sample lang="ruby" %}
-[import:34-46, lang="ruby"](code/ruby/verlet.rb)
-{% sample lang="go" %}
-[import:32-42, lang:"go"](code/golang/verlet.go)
-{% sample lang="asm-x64" %}
-[import:73-101, lang:"asm-x64"](code/asm-x64/verlet.s)
-{% sample lang="kotlin" %}
-[import:32-42, lang:"kotlin"](code/kotlin/verlet.kt)
-{% sample lang="nim" %}
-[import:34-45, lang:"nim"](code/nim/verlet.nim)
-{% sample lang="lisp" %}
-[import:28-35, lang:"lisp"](code/clisp/verlet.lisp)
-{% endmethod %}
+
+```julia
+{{#include code/julia/verlet.jl:33:45}}
+```
+
+#### Code Example javascript
+
+```javascript
+{{#include code/javascript/verlet.js:34:45}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/verlet.rs:34:45}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/verlet.swift:36:49}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/verlet.f90:44:60}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/verlet.rb:34:46}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/verlet.go:32:42}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/verlet.s:73:101}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/verlet.kt:32:42}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/verlet.nim:34:45}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/verlet.lisp:28:35}}
+```
 
 Even though this method is more widely used than the simple Verlet method mentioned above, it unforunately has an error term of \\(\mathcal{O}(\Delta t^2)\\), which is two orders of magnitude worse. That said, if you want to have a simulaton with many objects that depend on one another --- like a gravity simulation --- the Velocity Verlet algorithm is a handy choice; however, you may have to play further tricks to allow everything to scale appropriately. These types of simulatons are sometimes called *n-body* simulations and one such trick is the Barnes-Hut algorithm, which cuts the complexity of n-body simulations from \\(\sim \mathcal{O}(n^2)\\) to \\(\sim \mathcal{O}(n\log(n))\\).
 
@@ -217,54 +451,131 @@ Here is a video describing Verlet integration:
 
 Both of these methods work simply by iterating timestep-by-timestep and can be written straightforwardly in any language. For reference, here are snippets of code that use both the classic and velocity Verlet methods to find the time it takes for a ball to hit the ground after being dropped from a given height.
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/verlet.jl)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/verlet.cpp)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/verlet.c)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/VerletValues.java)
-[import, lang:"java"](code/java/Verlet.java)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/verlet.py)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/verlet.hs)
-{% sample lang="scratch" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/verlet.jl}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/verlet.cpp}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/verlet.c}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/VerletValues.java}}
+```
+
+```java
+{{#include code/java/Verlet.java}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/verlet.py}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/verlet.hs}}
+```
+
+#### Code Example scratch
+
 Submitted by Jie
+
 <p>
     <img  class="center" src="code/scratch/verlet_scratch.png" />
 </p>
+
 Link: [https://scratch.mit.edu/projects/173039394/](https://scratch.mit.edu/projects/173039394/)
-{% sample lang="matlab" %}
-[import, lang:"matlab"](code/matlab/verlet.m)
-{% sample lang="LabVIEW" %}
+
+#### Code Example matlab
+
+```matlab
+{{#include code/matlab/verlet.m}}
+```
+
+#### Code Example LabVIEW
+
 Submitted by P. Mekhail
+
 <p>
     <img  class="center" src="code/labview/verlet_labview.png" />
 </p>
-{% sample lang="javascript" %}
-[import, lang:"javascript"](code/javascript/verlet.js)
-{% sample lang="rs" %}
-[import, lang:"rust"](code/rust/verlet.rs)
-{% sample lang="swift" %}
-[import, lang:"swift"](code/swift/verlet.swift)
-{% sample lang="f90" %}
-[import, lang:"fortran"](code/fortran/verlet.f90)
-{% sample lang="ruby" %}
-[import, lang="ruby"](code/ruby/verlet.rb)
-{% sample lang="go" %}
-[import, lang:"go"](code/golang/verlet.go)
-{% sample lang="asm-x64" %}
-[import, lang:"asm-x64"](code/asm-x64/verlet.s)
-{% sample lang="kotlin" %}
-[import, lang:"kotlin"](code/kotlin/verlet.kt)
-{% sample lang="nim" %}
-[import, lang="nim"](code/nim/verlet.nim)
-{% sample lang="lisp" %}
-[import, lang:"lisp"](code/clisp/verlet.lisp)
-{% endmethod %}
+
+#### Code Example javascript
+
+```javascript
+{{#include code/javascript/verlet.js}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/verlet.rs}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/verlet.swift}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/verlet.f90}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/verlet.rb}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/verlet.go}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/verlet.s}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/verlet.kt}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/verlet.nim}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/verlet.lisp}}
+```
 
 
 <script>

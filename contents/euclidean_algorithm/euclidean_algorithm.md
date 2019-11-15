@@ -4,79 +4,210 @@ Computer science is (almost by definition) a science about computers -- a device
 
 The algorithm is a simple way to find the *greatest common divisor* (GCD) of two numbers, which is useful for a number of different applications (like reducing fractions). The first method (envisioned by Euclid) uses simple subtraction:
 
-{% method %}
-{% sample lang="c" %}
-[import:17-30, lang="c_cpp"](code/c/euclidean_example.c)
-{% sample lang="cs" %}
-[import:8-23, lang="csharp"](code/csharp/EuclideanAlgorithm.cs)
-{% sample lang="clj" %}
-[import:2-8, lang="clojure"](code/clojure/euclidean_example.clj)
-{% sample lang="cpp" %}
-[import:18-31, lang="c_cpp"](code/c++/euclidean.cpp)
-{% sample lang="java" %}
-[import:3-16, lang="java"](code/java/EuclideanAlgo.java)
-{% sample lang="kotlin" %}
-[import:3-13, lang="kotlin"](code/kotlin/Euclidean.kt)
-{% sample lang="js" %}
-[import:15-29, lang="javascript"](code/javascript/euclidean_example.js)
-{% sample lang="lisp" %}
-[import:3-12, lang="lisp"](code/clisp/euclidean.lisp)
-{% sample lang="py" %}
-[import:11-22, lang="python"](code/python/euclidean_example.py)
-{% sample lang="haskell" %}
-[import:2-8, lang="haskell"](code/haskell/euclidean_example.hs)
-{% sample lang="rs" %}
-[import:3-15, lang="rust"](code/rust/euclidean_example.rs)
-{% sample lang="ml" %}
-[import:9-17, lang="ocaml"](code/ocaml/euclidean_example.ml)
-{% sample lang="go" %}
-[import:25-38, lang="go"](code/go/euclidean.go)
-{% sample lang="swift" %}
-[import:1-14, lang="swift"](code/swift/euclidean_algorithm.swift)
-{% sample lang="matlab" %}
-[import:3-17, lang="matlab"](code/matlab/euclidean.m)
-{% sample lang="lua" %}
-[import:1-14, lang="lua"](code/lua/euclidean.lua)
-{% sample lang="jl" %}
-[import:12-25, lang="julia"](code/julia/euclidean.jl)
-{% sample lang="nim" %}
-[import:13-24, lang="nim"](code/nim/euclid_algorithm.nim)
-{% sample lang="asm-x64" %}
-[import:35-56, lang="asm-x64"](code/asm-x64/euclidean_example.s)
-{% sample lang="f90" %}
-[import:1-19, lang="fortran"](code/fortran/euclidean.f90)
-{% sample lang="php" %}
-[import:4-18, lang="php"](code/php/euclidean.php)
-{% sample lang="factor" %}
-[import:1-13, lang="factor"](code/factor/euclid.factor)
-{% sample lang="ws" %}
-[import, lang="whitespace"](code/whitespace/euclidian_sub.ws)
-{% sample lang="scala" %}
-[import:3-8, lang="scala"](code/scala/euclidean.scala)
-{% sample lang="racket" %}
-[import:3-14, lang="lisp"](code/racket/euclidean_algorithm.rkt)
-{% sample lang="ruby" %}
-[import:8-19, lang="ruby"](code/ruby/euclidean.rb)
-{% sample lang="st" %}
-[import:1-13, lang="smalltalk"](code/smalltalk/euclid.st)
-{% sample lang="emojic" %}
-[import:2-17, lang:"emojicode"](code/emojicode/euclidean_algorithm.emojic)
-{% sample lang="lolcode" %}
-[import:25-40, lang="LOLCODE"](code/lolcode/euclid.lol)
-{% sample lang="bash" %}
-[import:24-38, lang="bash"](code/bash/euclid.bash)
-{% sample lang="d" %}
-[import:19-33, lang="d"](code/d/euclidean_algorithm.d)
-{% sample lang="piet" %}
+### Code Examples
+
+#### Code Example c
+
+```c_cpp
+{{#include code/c/euclidean_example.c:17:30}}
+```
+
+#### Code Example cs
+
+```csharp
+{{#include code/csharp/EuclideanAlgorithm.cs:8:23}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/euclidean_example.clj:2:8}}
+```
+
+#### Code Example cpp
+
+```c_cpp
+{{#include code/c++/euclidean.cpp:18:31}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/EuclideanAlgo.java:3:16}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/Euclidean.kt:3:13}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/euclidean_example.js:15:29}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/euclidean.lisp:3:12}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/euclidean_example.py:11:22}}
+```
+
+#### Code Example haskell
+
+```haskell
+{{#include code/haskell/euclidean_example.hs:2:8}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/euclidean_example.rs:3:15}}
+```
+
+#### Code Example ml
+
+```ocaml
+{{#include code/ocaml/euclidean_example.ml:9:17}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/euclidean.go:25:38}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/euclidean_algorithm.swift:1:14}}
+```
+
+#### Code Example matlab
+
+```matlab
+{{#include code/matlab/euclidean.m:3:17}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/euclidean.lua:1:14}}
+```
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/euclidean.jl:12:25}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/euclid_algorithm.nim:13:24}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/euclidean_example.s:35:56}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/euclidean.f90:1:19}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/euclidean.php:4:18}}
+```
+
+#### Code Example factor
+
+```factor
+{{#include code/factor/euclid.factor:1:13}}
+```
+
+#### Code Example ws
+
+```whitespace
+{{#include code/whitespace/euclidian_sub.ws}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/euclidean.scala:3:8}}
+```
+
+#### Code Example racket
+
+```lisp
+{{#include code/racket/euclidean_algorithm.rkt:3:14}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/euclidean.rb:8:19}}
+```
+
+#### Code Example st
+
+```smalltalk
+{{#include code/smalltalk/euclid.st:1:13}}
+```
+
+#### Code Example emojic
+
+```emojicode
+{{#include code/emojicode/euclidean_algorithm.emojic:2:17}}
+```
+
+#### Code Example lolcode
+
+```LOLCODE
+{{#include code/lolcode/euclid.lol:25:40}}
+```
+
+#### Code Example bash
+
+```bash
+{{#include code/bash/euclid.bash:24:38}}
+```
+
+#### Code Example d
+
+```d
+{{#include code/d/euclidean_algorithm.d:19:33}}
+```
+
+#### Code Example piet
+
 > ![](code/piet/subtract/euclidian_algorithm_subtract_large.png) ![](code/piet/subtract/euclidian_algorithm_subtract.png)
-{% sample lang="ss" %}
-[import:1-7, lang="scheme"](code/scheme/euclidalg.ss)
-{% sample lang="scratch" %}
+
+#### Code Example ss
+
+```scheme
+{{#include code/scheme/euclidalg.ss:1:7}}
+```
+
+#### Code Example scratch
+
 <p>
   <img  class="center" src="code/scratch/euclid_sub.svg" width="200" />
 </p>
 
-{% endmethod %}
 
 Here, we simply line the two numbers up every step and subtract the lower value from the higher one every timestep. Once the two values are equal, we call that value the greatest common divisor. A graph of `a` and `b` as they change every step would look something like this:
 
@@ -86,79 +217,210 @@ Here, we simply line the two numbers up every step and subtract the lower value 
 
 Modern implementations, though, often use the modulus operator (%) like so
 
-{% method %}
-{% sample lang="c" %}
-[import:4-16, lang="c_cpp"](code/c/euclidean_example.c)
-{% sample lang="cs" %}
-[import:25-39, lang="csharp"](code/csharp/EuclideanAlgorithm.cs)
-{% sample lang="clj" %}
-[import:9-13, lang="clojure"](code/clojure/euclidean_example.clj)
-{% sample lang="cpp" %}
-[import:5-15, lang="c_cpp"](code/c++/euclidean.cpp)
-{% sample lang="java" %}
-[import:18-26, lang="java"](code/java/EuclideanAlgo.java)
-{% sample lang="kotlin" %}
-[import:15-26, lang="kotlin"](code/kotlin/Euclidean.kt)
-{% sample lang="js" %}
-[import:1-13, lang="javascript"](code/javascript/euclidean_example.js)
-{% sample lang="lisp" %}
-[import:14-18, lang="lisp"](code/clisp/euclidean.lisp)
-{% sample lang="py" %}
-[import:1-9, lang="python"](code/python/euclidean_example.py)
-{% sample lang="haskell" %}
-[import:10-14, lang="haskell"](code/haskell/euclidean_example.hs)
-{% sample lang="rs" %}
-[import:17-27, lang="rust"](code/rust/euclidean_example.rs)
-{% sample lang="ml" %}
-[import:3-7, lang="ocaml"](code/ocaml/euclidean_example.ml)
-{% sample lang="go" %}
-[import:14-23, lang="go"](code/go/euclidean.go)
-{% sample lang="swift" %}
-[import:16-27, lang="swift"](code/swift/euclidean_algorithm.swift)
-{% sample lang="matlab" %}
-[import:19-31, lang="matlab"](code/matlab/euclidean.m)
-{% sample lang="lua" %}
-[import:16-25, lang="lua"](code/lua/euclidean.lua)
-{% sample lang="jl" %}
-[import:1-10, lang="julia"](code/julia/euclidean.jl)
-{% sample lang="nim" %}
-[import:1-11, lang="nim"](code/nim/euclid_algorithm.nim)
-{% sample lang="asm-x64" %}
-[import:10-33, lang="asm-x64"](code/asm-x64/euclidean_example.s)
-{% sample lang="f90" %}
-[import:21-34, lang="fortran"](code/fortran/euclidean.f90)
-{% sample lang="php" %}
-[import:20-30, lang="php"](code/php/euclidean.php)
-{% sample lang="factor" %}
-[import:15-25, lang="factor"](code/factor/euclid.factor)
-{% sample lang="ws" %}
-[import, lang="whitespace"](code/whitespace/euclidian_mod.ws)
-{% sample lang="scala" %}
-[import:10-14, lang="scala"](code/scala/euclidean.scala)
-{% sample lang="racket" %}
-[import:16-24, lang="lisp"](code/racket/euclidean_algorithm.rkt)
-{% sample lang="ruby" %}
-[import:1-6, lang="ruby"](code/ruby/euclidean.rb)
-{% sample lang="st" %}
-[import:15-25, lang="smalltalk"](code/smalltalk/euclid.st)
-{% sample lang="emojic" %}
-[import:19-31, lang:"emojicode"](code/emojicode/euclidean_algorithm.emojic)
-{% sample lang="lolcode" %}
-[import:9-23, lang="LOLCODE"](code/lolcode/euclid.lol)
-{% sample lang="bash" %}
-[import:10-22, lang="bash"](code/bash/euclid.bash)
-{% sample lang="d" %}
-[import:4-17, lang="d"](code/d/euclidean_algorithm.d)
-{% sample lang="piet" %}
+### Code Examples
+
+#### Code Example c
+
+```c_cpp
+{{#include code/c/euclidean_example.c:4:16}}
+```
+
+#### Code Example cs
+
+```csharp
+{{#include code/csharp/EuclideanAlgorithm.cs:25:39}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/euclidean_example.clj:9:13}}
+```
+
+#### Code Example cpp
+
+```c_cpp
+{{#include code/c++/euclidean.cpp:5:15}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/EuclideanAlgo.java:18:26}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/Euclidean.kt:15:26}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/euclidean_example.js:1:13}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/euclidean.lisp:14:18}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/euclidean_example.py:1:9}}
+```
+
+#### Code Example haskell
+
+```haskell
+{{#include code/haskell/euclidean_example.hs:10:14}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/euclidean_example.rs:17:27}}
+```
+
+#### Code Example ml
+
+```ocaml
+{{#include code/ocaml/euclidean_example.ml:3:7}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/euclidean.go:14:23}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/euclidean_algorithm.swift:16:27}}
+```
+
+#### Code Example matlab
+
+```matlab
+{{#include code/matlab/euclidean.m:19:31}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/euclidean.lua:16:25}}
+```
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/euclidean.jl:1:10}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/euclid_algorithm.nim:1:11}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/euclidean_example.s:10:33}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/euclidean.f90:21:34}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/euclidean.php:20:30}}
+```
+
+#### Code Example factor
+
+```factor
+{{#include code/factor/euclid.factor:15:25}}
+```
+
+#### Code Example ws
+
+```whitespace
+{{#include code/whitespace/euclidian_mod.ws}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/euclidean.scala:10:14}}
+```
+
+#### Code Example racket
+
+```lisp
+{{#include code/racket/euclidean_algorithm.rkt:16:24}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/euclidean.rb:1:6}}
+```
+
+#### Code Example st
+
+```smalltalk
+{{#include code/smalltalk/euclid.st:15:25}}
+```
+
+#### Code Example emojic
+
+```emojicode
+{{#include code/emojicode/euclidean_algorithm.emojic:19:31}}
+```
+
+#### Code Example lolcode
+
+```LOLCODE
+{{#include code/lolcode/euclid.lol:9:23}}
+```
+
+#### Code Example bash
+
+```bash
+{{#include code/bash/euclid.bash:10:22}}
+```
+
+#### Code Example d
+
+```d
+{{#include code/d/euclidean_algorithm.d:4:17}}
+```
+
+#### Code Example piet
+
 > ![](code/piet/mod/euclidian_algorithm_mod_large.png) ![](code/piet/mod/euclidian_algorithm_mod.png)
-{% sample lang="ss" %}
-[import:9-12, lang="scheme"](code/scheme/euclidalg.ss)
-{% sample lang="scratch" %}
+
+#### Code Example ss
+
+```scheme
+{{#include code/scheme/euclidalg.ss:9:12}}
+```
+
+#### Code Example scratch
+
 <p>
   <img  class="center" src="code/scratch/euclid_mod.svg" width="200" />
 </p>
 
-{% endmethod %}
 
 Here, we set `b` to be the remainder of `a%b` and `a` to be whatever `b` was last timestep. Because of how the modulus operator works, this will provide the same information as the subtraction-based implementation, but when we show `a` and `b` as they change with time, we can see that it might take many fewer steps:
 
@@ -178,94 +440,238 @@ Here's a video on the Euclidean algorithm:
 
 ## Example Code
 
-{% method %}
-{% sample lang="c" %}
-[import, lang="c_cpp"](code/c/euclidean_example.c)
-{% sample lang="cs" %}
+### Code Examples
+
+#### Code Example c
+
+```c_cpp
+{{#include code/c/euclidean_example.c}}
+```
+
+#### Code Example cs
+
 ##### EuclideanAlgorithm.cs
-[import, lang="csharp"](code/csharp/EuclideanAlgorithm.cs)
+
+```csharp
+{{#include code/csharp/EuclideanAlgorithm.cs}}
+```
+
 ##### Program.cs
-[import, lang="csharp"](code/csharp/Program.cs)
-{% sample lang="clj" %}
-[import, lang="clojure"](code/clojure/euclidean_example.clj)
-{% sample lang="cpp" %}
-[import, lang="c_cpp"](code/c++/euclidean.cpp)
-{% sample lang="java" %}
-[import, lang="java"](code/java/EuclideanAlgo.java)
-{% sample lang="js" %}
-[import, lang="javascript"](code/javascript/euclidean_example.js)
-{% sample lang="lisp" %}
-[import, lang="lisp"](code/clisp/euclidean.lisp)
-{% sample lang="py" %}
-[import, lang="python"](code/python/euclidean_example.py)
-{% sample lang="haskell" %}
-[import, lang="haskell"](code/haskell/euclidean_example.hs)
-{% sample lang="rs" %}
-[import, lang="rust"](code/rust/euclidean_example.rs)
-{% sample lang="ml" %}
-[import, lang="ocaml"](code/ocaml/euclidean_example.ml)
-{% sample lang="go" %}
-[import, lang="go"](code/go/euclidean.go)
-{% sample lang="swift" %}
-[import, lang="swift"](code/swift/euclidean_algorithm.swift)
-{% sample lang="matlab" %}
-[import, lang="matlab"](code/matlab/euclidean.m)
-{% sample lang="lua" %}
-[import, lang="lua"](code/lua/euclidean.lua)
-{% sample lang="jl" %}
-[import, lang="julia"](code/julia/euclidean.jl)
-{% sample lang="nim" %}
-[import, lang="nim" %](code/nim/euclid_algorithm.nim)
-{% sample lang="asm-x64" %}
-[import, lang="asm-x64"](code/asm-x64/euclidean_example.s)
-{% sample lang="f90" %}
-[import, lang="fortran"](code/fortran/euclidean.f90)
-{% sample lang="php" %}
-[import, lang="php"](code/php/euclidean.php)
-{% sample lang="factor" %}
-[import, lang="factor"](code/factor/euclid.factor)
-{% sample lang="ws" %}
+
+```csharp
+{{#include code/csharp/Program.cs}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/euclidean_example.clj}}
+```
+
+#### Code Example cpp
+
+```c_cpp
+{{#include code/c++/euclidean.cpp}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/EuclideanAlgo.java}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/euclidean_example.js}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/euclidean.lisp}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/euclidean_example.py}}
+```
+
+#### Code Example haskell
+
+```haskell
+{{#include code/haskell/euclidean_example.hs}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/euclidean_example.rs}}
+```
+
+#### Code Example ml
+
+```ocaml
+{{#include code/ocaml/euclidean_example.ml}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/euclidean.go}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/euclidean_algorithm.swift}}
+```
+
+#### Code Example matlab
+
+```matlab
+{{#include code/matlab/euclidean.m}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/euclidean.lua}}
+```
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/euclidean.jl}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/euclid_algorithm.nim}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/euclidean_example.s}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/euclidean.f90}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/euclidean.php}}
+```
+
+#### Code Example factor
+
+```factor
+{{#include code/factor/euclid.factor}}
+```
+
+#### Code Example ws
+
 Here is a readable version of the algorithms with comments. First, subtraction method:
-[import, lang="whitespace"](code/whitespace/euclidian_sub_comments.ws)
+
+```whitespace
+{{#include code/whitespace/euclidian_sub_comments.ws}}
+```
+
 and modulo method:
-[import, lang="whitespace"](code/whitespace/euclidian_mod_comments.ws)
-{% sample lang="scala" %}
-[import, lang="scala"](code/scala/euclidean.scala)
-{% sample lang="racket" %}
-[import, lang="lisp"](code/racket/euclidean_algorithm.rkt)
-{% sample lang="ruby" %}
-[import, lang="ruby"](code/ruby/euclidean.rb)
-{% sample lang="st" %}
-[import, lang="smalltalk"](code/smalltalk/euclid.st)
-{% sample lang="emojic" %}
-[import, lang:"emojicode"](code/emojicode/euclidean_algorithm.emojic)
-{% sample lang="lolcode" %}
-[import, lang="LOLCODE"](code/lolcode/euclid.lol)
-{% sample lang="bash" %}
-[import, lang="bash"](code/bash/euclid.bash)
-{% sample lang="d" %}
-[import, lang="d"](code/d/euclidean_algorithm.d)
-{% sample lang="piet" %}
+
+```whitespace
+{{#include code/whitespace/euclidian_mod_comments.ws}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/euclidean.scala}}
+```
+
+#### Code Example racket
+
+```lisp
+{{#include code/racket/euclidean_algorithm.rkt}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/euclidean.rb}}
+```
+
+#### Code Example st
+
+```smalltalk
+{{#include code/smalltalk/euclid.st}}
+```
+
+#### Code Example emojic
+
+```emojicode
+{{#include code/emojicode/euclidean_algorithm.emojic}}
+```
+
+#### Code Example lolcode
+
+```LOLCODE
+{{#include code/lolcode/euclid.lol}}
+```
+
+#### Code Example bash
+
+```bash
+{{#include code/bash/euclid.bash}}
+```
+
+#### Code Example d
+
+```d
+{{#include code/d/euclidean_algorithm.d}}
+```
+
+#### Code Example piet
+
 A text version of the program is provided for both versions.
+
 #### Subtraction
+
 > ![](code/piet/subtract/euclidian_algorithm_subtract_large.png) ![](code/piet/subtract/euclidian_algorithm_subtract.png)
 
-[import:23-107](code/piet/euclidian_algorithm.piet)
+```piet
+{{#include code/piet/euclidian_algorithm.piet:23:107}}
+```
 
 #### Modulo
+
 > ![](code/piet/mod/euclidian_algorithm_mod_large.png) ![](code/piet/mod/euclidian_algorithm_mod.png)
 
-[import:126-146](code/piet/euclidian_algorithm.piet)
-{% sample lang="ss" %}
-[import:, lang="scheme"](code/scheme/euclidalg.ss)
-{% sample lang="scratch" %}
+```piet
+{{#include code/piet/euclidian_algorithm.piet:126:146}}
+```
+
+#### Code Example ss
+
+```scheme
+{{#include code/scheme/euclidalg.ss}}
+```
+
+#### Code Example scratch
+
 The code snippets were taken from this [Scratch project](https://scratch.mit.edu/projects/278727055/)
 
 <p>
   <img  class="center" src="code/scratch/main.svg" width="200" />
 </p>
 
-{% endmethod %}
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

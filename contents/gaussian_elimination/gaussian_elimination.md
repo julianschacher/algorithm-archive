@@ -306,26 +306,63 @@ In this case, the new pivot is \\(3\\).
 
 In code, this process might look like this:
 
-{% method %}
-{% sample lang="jl" %}
-[import:12-24, lang:"julia"](code/julia/gaussian_elimination.jl)
-{% sample lang="java" %}
-[import:14-30, lang:"java"](code/java/GaussianElimination.java)
-{% sample lang="c" %}
-[import:5-13, lang:"c"](code/c/gaussian_elimination.c)
-[import:19-34, lang:"c"](code/c/gaussian_elimination.c)
-{% sample lang="cpp" %}
-[import:13-23, lang:"cpp"](code/c++/gaussian_elimination.cpp)
-{% sample lang="hs" %}
-[import:10-17, lang:"haskell"](code/haskell/gaussianElimination.hs)
-[import:44-46, lang:"haskell"](code/haskell/gaussianElimination.hs)
-{% sample lang="js" %}
-[import:7-23, lang:"javascript"](code/javascript/gaussian_elimination.js)
-{% sample lang="py" %}
-[import:13-19, lang:"python"](code/python/gaussian_elimination.py)
-{% sample lang="rs" %}
-[import:43-76, lang:"rust"](code/rust/gaussian_elimination.rs)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/gaussian_elimination.jl:12:24}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/GaussianElimination.java:14:30}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/gaussian_elimination.c:5:13}}
+```
+
+```c
+{{#include code/c/gaussian_elimination.c:19:34}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/gaussian_elimination.cpp:13:23}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/gaussianElimination.hs:10:17}}
+```
+
+```haskell
+{{#include code/haskell/gaussianElimination.hs:44:46}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/gaussian_elimination.js:7:23}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/gaussian_elimination.py:13:19}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/gaussian_elimination.rs:43:76}}
+```
 
 As a note, if the highest value is \\(0\\), the matrix is singular and the system has no single solution.
 This makes sense because if the highest value in a column is 0, the entire column must be 0, thus there can be no unique solution when we read the matrix as a set of equations.
@@ -379,49 +416,120 @@ After finding the fraction, we simply subtract \\(\text{current_row} - \frac{1}{
 After this, repeat the process for all other rows.
 
 Here is what it might look like in code:
-{% method %}
-{% sample lang="jl" %}
-[import:26-38, lang:"julia"](code/julia/gaussian_elimination.jl)
-{% sample lang="java" %}
-[import:32-40, lang:"java"](code/java/GaussianElimination.java)
-{% sample lang="c" %}
-[import:36-41, lang:"c"](code/c/gaussian_elimination.c)
-{% sample lang="cpp" %}
-[import:25-32, lang:"cpp"](code/c++/gaussian_elimination.cpp)
-{% sample lang="hs" %}
-[import:19-33, lang:"haskell"](code/haskell/gaussianElimination.hs)
-[import:42-42, lang:"haskell"](code/haskell/gaussianElimination.hs)
-{% sample lang="js" %}
-[import:25-30, lang:"javascript"](code/javascript/gaussian_elimination.js)
-{% sample lang="py" %}
-[import:21-26, lang:"python"](code/python/gaussian_elimination.py)
-{% sample lang="rs" %}
-[import:62-75, lang:"rust"](code/rust/gaussian_elimination.rs)
-{% endmethod %}
+
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/gaussian_elimination.jl:26:38}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/GaussianElimination.java:32:40}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/gaussian_elimination.c:36:41}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/gaussian_elimination.cpp:25:32}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/gaussianElimination.hs:19:33}}
+```
+
+```haskell
+{{#include code/haskell/gaussianElimination.hs:42:42}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/gaussian_elimination.js:25:30}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/gaussian_elimination.py:21:26}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/gaussian_elimination.rs:62:75}}
+```
 
 #### All together
+
 When we put everything together, it looks like this:
 
-{% method %}
-{% sample lang="jl" %}
-[import:1-45, lang:"julia"](code/julia/gaussian_elimination.jl)
-{% sample lang="c" %}
-[import:15-48, lang:"c"](code/c/gaussian_elimination.c)
-{% sample lang="cpp" %}
-[import:8-34, lang:"cpp"](code/c++/gaussian_elimination.cpp)
-{% sample lang="hs" %}
-[import:10-36, lang:"haskell"](code/haskell/gaussianElimination.hs)
-{% sample lang="py" %}
-[import:3-28, lang:"python"](code/python/gaussian_elimination.py)
-{% sample lang="java" %}
-[import:5-47, lang:"java"](code/java/GaussianElimination.java)
-{% sample lang="js" %}
-[import:1-38, lang:"javascript"](code/javascript/gaussian_elimination.js)
-{% sample lang="go" %}
-[import:9-53, lang:"go"](code/go/gaussian_elimination.go)
-{% sample lang="rs" %}
-[import:41-77, lang:"rust"](code/rust/gaussian_elimination.rs)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/gaussian_elimination.jl:1:45}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/gaussian_elimination.c:15:48}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/gaussian_elimination.cpp:8:34}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/gaussianElimination.hs:10:36}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/gaussian_elimination.py:3:28}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/GaussianElimination.java:5:47}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/gaussian_elimination.js:1:38}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/gaussian_elimination.go:9:53}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/gaussian_elimination.rs:41:77}}
+```
 
 To be clear: if the matrix is found to be singular during this process, the system of equations is either over- or under-determined and no general solution exists.
 For this reason, many implementations of this method will stop the moment the matrix is found to have no unique solutions.
@@ -443,26 +551,61 @@ We basically need to find the pivot of every row and set that value to 1 by divi
 Afterwards, we subtract upwards until all values above the pivot are 0 before moving on to the next column from right to left (instead of left to right, like before).
 Here it is in code:
 
-{% method %}
-{% sample lang="jl" %}
-[import:67-93, lang:"julia"](code/julia/gaussian_elimination.jl)
-{% sample lang="c" %}
-[import:64-82, lang:"c"](code/c/gaussian_elimination.c)
-{% sample lang="cpp" %}
-[import:36-54, lang:"cpp"](code/c++/gaussian_elimination.cpp)
-{% sample lang="hs" %}
-[import:38-46, lang:"haskell"](code/haskell/gaussianElimination.hs)
-{% sample lang="py" %}
-[import:31-49, lang:"python"](code/python/gaussian_elimination.py)
-{% sample lang="java" %}
-[import:49-70, lang:"java"](code/java/GaussianElimination.java)
-{% sample lang="js" %}
-[import:57-76, lang:"javascript"](code/javascript/gaussian_elimination.js)
-{% sample lang="go" %}
-[import:55-82, lang:"go"](code/go/gaussian_elimination.go)
-{% sample lang="rs" %}
-[import:79-96, lang:"rust"](code/rust/gaussian_elimination.rs)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/gaussian_elimination.jl:67:93}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/gaussian_elimination.c:64:82}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/gaussian_elimination.cpp:36:54}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/gaussianElimination.hs:38:46}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/gaussian_elimination.py:31:49}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/GaussianElimination.java:49:70}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/gaussian_elimination.js:57:76}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/gaussian_elimination.go:55:82}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/gaussian_elimination.rs:79:96}}
+```
 
 As a note: Gauss-Jordan elimination can also be used to find the inverse of a matrix by following the same procedure to generate a reduced row echelon matrix, but with an identity matrix on the other side instead of the right-hand side of each equation.
 This process is straightforward but will not be covered here, simply because there are much faster numerical methods to find an inverse matrix; however, if you would like to see this, let me know and I can add it in for completeness.
@@ -487,26 +630,61 @@ After that, we simply need to solve \\(2x + 3y + 4z = 6\\) for \\(x\\) in a simi
 In code, this involves keeping a rolling sum of all the values we substitute, subtracting that sum from the solution column and then dividing by the coefficient variable.
 In code, it looks like this:
 
-{% method %}
-{% sample lang="jl" %}
-[import:47-64, lang:"julia"](code/julia/gaussian_elimination.jl)
-{% sample lang="c" %}
-[import:50-62, lang:"c"](code/c/gaussian_elimination.c)
-{% sample lang="cpp" %}
-[import:56-72, lang:"cpp"](code/c++/gaussian_elimination.cpp)
-{% sample lang="rs" %}
-[import:98-112, lang:"rust"](code/rust/gaussian_elimination.rs)
-{% sample lang="hs" %}
-[import:48-53, lang:"haskell"](code/haskell/gaussianElimination.hs)
-{% sample lang="py" %}
-[import:52-64, lang:"python"](code/python/gaussian_elimination.py)
-{% sample lang="java" %}
-[import:72-87, lang:"java"](code/java/GaussianElimination.java)
-{% sample lang="js" %}
-[import:40-55, lang:"javascript"](code/javascript/gaussian_elimination.js)
-{% sample lang="go" %}
-[import:84-98, lang:"go"](code/go/gaussian_elimination.go)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/gaussian_elimination.jl:47:64}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/gaussian_elimination.c:50:62}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/gaussian_elimination.cpp:56:72}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/gaussian_elimination.rs:98:112}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/gaussianElimination.hs:48:53}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/gaussian_elimination.py:52:64}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/GaussianElimination.java:72:87}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/gaussian_elimination.js:40:55}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/gaussian_elimination.go:84:98}}
+```
 
 ## Visual Representation
 
@@ -557,26 +735,61 @@ Here's a video describing Gaussian elimination:
 
 ## Example Code
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/gaussian_elimination.jl)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/gaussian_elimination.c)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/gaussian_elimination.cpp)
-{% sample lang="rs" %}
-[import, lang:"rust"](code/rust/gaussian_elimination.rs)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/gaussianElimination.hs)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/gaussian_elimination.py)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/GaussianElimination.java)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/gaussian_elimination.js)
-{% sample lang="go" %}
-[import, lang:"go"](code/go/gaussian_elimination.go)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/gaussian_elimination.jl}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/gaussian_elimination.c}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/gaussian_elimination.cpp}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/gaussian_elimination.rs}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/gaussianElimination.hs}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/gaussian_elimination.py}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/GaussianElimination.java}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/gaussian_elimination.js}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/gaussian_elimination.go}}
+```
 
 
 <script>

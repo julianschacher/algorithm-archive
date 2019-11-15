@@ -22,33 +22,81 @@ Since this algorithm, there have been many other algorithms that have advanced t
 
 ## Example Code
 
-{% method %}
-{% sample lang="cs" %}
+### Code Examples
+
+#### Code Example cs
+
 ##### JarvisMarch.cs
-[import, lang="csharp"](code/csharp/JarvisMarch.cs)
+
+```csharp
+{{#include code/csharp/JarvisMarch.cs}}
+```
+
 ##### Program.cs
-[import, lang="csharp"](code/csharp/Program.cs)
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/jarvis.jl)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/jarvisMarch.hs)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/jarvis_march.c)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/jarvis-march.js)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/jarvis_march.py)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/jarvis_march.cpp)
-{% sample lang="lisp" %}
-[import, lang:"lisp"](code/clisp/jarvis-march.lisp)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/JarvisMarch.java)
-{% sample lang="go" %}
-[import, lang:"go"](code/golang/jarvis.go)
-{% sample lang="v" %}
-[import, lang:"v"](code/v/jarvis.v)
-{% endmethod %}
+
+```csharp
+{{#include code/csharp/Program.cs}}
+```
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/jarvis.jl}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/jarvisMarch.hs}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/jarvis_march.c}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/jarvis-march.js}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/jarvis_march.py}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/jarvis_march.cpp}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/jarvis-march.lisp}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/JarvisMarch.java}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/jarvis.go}}
+```
+
+#### Code Example v
+
+```v
+{{#include code/v/jarvis.v}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

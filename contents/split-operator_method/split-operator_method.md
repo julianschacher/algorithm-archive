@@ -96,19 +96,41 @@ There is no doubt that it makes the simulation easier to understand (albeit a li
 
 Regardless, we first need to set all the initial parameters, including the initial grids in real and momentum space:
 
-{% method %}
-{% sample lang="jl" %}
-[import:11-34, lang:"julia"](code/julia/split_op.jl)
-{% sample lang="c" %}
-[import:11-21, lang:"c"](code/c/split_op.c)
-[import:52-73, lang:"c"](code/c/split_op.c)
-{% sample lang="cpp" %}
-[import:14-49, lang:"cpp"](code/c++/split_op.cpp)
-{% sample lang="py" %}
-[import:11-30, lang:"python"](code/python/split_op.py)
-{% sample lang="hs" %}
-[import:17-47, lang:"haskell"](code/haskell/splitOp.hs)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/split_op.jl:11:34}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/split_op.c:11:21}}
+```
+
+```c
+{{#include code/c/split_op.c:52:73}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/split_op.cpp:14:49}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/split_op.py:11:30}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/splitOp.hs:17:47}}
+```
 
 As a note, when we generate our grid in momentum space `k`, we need to split the grid into two lines, one that is going from `0` to `-kmax` and is then discontinuous and goes from `kmax` to `0`.
 This is simply because the FFT will naturally assume that the `0` in our grid is at the left side of the simulation, so we shift k-space to match this expectation.
@@ -117,19 +139,41 @@ There is another boolean value here called `im_time`, which is for imaginary tim
 
 Afterwards, we turn them into operators:
 
-{% method %}
-{% sample lang="jl" %}
-[import:36-62, lang:"julia"](code/julia/split_op.jl)
-{% sample lang="c" %}
-[import:23-29, lang:"c"](code/c/split_op.c)
-[import:75-96, lang:"c"](code/c/split_op.c)
-{% sample lang="cpp" %}
-[import:51-80, lang:"cpp"](code/c++/split_op.cpp)
-{% sample lang="py" %}
-[import:33-54, lang:"python"](code/python/split_op.py)
-{% sample lang="hs" %}
-[import:49-66, lang:"haskell"](code/haskell/splitOp.hs)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/split_op.jl:36:62}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/split_op.c:23:29}}
+```
+
+```c
+{{#include code/c/split_op.c:75:96}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/split_op.cpp:51:80}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/split_op.py:33:54}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/splitOp.hs:49:66}}
+```
 
 Here, we use a standard harmonic potential for the atoms to sit in and a gaussian distribution for an initial guess for the probability distribution.
 If we give either the trap or the atoms a slight offset (so the gaussian distribution of atoms does not *quite* rest at the bottom of the \\(x^2\\) potential, we can see the atoms moving back and forth in the potential as we move the simulation forward in time.
@@ -139,18 +183,37 @@ Both of these have been shown in the figures above.
 
 The final step is to do the iteration, itself.
 
-{% method %}
-{% sample lang="jl" %}
-[import:65-112, lang:"julia"](code/julia/split_op.jl)
-{% sample lang="c" %}
-[import:98-148, lang:"c"](code/c/split_op.c)
-{% sample lang="cpp" %}
-[import:99-156, lang:"cpp"](code/c++/split_op.cpp)
-{% sample lang="py" %}
-[import:57-95, lang:"python"](code/python/split_op.py)
-{% sample lang="hs" %}
-[import:68-73, lang:"haskell"](code/haskell/splitOp.hs)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/split_op.jl:65:112}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/split_op.c:98:148}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/split_op.cpp:99:156}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/split_op.py:57:95}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/splitOp.hs:68:73}}
+```
 
 And that's it.
 
@@ -174,18 +237,37 @@ This example code is a simulation of a gaussian distribution of atoms slightly o
 So long as the code is written appropriately, this means that the atoms should move towards the center of the trap and the energy should decay to \\(\frac{1}{2}\hbar\omega\\), which will be simply \\(\frac{1}{2}\\) in this simulation.
 Checking to make sure your code can output the correct energy for a harmonic trap is a good test to make sure it is all working under-the-hood before simulating systems with more complicated Hamiltonians.
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/split_op.jl)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/split_op.c)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/split_op.cpp)
-{% sample lang="py" %}
-[import:5-127, lang:"python"](code/python/split_op.py)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/splitOp.hs)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/split_op.jl}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/split_op.c}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/split_op.cpp}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/split_op.py:5:127}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/splitOp.hs}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

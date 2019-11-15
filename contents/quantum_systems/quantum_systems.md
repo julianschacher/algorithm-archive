@@ -224,18 +224,37 @@ E = \langle \Psi \lvert \hat H \lvert \Psi \rangle
 Which can be done rather trivially in code by finding the conjugate of the wavefunction and multiplying it with another wavefunction after operation in position and momentum space.
 This ultimately looks like this:
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/energy.jl)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/Energy.hs)
-{% sample lang="c" %}
-[import:29-, lang:"c"](code/c/energy.c)
-{% sample lang="cpp" %}
-[import:26-, lang:"cpp"](code/c++/energy.cpp)
-{% sample lang="py" %}
-[import:4-17, lang:"python"](code/python/energy.py)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/energy.jl}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/Energy.hs}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/energy.c:29:}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/energy.cpp:26:}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/energy.py:4:17}}
+```
 
 This calculation will be used in many different simulations of quantum systems to check our results.
 In the end, many quantum simulations are focused on the _ground_ state, which is the lowest energy state (\\(\Psi_0\\)); however, sometimes higher energy states are desired.

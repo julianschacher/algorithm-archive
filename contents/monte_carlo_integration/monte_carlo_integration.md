@@ -36,62 +36,169 @@ Well, one way is with *random sampling*.
 We basically just pick a bunch of points randomly in the square, and
 each point is tested to see whether it's in the circle or not:
 
-{% method %}
-{% sample lang="jl" %}
-[import:2-7, lang:"julia"](code/julia/monte_carlo.jl)
-{% sample lang="clj" %}
-[import:3-10, lang:"clojure"](code/clojure/monte_carlo.clj)
-{% sample lang="c" %}
-[import:7-9, lang:"c"](code/c/monte_carlo.c)
-{% sample lang="cpp" %}
-[import:7-16, lang:"cpp"](code/c++/monte_carlo.cpp)
-{% sample lang="js" %}
-[import:2-6, lang:"javascript"](code/javascript/monte_carlo.js)
-{% sample lang="hs" %}
-[import:7-7, lang:"haskell"](code/haskell/monteCarlo.hs)
-{% sample lang="rs" %}
-[import:7-9, lang:"rust"](code/rust/monte_carlo.rs)
-{% sample lang="d" %}
-[import:2-5, lang:"d"](code/d/monte_carlo.d)
-{% sample lang="go" %}
-[import:12-14, lang:"go"](code/go/monteCarlo.go)
-{% sample lang="r" %}
-[import:2-6, lang:"r"](code/r/monte_carlo.R)
-{% sample lang="java" %}
-[import:12-14, lang:"java"](code/java/MonteCarlo.java)
-{% sample lang="swift" %}
-[import:1-3, lang:"swift"](code/swift/monte_carlo.swift)
-{% sample lang="py" %}
-[import:5-7, lang:"python"](code/python/monte_carlo.py)
-{% sample lang="cs" %}
-[import:23-23, lang:"csharp"](code/csharp/Circle.cs)
-{% sample lang="nim" %}
-[import:6-7, lang:"nim"](code/nim/monte_carlo.nim)
-{% sample lang="ruby" %}
-[import:1-4, lang:"ruby"](code/ruby/monte_carlo.rb)
-{% sample lang="f90" %}
-[import:1-8, lang:"fortran"](code/fortran/monte_carlo.f90)
-{% sample lang="factor" %}
-[import:9-12 lang:"factor"](code/factor/monte_carlo.factor)
-{% sample lang="emojic" %}
-[import:23-27, lang:"emojicode"](code/emojicode/monte_carlo.emojic)
-{% sample lang="php" %}
-[import:4-7, lang:"php"](code/php/monte_carlo.php)
-{% sample lang="lua" %}
-[import:1-3, lang="lua"](code/lua/monte_carlo.lua)
-{% sample lang="racket" %}
-[import:2-4, lang:"lisp"](code/racket/monte_carlo.rkt)
-{% sample lang="scala" %}
-[import:3-3, lang:"scala"](code/scala/monte_carlo.scala)
-{% sample lang="lisp" %}
-[import:3-5, lang:"lisp"](code/clisp/monte-carlo.lisp)
-{% sample lang="asm-x64" %}
-[import:21-32, lang:"asm-x64"](code/asm-x64/monte_carlo.s)
-{% sample lang="bash" %}
-[import:2-10, lang:"bash"](code/bash/monte_carlo.bash)
-{% sample lang="kotlin" %}
-[import:3-3, lang:"kotlin"](code/kotlin/MonteCarlo.kt)
-{% endmethod %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/monte_carlo.jl:2:7}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/monte_carlo.clj:3:10}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/monte_carlo.c:7:9}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/monte_carlo.cpp:7:16}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/monte_carlo.js:2:6}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/monteCarlo.hs:7:7}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/monte_carlo.rs:7:9}}
+```
+
+#### Code Example d
+
+```d
+{{#include code/d/monte_carlo.d:2:5}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/monteCarlo.go:12:14}}
+```
+
+#### Code Example r
+
+```r
+{{#include code/r/monte_carlo.R:2:6}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/MonteCarlo.java:12:14}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/monte_carlo.swift:1:3}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/monte_carlo.py:5:7}}
+```
+
+#### Code Example cs
+
+```csharp
+{{#include code/csharp/Circle.cs:23:23}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/monte_carlo.nim:6:7}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/monte_carlo.rb:1:4}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/monte_carlo.f90:1:8}}
+```
+
+#### Code Example factor
+
+```factor
+{{#include code/factor/monte_carlo.factor:9:12}}
+```
+
+#### Code Example emojic
+
+```emojicode
+{{#include code/emojicode/monte_carlo.emojic:23:27}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/monte_carlo.php:4:7}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/monte_carlo.lua:1:3}}
+```
+
+#### Code Example racket
+
+```lisp
+{{#include code/racket/monte_carlo.rkt:2:4}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/monte_carlo.scala:3:3}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/monte-carlo.lisp:3:5}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/monte_carlo.s:21:32}}
+```
+
+#### Code Example bash
+
+```bash
+{{#include code/bash/monte_carlo.bash:2:10}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/MonteCarlo.kt:3:3}}
+```
 
 If it's in the circle, we increase an internal count by one, and in the end,
 
@@ -129,67 +236,183 @@ This saves a bit of computation time, but also requires us to multiply our outpu
 That's all there is to it!
 Feel free to submit your version via pull request, and thanks for reading!
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/monte_carlo.jl)
-{% sample lang="clj" %}
-[import, lang:"clojure"](code/clojure/monte_carlo.clj)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/monte_carlo.c)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/monte_carlo.cpp)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/monte_carlo.js)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/monteCarlo.hs)
-{%sample lang="rs" %}
-[import, lang:"rust"](code/rust/monte_carlo.rs)
-{%sample lang="d" %}
-[import, lang:"d"](code/d/monte_carlo.d)
-{%sample lang="go" %}
-[import, lang:"go"](code/go/monteCarlo.go)
-{%sample lang="r" %}
-[import, lang:"r"](code/r/monte_carlo.R)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/MonteCarlo.java)
-{% sample lang="swift" %}
-[import, lang:"swift"](code/swift/monte_carlo.swift)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/monte_carlo.py)
-{% sample lang="cs" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/monte_carlo.jl}}
+```
+
+#### Code Example clj
+
+```clojure
+{{#include code/clojure/monte_carlo.clj}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/monte_carlo.c}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/monte_carlo.cpp}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/monte_carlo.js}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/monteCarlo.hs}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/monte_carlo.rs}}
+```
+
+#### Code Example d
+
+```d
+{{#include code/d/monte_carlo.d}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/go/monteCarlo.go}}
+```
+
+#### Code Example r
+
+```r
+{{#include code/r/monte_carlo.R}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/MonteCarlo.java}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/monte_carlo.swift}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/monte_carlo.py}}
+```
+
+#### Code Example cs
+
 ##### MonteCarlo.cs
-[import, lang:"csharp"](code/csharp/MonteCarlo.cs)
+
+```csharp
+{{#include code/csharp/MonteCarlo.cs}}
+```
+
 ##### Circle.cs
-[import, lang:"csharp"](code/csharp/Circle.cs)
+
+```csharp
+{{#include code/csharp/Circle.cs}}
+```
+
 ##### Program.cs
-[import, lang:"csharp"](code/csharp/Program.cs)
-{% sample lang="nim" %}
-[import, lang:"nim"](code/nim/monte_carlo.nim)
-{% sample lang="ruby" %}
-[import, lang:"ruby"](code/ruby/monte_carlo.rb)
-{% sample lang="f90" %}
-[import, lang:"fortran"](code/fortran/monte_carlo.f90)
-{% sample lang="factor" %}
-[import, lang:"factor"](code/factor/monte_carlo.factor)
-{% sample lang="emojic" %}
-[import, lang:"emojicode"](code/emojicode/monte_carlo.emojic)
-{% sample lang="php" %}
-[import, lang:"php"](code/php/monte_carlo.php)
-{% sample lang="lua" %}
-[import, lang="lua"](code/lua/monte_carlo.lua)
-{% sample lang="racket" %}
-[import, lang:"lisp"](code/racket/monte_carlo.rkt)
-{% sample lang="scala" %}
-[import, lang:"scala"](code/scala/monte_carlo.scala)
-{% sample lang="lisp" %}
-[import, lang:"lisp"](code/clisp/monte-carlo.lisp)
-{% sample lang="asm-x64" %}
-[import, lang:"asm-x64"](code/asm-x64/monte_carlo.s)
-{% sample lang="bash" %}
-[import, lang:"bash"](code/bash/monte_carlo.bash)
-{% sample lang="kotlin" %}
-[import, lang:"kotlin"](code/kotlin/MonteCarlo.kt)
-{% endmethod %}
+
+```csharp
+{{#include code/csharp/Program.cs}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/monte_carlo.nim}}
+```
+
+#### Code Example ruby
+
+```ruby
+{{#include code/ruby/monte_carlo.rb}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/monte_carlo.f90}}
+```
+
+#### Code Example factor
+
+```factor
+{{#include code/factor/monte_carlo.factor}}
+```
+
+#### Code Example emojic
+
+```emojicode
+{{#include code/emojicode/monte_carlo.emojic}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/monte_carlo.php}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/monte_carlo.lua}}
+```
+
+#### Code Example racket
+
+```lisp
+{{#include code/racket/monte_carlo.rkt}}
+```
+
+#### Code Example scala
+
+```scala
+{{#include code/scala/monte_carlo.scala}}
+```
+
+#### Code Example lisp
+
+```lisp
+{{#include code/clisp/monte-carlo.lisp}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/monte_carlo.s}}
+```
+
+#### Code Example bash
+
+```bash
+{{#include code/bash/monte_carlo.bash}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/MonteCarlo.kt}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

@@ -95,41 +95,99 @@ The transformations are quite easy too, isn't that neat?
 
 ## Example Code
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/thomas.jl)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/thomas.c)
-{% sample lang="py" %}
-[import, lang:"python"](code/python/thomas.py)
-{% sample lang="scratch" %}
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/thomas.jl}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/thomas.c}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/thomas.py}}
+```
+
+#### Code Example scratch
+
 You will find this algorithm implemented [in this project](https://scratch.mit.edu/projects/169418273/).
+
 <p>
   <img  class="center" src="code/scratch/thomas.svg" width="1000" />
 </p>
-{% sample lang="java" %}
-[import, lang:"java"](code/java/Thomas.java)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/thomas.hs)
-{% sample lang="go" %}
-[import, lang:"go"](code/golang/thomas.go)
-{% sample lang="v" %}
-[import, lang:"v"](code/v/thomas.v)
-{% sample lang="swift" %}
-[import, lang:"swift"](code/swift/thomas.swift)
-{% sample lang="php" %}
-[import, lang:"php"](code/php/thomas.php)
-{%sample lang="nim" %}
-[import, lang:"nim"](code/nim/thomas_algorithm.nim)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/thomas.cpp)
-{% sample lang="lua" %}
-[import, lang:"lua"](code/lua/thomas.lua)
-{% sample lang="crystal" %}
-[import, lang:"crystal"](code/crystal/thomas.cr)
-{% sample lang="kotlin" %}
-[import, lang:"kotlin"](code/kotlin/thomas.kt)
-{% endmethod %}
+
+#### Code Example java
+
+```java
+{{#include code/java/Thomas.java}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/thomas.hs}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/thomas.go}}
+```
+
+#### Code Example v
+
+```v
+{{#include code/v/thomas.v}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/thomas.swift}}
+```
+
+#### Code Example php
+
+```php
+{{#include code/php/thomas.php}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/thomas_algorithm.nim}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/thomas.cpp}}
+```
+
+#### Code Example lua
+
+```lua
+{{#include code/lua/thomas.lua}}
+```
+
+#### Code Example crystal
+
+```crystal
+{{#include code/crystal/thomas.cr}}
+```
+
+#### Code Example kotlin
+
+```kotlin
+{{#include code/kotlin/thomas.kt}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);

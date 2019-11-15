@@ -106,45 +106,113 @@ Here, the most obvious test-case would be dropping a ball from 5 meters, which i
 So, this time, let's remove ourselves from any physics and instead solve the following ODE: \\(y(t)' = -3t\\) with the initial condition that \\(y(0) = 1\\).
 Note that in this case, the velocity is directly given by the ODE and the acceleration is not part of the model.
 
-{% method %}
-{% sample lang="jl" %}
-[import, lang:"julia"](code/julia/euler.jl)
-{% sample lang="c" %}
-[import, lang:"c"](code/c/euler.c)
-{% sample lang="cpp" %}
-[import, lang:"cpp"](code/c++/euler.cpp)
-{% sample lang="rs" %}
-[import, lang:"rust"](code/rust/euler.rs)
-{% sample lang="elm" %}
-[import:44-54, lang:"elm"](code/elm/euler.elm)
-[import:193-210, lang:"elm"](code/elm/euler.elm)
+### Code Examples
+
+#### Code Example jl
+
+```julia
+{{#include code/julia/euler.jl}}
+```
+
+#### Code Example c
+
+```c
+{{#include code/c/euler.c}}
+```
+
+#### Code Example cpp
+
+```cpp
+{{#include code/c++/euler.cpp}}
+```
+
+#### Code Example rs
+
+```rust
+{{#include code/rust/euler.rs}}
+```
+
+#### Code Example elm
+
+```elm
+{{#include code/elm/euler.elm:44:54}}
+```
+
+```elm
+{{#include code/elm/euler.elm:193:210}}
+```
 
 Full code for the visualization follows:
-[import, lang:"elm"](code/elm/euler.elm)
 
-{% sample lang="py" %}
-[import, lang:"python"](code/python/euler.py)
-{% sample lang="hs" %}
-[import, lang:"haskell"](code/haskell/euler.hs)
-{% sample lang="m" %}
-[import, lang:"matlab"](code/matlab/euler.m)
-{% sample lang="swift" %}
-[import, lang:"swift"](code/swift/euler.swift)
-{% sample lang="js" %}
-[import, lang:"javascript"](code/javascript/euler.js)
-{% sample lang="f90" %}
-[import, lang:"fortran"](code/fortran/euler.f90)
-{% sample lang="go" %}
-[import, lang:"go"](code/golang/euler.go)
-{% sample lang="v" %}
-[import, lang:"v"](code/v/euler.v)
-{% sample lang="asm-x64" %}
-[import, lang:"asm-x64"](code/asm-x64/euler.s)
-{% sample lang="java" %}
-[import, lang:"java"](code/java/ForwardEuler.java)
-{% sample lang="nim" %}
-[import, lang:"nim"](code/nim/forwardeuler.nim)
-{% endmethod %}
+```elm
+{{#include code/elm/euler.elm}}
+```
+
+#### Code Example py
+
+```python
+{{#include code/python/euler.py}}
+```
+
+#### Code Example hs
+
+```haskell
+{{#include code/haskell/euler.hs}}
+```
+
+#### Code Example m
+
+```matlab
+{{#include code/matlab/euler.m}}
+```
+
+#### Code Example swift
+
+```swift
+{{#include code/swift/euler.swift}}
+```
+
+#### Code Example js
+
+```javascript
+{{#include code/javascript/euler.js}}
+```
+
+#### Code Example f90
+
+```fortran
+{{#include code/fortran/euler.f90}}
+```
+
+#### Code Example go
+
+```go
+{{#include code/golang/euler.go}}
+```
+
+#### Code Example v
+
+```v
+{{#include code/v/euler.v}}
+```
+
+#### Code Example asm-x64
+
+```asm-x64
+{{#include code/asm-x64/euler.s}}
+```
+
+#### Code Example java
+
+```java
+{{#include code/java/ForwardEuler.java}}
+```
+
+#### Code Example nim
+
+```nim
+{{#include code/nim/forwardeuler.nim}}
+```
 
 <script>
 MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
